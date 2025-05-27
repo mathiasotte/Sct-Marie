@@ -18,6 +18,8 @@
   body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+
+    background-color: #FCF2DA;
   }
   
 
@@ -47,6 +49,7 @@
 
 /* Fonte og fontstørrelser */
 
+<<<<<<< Updated upstream
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 h1{
@@ -121,6 +124,11 @@ p, li{
 
 
 /* Farver */
+=======
+/* Afstande   */
+
+/* Farver --------------------------------------------------------*/
+>>>>>>> Stashed changes
 
 
 :root {
