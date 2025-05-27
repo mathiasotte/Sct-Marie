@@ -43,7 +43,7 @@
     text-wrap: balance;
   }
   
- /* stylesheet Start*/
+
 
 /* Fonte og fontstørrelser */
 
@@ -136,7 +136,7 @@ p, li{
 }
 
 
- /* stylesheet slut*/
+
 
  /* Komponenter start --------------------------------------------------------*/
 
@@ -162,20 +162,20 @@ p, li{
   }
 }
 
+.textafsnit {
+   
+}
+
+.topsektion {
+
+
+}
  /* Komponenter slut --------------------------------------------------------*/
 
 
- .textafsnit {
-    
- }
-
- .topsektion {
-
-
- }
 
 
 
- /* Komponenter slut */
+ 
 
  
