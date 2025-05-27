@@ -122,6 +122,7 @@ p, li{
 
 /* Farver */
 
+
 :root {
   /* Colors */
   --backgroundPrimaryColor: #D8C4AD;
@@ -134,9 +135,35 @@ p, li{
 
 }
 
+
  /* stylesheet slut*/
 
- /* Komponenter start */
+ /* Komponenter start --------------------------------------------------------*/
+
+
+ /* knapper */
+
+ .responsiveBtn {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Små skærme (mobile) */
+@media (max-width: 600px) {
+  .responsive-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+ /* Komponenter slut --------------------------------------------------------*/
+
 
  .textafsnit {
     
