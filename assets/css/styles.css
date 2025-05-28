@@ -16,10 +16,8 @@
   }
   
   body {
-    line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-
-    background-color: #FCF2DA;
+    background-color: var(--backgroundPrimaryColor);
   }
   
 
@@ -35,17 +33,29 @@
  
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
+    max-width: 70ch;
   }
   
   
   p {
     text-wrap: pretty;
+    line-height: 140%;
   }
   h1, h2, h3, h4, h5, h6 {
-    text-wrap: balance;
+    text-wrap: pretty;
+    line-height: 100%;
+    margin-bottom: var(--spacingMedium);
   }
   
+  @media (max-width: 600px) {
+    h1, h2, h3, h4, h5, h6{
+      margin-bottom: var(--mobilSpacingMedium);
+    }
+  }
 
+/* section {
+    padding-bottom: var(--spacingMedium);
+} */
 
 /* Fonte og fontstørrelser */
 
@@ -102,7 +112,9 @@ p, li{
  /* spacing desktop */
 
   --spacingXSmall: 0.5rem;
+  /* afstand imellem sammenhængende indhold */
   --spacingSmall: 1rem;
+  /* afstand imellem sektioner */
   --spacingMedium: 2rem;
   --spacingLarge: 3rem;
   --spacingXLarge: 4rem;
@@ -133,17 +145,30 @@ p, li{
 
 :root {
   /* Colors */
-  --backgroundPrimaryColor: #D8C4AD;
-  --backgroundSecondaryColor: #72422F;
-  --headerIconColor: #000000;
-  --headerColor: #FFFFFF;
+  --backgroundPrimaryColor: #fbf2d9;
+  --primaryCTA: #d57a66;
+  --headerIconColor: #040404;
+  --white: #FFFFFF;
   --interactivePrimaryColor: #213921;
   --interactiveSecondaryColor: #72422F;
   --specialCaseColor: #00282C;
 
 }
 
+/* utility classes start --------------------------------------------------------*/
 
+/* .flexRow {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacingMedium);
+} */
+
+.content {
+  max-width: 1120px;
+  width: 90%;
+  margin: 0 auto;
+}
+/* utility classes slut --------------------------------------------------------*/
 
 
  /* Komponenter start --------------------------------------------------------*/
@@ -154,12 +179,14 @@ p, li{
  .responsiveBtn {
   padding: 12px 24px;
   font-size: 16px;
+  font-family: inter;
   border: none;
-  background-color: #007bff;
+  background-color: var(--primaryCTA);
   color: white;
-  border-radius: 4px;
+  border-radius: 28px;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin-top: var(--spacingSmall);
 }
 
 /* Små skærme (mobile) */
@@ -179,6 +206,95 @@ p, li{
 
 }
  /* Komponenter slut --------------------------------------------------------*/
+
+
+
+ /* landingpage start --------------------------------------------------------*/
+
+.textContentLanding p {
+  max-width: 380px;
+}
+
+.landingHero {
+   float: right; 
+transform: translateY(-215px); 
+max-width: 600px;
+}
+
+.heroSection {
+  overflow: hidden;
+  /* max-height: 620px; */
+}
+
+
+@media screen and (max-width: 1060px){
+  .landingHero {
+    transform: unset;
+    margin-bottom: var(--mobilSpacingLarge);
+    }
+}
+
+/* værdier sektion */
+/* inspireret af: https://webdesign.tutsplus.com/horizontal-scrolling-card-ui-flexbox-and-css-grid--cms-41922t */
+
+.value {
+  position: relative;
+  display: inline-block;
+  min-width: 300px;
+}
+
+.value p {
+  margin-bottom: var(--mobilSpacingSmall);
+}
+
+
+.openIcon {
+  position: absolute;
+  bottom: 20px;
+  left: 40%; 
+}
+
+.valueEntrypoints{
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  align-items: flex-start;
+}
+
+.valueEntrypoints::-webkit-scrollbar{
+  height: 50px;
+}
+.valueEntrypoints::-webkit-scrollbar-thumb,
+.valueEntrypoints::-webkit-scrollbar-track{
+  border-radius: 92px;
+}
+.valueEntrypoints::-webkit-scrollbar-thumb{
+  background: var(--primaryCTA);
+}
+.valueEntrypoints::-webkit-scrollbar-track{
+  background: var(--white);
+  margin: 0 5vw;
+  margin: 2rem;
+}
+.value {
+  scroll-snap-align: center;
+  margin: 0 25px 25px 25px;
+}
+
+@media screen and (max-width: 950px){
+  .valueEntrypoints {
+    gap: var(--mobilSpacingXSmall);
+    }
+    .value {
+      max-width: 150px;
+      margin: 0;
+    }
+}
+
+article {
+  height: 1000px;
+}
+ /* landingpage slut --------------------------------------------------------*/
 
 
 
