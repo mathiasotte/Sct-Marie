@@ -31,6 +31,23 @@
   });
 
 
+// landing page JS ------------------------------------------
 
 
- 
+// desktop nav 
+
+const hamburgerToggle = document.getElementById("hamburgerToggle");
+const hamburgerClose = document.getElementById("hamburgerClose");
+const sideNav = document.getElementById("sideNav");
+
+hamburgerToggle.addEventListener("click", () => {
+  sideNav.classList.remove("hidden");
+  hamburgerToggle.style.display = "none";
+  hamburgerClose.style.display = "inline";
+});
+
+hamburgerClose.addEventListener("click", () => {
+  sideNav.classList.add("hidden");
+  hamburgerToggle.style.display = "inline";
+  hamburgerClose.style.display = "none";
+});
