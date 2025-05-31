@@ -31,15 +31,16 @@
   }
   
  
-  p, h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
-    max-width: 70ch;
+    max-width: 65ch;
   }
   
   
   p {
     text-wrap: pretty;
     line-height: 140%;
+    max-width: 65ch !important;
   }
   h1, h2, h3, h4, h5, h6 {
     text-wrap: pretty;
@@ -55,9 +56,7 @@
 
  
 
-/* section {
-    padding-bottom: var(--spacingMedium);
-} */
+
 
 /* Fonte og fontstørrelser */
 
@@ -82,10 +81,11 @@ h3{
     text-wrap: balance;
 }
 p, li{
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     font-family: inter;
     line-height: 150%;
 }
+
 @media screen and (max-width: 950px){
     h1{
         font-size: 2rem;
@@ -450,12 +450,18 @@ img.align-right {
       max-width: 150px;
       margin: 0;
     }
+  
 }
 
 article {
-  height: 1000px;
+  margin-bottom:8rem;
 }
 
+@media screen and (max-width: 950px){
+  article {
+    margin-bottom:4rem;
+  }
+}
 
 /* value modal */
 
@@ -556,6 +562,94 @@ article {
 
 
  /* landingpage slut --------------------------------------------------------*/
+ 
+ 
+ 
+ /* faq start--------------------------------------------------------*/
+ 
+ .heroSectionMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacingXLarge);
+  gap: var(--spacingMedium);
+ }
+ 
+ .heroSectionMain a {
+  color: var(--primaryCTA);
+ }
+ .heroSectionMain a:hover{
+  color: var(--primaryCTAHover);
+ }
+ 
+ .faqSection article {
+  display: flex;
+  justify-content: space-between;
+ }
+
+.faq {
+  width: 50%;
+}
+
+summary {
+  padding-block: .5rem;
+  padding-right: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+summary:after{
+  content: "\002B";
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--primaryCTA);
+  margin-left: 1rem;
+}
+
+summary:hover {
+  cursor: pointer;
+  background-color: #d57a6666;
+}
+
+summary p {
+  /* font-weight:600; */
+  font-size: 1.6rem;
+}
+
+details[open] summary:after{
+  content: "\00D7";
+}
+
+
+
+.singleBorder {
+  border-bottom: 3px solid var(--primaryCTA);
+}
+.doubleBorder {
+  border-top: 3px solid var(--primaryCTA);
+  border-bottom: 3px solid var(--primaryCTA);
+}
+
+@media screen and (max-width: 950px){
+  .faqSection article {
+    display: block;
+   }
+   .faq {
+    width: 100%;
+   }
+
+   .heroSectionMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacingXLarge);
+    gap: var(--spacingMedium);
+   }
+}
+
+ /* faq slut --------------------------------------------------------*/
 
 
 

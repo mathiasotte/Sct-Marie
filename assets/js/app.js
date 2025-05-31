@@ -51,3 +51,13 @@ hamburgerClose.addEventListener("click", () => {
   hamburgerToggle.style.display = "inline";
   hamburgerClose.style.display = "none";
 });
+
+// FAQ side ------------------------------------------
+
+
+
+  
+  
+  
+  
+
