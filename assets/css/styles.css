@@ -34,6 +34,7 @@
   h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
     max-width: 65ch;
+    max-width: 65ch !important;
   }
   
   
@@ -41,16 +42,20 @@
     text-wrap: pretty;
     line-height: 140%;
     max-width: 65ch !important;
+    margin-bottom: var(--spacingMedium);
   }
   h1, h2, h3, h4, h5, h6 {
     text-wrap: pretty;
     line-height: 100%;
-    margin-bottom: var(--spacingMedium);
+    margin-bottom: var(--spacingXSmall);
   }
   
   @media (max-width: 600px) {
     h1, h2, h3, h4, h5, h6{
-      margin-bottom: var(--mobilSpacingMedium);
+      margin-bottom: var(--mobilSpacingXSmall);
+    }
+    p {
+      margin-bottom: var(--mobilSpacingMedium)
     }
   }
 
@@ -189,7 +194,6 @@ p, li{
   border-radius: 28px;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-top: var(--spacingSmall);
 }
 .responsiveBtn:hover {
   
@@ -642,14 +646,29 @@ details[open] summary:after{
    .heroSectionMain {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    align-items:left;
     margin-bottom: var(--spacingXLarge);
-    gap: var(--spacingMedium);
+    gap: var(--mobilSpacingSmall);
    }
 }
 
  /* faq slut --------------------------------------------------------*/
+ 
+ .detKatolskeAspekt div {
+  margin-bottom: var(--spacingLarge);
+ }
+ 
+ /* Det katolske aspekt start --------------------------------------------------------*/
+.detKatolskeAspekt p,
+.detKatolskeAspekt h2 {
+  max-width: 800px !important;
+  text-wrap: balance;
+}
+
+
+
+
+ /* Det katolske aspekt slut --------------------------------------------------------*/
 
 
 
