@@ -777,7 +777,49 @@ details[open] summary:after{
  /* Det katolske aspekt slut --------------------------------------------------------*/
 
 
+ /* Vores Værdier side start --------------------------------------------------------*/
 
+.verdi {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+ margin-bottom: var(--spacingSmall);
+}
+.verdi img{
+  max-width: 100px;
+}
+
+.verdiContainer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: var(--spacingMedium);
+}
+.verdiContainer p {
+  margin-bottom: var(--spacingMedium);
+  text-wrap: balance;
+}
+
+
+.verdiContainer img:last-of-type {
+width: 50%;
+border-radius: 28px;
+}
+
+
+@media screen and (max-width: 950px){ 
+  .verdiContainer p {
+  
+    margin-bottom: var(--mobilSpacingMedium);
+  }
+
+}
+
+
+ /* Vores Værdier side slut --------------------------------------------------------*/
+
+
+ 
 
 
  
