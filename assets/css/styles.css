@@ -991,7 +991,15 @@ details[open] summary:after {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-
 }
 
 /* vedtægter side slut --------------------------------------------------------*/
+
+
+/* Footer start --------------------------------------------------------*/
+.footer {
+  display: flex;
+}
+
+
+/* Footer slut --------------------------------------------------------*/
