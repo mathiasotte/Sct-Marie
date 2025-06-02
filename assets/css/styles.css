@@ -31,31 +31,36 @@
   }
   
  
-  p, h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
-    max-width: 70ch;
+    max-width: 65ch;
+    max-width: 65ch !important;
   }
   
   
   p {
     text-wrap: pretty;
     line-height: 140%;
+    max-width: 65ch !important;
   }
   h1, h2, h3, h4, h5, h6 {
     text-wrap: pretty;
     line-height: 100%;
-    margin-bottom: var(--spacingMedium);
+    margin-bottom: var(--spacingXSmall);
   }
   
   @media (max-width: 600px) {
     h1, h2, h3, h4, h5, h6{
-      margin-bottom: var(--mobilSpacingMedium);
+      margin-bottom: var(--mobilSpacingXSmall);
     }
+   
   }
+  
+ 
 
-/* section {
-    padding-bottom: var(--spacingMedium);
-} */
+ 
+
+
 
 /* Fonte og fontstørrelser */
 
@@ -80,10 +85,11 @@ h3{
     text-wrap: balance;
 }
 p, li{
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     font-family: inter;
     line-height: 150%;
 }
+
 @media screen and (max-width: 950px){
     h1{
         font-size: 2rem;
@@ -147,11 +153,10 @@ p, li{
   /* Colors */
   --backgroundPrimaryColor: #fbf2d9;
   --primaryCTA: #d57a66;
+  --primaryCTAHover: #f9471f;
   --headerIconColor: #040404;
   --white: #FFFFFF;
-  --interactivePrimaryColor: #213921;
-  --interactiveSecondaryColor: #72422F;
-  --specialCaseColor: #00282C;
+  --blue: #A1BFB1;
 
 }
 
@@ -186,8 +191,13 @@ p, li{
   border-radius: 28px;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-top: var(--spacingSmall);
 }
+.responsiveBtn:hover {
+  
+  background-color: var(--primaryCTAHover);
+}
+
+
 
 /* Små skærme (mobile) */
 @media (max-width: 600px) {
@@ -197,41 +207,178 @@ p, li{
   }
 }
 
-.textafsnit {
-   
+/* Navigation desktop */
+
+
+
+.main-header {
+  background-color: #333;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.topsektion {
-
-
+.desktop-nav {
+  display: flex;
+  align-items: right;
+  width: 100%;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
 }
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-item a:hover {
+  color: #aaa;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  list-style: none;
+  border-radius: 4px;
+  min-width: 140px;
+  z-index: 10;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-icon {
+  font-size: 0.7rem;
+  margin-left: 0.3rem;
+}
+
+/* Hamburger & Close Buttons */
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+  margin-left: auto;
+  position: relative;
+  z-index: 20;
+}
+
+/* Side navigation */
+.side-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 280px;
+  height: 100vh;
+  background-color: #222;
+  padding: 2rem 1.5rem;
+  box-shadow: -3px 0 6px rgba(0,0,0,0.6);
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+  z-index: 15;
+}
+
+.side-nav.hidden {
+  transform: translateX(100%);
+}
+
+.side-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-item a {
+  display: block;
+  padding: 0.6rem 0;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.side-item a:hover {
+  color: #aaa;
+}
+
+/* Dropdown inside side nav */
+.side-item .dropdown-menu {
+  display: none;
+  padding-left: 1rem;
+  margin-top: 0.3rem;
+  list-style: none;
+}
+
+.side-item.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.side-item .dropdown-icon {
+  font-size: 0.7rem;
+  margin-left: 0.4rem;
+}
+
+/* Position hamburger and close exactly overlapping */
+#hamburgerToggle, #hamburgerClose {
+  position: relative;
+  z-index: 20;
+}
+
+
  /* Komponenter slut --------------------------------------------------------*/
 
 
 
  /* landingpage start --------------------------------------------------------*/
 
-.textContentLanding p {
-  max-width: 380px;
-}
+ .textContentLanding p {
+  max-width: 600px;
+} 
 
-.landingHero {
-   float: right; 
-transform: translateY(-215px); 
-max-width: 600px;
-}
 
-.heroSection {
-  overflow: hidden;
-  /* max-height: 620px; */
+img.align-right {
+  display: block;
+  margin-left: auto;
 }
 
 
-@media screen and (max-width: 1060px){
-  .landingHero {
-    transform: unset;
-    margin-bottom: var(--mobilSpacingLarge);
-    }
+.landingHero img{
+  max-width: 1600px;
+  padding-top: 10rem;
+  /* width: 90%; */
+  }
+  
+  .heroSection {
+   display: flex;
+   gap: var(--spacingMedium);
+   margin-bottom: var(--spacingXLarge);
+  }
+  
+  @media screen and (max-width: 1500px){
+    
+  .heroSection {
+   display: block;
+  }
 }
 
 /* værdier sektion */
@@ -278,7 +425,22 @@ max-width: 600px;
 }
 .value {
   scroll-snap-align: center;
-  margin: 0 25px 25px 25px;
+  margin: 25px 25px 25px 25px;
+}
+
+
+.value:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+ 
+}
+.value h3 {
+  margin: 0 auto !important;
+}
+.valueBtn {
+  background-color: transparent;
+  border: none;
+
 }
 
 @media screen and (max-width: 950px){
@@ -289,15 +451,445 @@ max-width: 600px;
       max-width: 150px;
       margin: 0;
     }
+  
 }
 
 article {
-  height: 1000px;
+  margin-bottom:8rem;
 }
+
+@media screen and (max-width: 950px){
+  article {
+    margin-bottom:4rem;
+  }
+}
+
+/* value modal */
+
+/* .valueModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+} */
+
+.closeModalBtn {
+ margin-left: auto;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.valueModalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+
+
+.valueModal {
+  padding-top: 70px;
+  padding-bottom: 2rem;
+  padding-inline: 2rem;
+  border-radius: 28px;
+  background-color: var(--backgroundPrimaryColor);
+}
+
+.modalActive {
+  display: block;
+}
+
+.valueModalContent {
+  position: relative;
+}
+.valueModalContent .closeModalBtn{
+  position: absolute;
+  right: -15px;
+  top: -50px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+.valueModalContent .closeModalBtn img{
+  width: 32px;
+  height: 32px;
+}
+
+
+.valueModal img {
+  border-radius: 28px;
+  width: 50%;
+  height: 100%;
+}
+
+.df {
+  display: flex;
+}
+
+.gapMedium {
+  gap: var(--spacingMedium);
+}
+
+.valueFlex {
+  display: flex;
+  align-items: center;
+  gap: var(--spacingMedium);
+  margin-bottom: var(--spacingMedium);
+}
+.valueFlex h3 {
+  margin: 0px;
+}
+
+.valueFlex img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+
  /* landingpage slut --------------------------------------------------------*/
+ 
+ 
+ 
+ /* faq start--------------------------------------------------------*/
+ 
+ .heroSectionMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacingXLarge);
+  gap: var(--spacingMedium);
+ }
+ 
+ .heroSectionMain a {
+  color: var(--primaryCTA);
+ }
+ .heroSectionMain a:hover{
+  color: var(--primaryCTAHover);
+ }
+ 
+ .faqSection article {
+  display: flex;
+  justify-content: space-between;
+ }
+
+.faq {
+  width: 50%;
+}
+
+summary {
+  padding-block: .5rem;
+  padding-right: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+summary:after{
+  content: "\002B";
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--primaryCTA);
+  margin-left: 1rem;
+}
+
+summary:hover {
+  cursor: pointer;
+  background-color: #d57a667b;
+}
+
+summary p {
+  /* font-weight:600; */
+  font-size: 1.6rem;
+}
+
+details[open] summary:after{
+  content: "\00D7";
+}
 
 
 
+.singleBorder {
+  border-bottom: 3px solid var(--primaryCTA);
+}
+.doubleBorder {
+  border-top: 3px solid var(--primaryCTA);
+  border-bottom: 3px solid var(--primaryCTA);
+}
+
+@media screen and (max-width: 950px){
+  .faqSection article {
+    display: block;
+   }
+   .faq {
+    width: 100%;
+   }
+
+   .heroSectionMain {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items:left;
+    margin-bottom: var(--mobilSpacingXLarge);
+    gap: var(--mobilSpacingSmall);
+   }
+}
+
+ /* faq slut --------------------------------------------------------*/
+ 
+ .detKatolskeAspekt div {
+  margin-bottom: var(--spacingLarge);
+ }
+ 
+ /* Det katolske aspekt start --------------------------------------------------------*/
+.detKatolskeAspekt p,
+.detKatolskeAspekt h2 {
+  max-width: 800px !important;
+  text-wrap: balance;
+  margin-bottom: var(--spacingMedium);
+}
+
+#detKatolskeAspekt h2 {
+  margin-bottom: var(--spacingSmall);
+}
+
+.detKatolskeAspekt p:last-of-type {
+  margin-bottom: var(--spacingSmall);
+}
+
+.citatContainer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.citat{
+ font-size: 2rem;
+}
+
+
+.citatContainer img{
+  max-width: 300px;
+}
+
+.elevCitater, .ForeldreCitater {
+  margin-bottom: 4rem;
+}
+.elevCitater h2, .ForeldreCitater h2{
+  margin-bottom: var(--spacingMedium) !important;
+}
+
+.entryPointVenteliste img {
+  min-height: 500px !important;
+  object-fit: cover;
+ }
+
+.entryPointVenteliste {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: -20rem;
+}
+
+.entryPointVenteliste p {
+  margin-bottom: var(--spacingMedium);
+}
+.entryPointVenteliste p:last-of-type {
+  margin-bottom: var(--spacingSmall);
+}
+
+.baggrundsVector {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+ 
+
+.textBackground {
+  background-color: var(--blue);
+  padding: 2rem;
+  border-top-left-radius: 28px;
+  border-bottom-left-radius: 28px;
+}
+
+@media screen and (max-width: 950px){
+  .entryPointVenteliste {
+    flex-direction: column;
+    gap: 0;
+  }
+  .textBackground {
+    border-radius: 28px;
+    transform: translateY(10px);
+    z-index: -100;
+  }
+
+  .entryPointVenteliste p, .detKatolskeAspekt p{
+    margin-bottom: var(--spacingSmall);
+  }
+  .citat{
+    font-size: .75rem;
+    font-weight: 600;
+   }
+
+   .citatContainer img {
+    max-width: 100px; 
+   }
+
+   .entryPointVenteliste img {
+    width: 80% !important;
+    margin: 0 auto;
+    z-index: 1000 !important;
+   }
+
+   .citatContainer {
+    gap: 1rem;
+    padding-bottom: var(--spacingSmall);
+  }
+  .elevCitater, .ForeldreCitater {
+    margin-bottom: 2rem;
+  }
+  .elevCitater h2, .ForeldreCitater h2{
+    margin-bottom: var(--mobilSpacingMedium) !important;
+  }
+
+  .detKatolskeAspekt div {
+    margin-bottom: var(--mobilSpacingLarge);
+   }
+}
+
+ /* Det katolske aspekt slut --------------------------------------------------------*/
+
+
+ /* Vores Værdier side start --------------------------------------------------------*/
+
+.verdi {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+ margin-bottom: var(--spacingSmall);
+}
+.verdi img{
+  max-width: 100px;
+}
+
+.verdiContainer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: var(--spacingMedium);
+}
+.verdiContainer p {
+  margin-bottom: var(--spacingMedium);
+  text-wrap: balance;
+}
+
+
+.verdiContainer img:last-of-type {
+width: 50%;
+border-radius: 28px;
+}
+
+.vedtægterEntry{
+  display: flex;
+  gap: 2rem;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--spacingMedium);
+}
+.vedtægterEntry div {
+  text-align: center;
+}
+.vedtægterEntry div p{
+  text-wrap:balance;
+  margin-bottom: var(--spacingSmall);
+}
+.vedtægterEntry img{
+  border-radius: 28px;
+}
+
+.vision {
+  text-align: center;
+  margin-bottom: var(--spacingMedium);
+  background-color: var(--blue);
+  padding-inline: 1rem;
+  padding-block: 2rem;
+}
+.vision p, .vision h2{
+ margin: 0 auto;
+ text-wrap: balance;
+}
+
+@media screen and (max-width: 950px){ 
+  .verdiContainer p {
+    margin-bottom: var(--mobilSpacingMedium);
+  }
+  .verdiContainer {
+    display: block;
+  }
+  .verdiContainer img{
+    width: 100% !important;
+    max-height: 200px !important;
+    object-fit: cover;
+  }
+
+  
+    .verdiGrid {
+      display: grid;
+      grid-template-areas:
+        "verdiTekst"
+        "verdiBillede";
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+    
+    .verdiTekst {
+      grid-area: verdiTekst;
+    }
+    
+    .verdiBillede {
+      grid-area: verdiBillede;
+    }
+  }
+
+
+@media screen and (max-width: 1120px){ 
+  .vedtægterEntry {
+    width: 100%;
+  gap: 1rem;
+  }
+  .vedtægterEntry div {
+    min-width: 200px;
+    text-align: left;
+    text-wrap: balance;
+  }
+  .vedtægterEntry img{
+    border-radius: 0;
+  }
+}
+
+
+ /* Vores Værdier side slut --------------------------------------------------------*/
+
+
+ 
 
 
  
