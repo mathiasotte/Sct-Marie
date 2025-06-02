@@ -153,7 +153,7 @@ p, li{
   /* Colors */
   --backgroundPrimaryColor: #fbf2d9;
   --primaryCTA: #d57a66;
-  --primaryCTAHover: #d93c18;
+  --primaryCTAHover: #f9471f;
   --headerIconColor: #040404;
   --white: #FFFFFF;
   --blue: #A1BFB1;
@@ -806,13 +806,83 @@ width: 50%;
 border-radius: 28px;
 }
 
+.vedtægterEntry{
+  display: flex;
+  gap: 2rem;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--spacingMedium);
+}
+.vedtægterEntry div {
+  text-align: center;
+}
+.vedtægterEntry div p{
+  text-wrap:balance;
+  margin-bottom: var(--spacingSmall);
+}
+.vedtægterEntry img{
+  border-radius: 28px;
+}
+
+.vision {
+  text-align: center;
+  margin-bottom: var(--spacingMedium);
+  background-color: var(--blue);
+  padding-inline: 1rem;
+  padding-block: 2rem;
+}
+.vision p, .vision h2{
+ margin: 0 auto;
+ text-wrap: balance;
+}
 
 @media screen and (max-width: 950px){ 
   .verdiContainer p {
-  
     margin-bottom: var(--mobilSpacingMedium);
   }
+  .verdiContainer {
+    display: block;
+  }
+  .verdiContainer img{
+    width: 100% !important;
+    max-height: 200px !important;
+    object-fit: cover;
+  }
 
+  
+    .verdiGrid {
+      display: grid;
+      grid-template-areas:
+        "verdiTekst"
+        "verdiBillede";
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+    
+    .verdiTekst {
+      grid-area: verdiTekst;
+    }
+    
+    .verdiBillede {
+      grid-area: verdiBillede;
+    }
+  }
+
+
+@media screen and (max-width: 1120px){ 
+  .vedtægterEntry {
+    width: 100%;
+  gap: 1rem;
+  }
+  .vedtægterEntry div {
+    min-width: 200px;
+    text-align: left;
+    text-wrap: balance;
+  }
+  .vedtægterEntry img{
+    border-radius: 0;
+  }
 }
 
 
