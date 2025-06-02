@@ -1,64 +1,90 @@
 /* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
-    box-sizing: border-box;
-  }
-  
-  
-  * {
-    margin: 0;
-  }
-  
-  /* 3. brug keyword animations */
-  @media (prefers-reduced-motion: no-preference) {
-    html {
-      interpolate-size: allow-keywords;
-    }
-  }
-  
-  body {
-    -webkit-font-smoothing: antialiased;
-    background-color: var(--backgroundPrimaryColor);
-  }
-  
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  
-  input, button, textarea, select {
-    font: inherit;
-  }
-  
- 
-  h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-    max-width: 65ch;
-    max-width: 65ch !important;
-  }
-  
-  
-  p {
-    text-wrap: pretty;
-    line-height: 140%;
-    max-width: 65ch !important;
-  }
-  h1, h2, h3, h4, h5, h6 {
-    text-wrap: pretty;
-    line-height: 100%;
-    margin-bottom: var(--spacingXSmall);
-  }
-  
-  @media (max-width: 600px) {
-    h1, h2, h3, h4, h5, h6{
-      margin-bottom: var(--mobilSpacingXSmall);
-    }
-   
-  }
-  
- 
 
- 
+* {
+  margin: 0;
+}
+
+/* 3. brug keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--backgroundPrimaryColor);
+}
+
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  max-width: 65ch;
+  max-width: 65ch !important;
+}
+
+
+p {
+  text-wrap: pretty;
+  line-height: 140%;
+  max-width: 65ch !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: pretty;
+  line-height: 100%;
+  margin-bottom: var(--spacingXSmall);
+}
+
+@media (max-width: 600px) {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: var(--mobilSpacingXSmall);
+  }
+
+}
+
+
+
+
 
 
 
@@ -67,42 +93,62 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
-h1{
-    font-size: 3.5rem;
-    font-family: libre baskerville;
-    font-weight: 700;
-    text-wrap: balance;
-}
-h2{
-    font-size: 2.5rem;
-    font-family: libre baskerville;
-    font-weight: 700;
-    text-wrap: balance;
-}
-h3{
-    font-size: 2rem;
-    font-family: libre baskerville;
-    text-wrap: balance;
-}
-p, li{
-    font-size: 1.125rem;
-    font-family: inter;
-    line-height: 150%;
+
+
+
+h1 {
+  font-size: 3.5rem;
+  font-family: libre baskerville;
+  font-weight: 700;
+  text-wrap: balance;
+  margin-bottom: var(--spacingMedium);
+
 }
 
-@media screen and (max-width: 950px){
-    h1{
-        font-size: 2rem;
-    }
-    h2{
-        font-size: 1.5rem;
-    }
-    h3{
-        font-size: 1rem;
-    }
-    p, li{
-        font-size: 0.75rem;
-    }
+h2 {
+  font-size: 2.5rem;
+  font-family: libre baskerville;
+  font-weight: 700;
+  text-wrap: balance;
+  margin-bottom: var(--spacingSmall);
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: libre baskerville;
+  text-wrap: balance;
+  margin-bottom: var(--spacingSmall);
+}
+
+p,
+li {
+  font-size: 1.125rem;
+  font-family: inter;
+  line-height: 150%;
+  margin-bottom: var(--spacingSmall);
+}
+
+@media screen and (max-width: 950px) {
+  h1 {
+    font-size: 2rem;
+    margin-bottom: var(--mobilSpacingMedium);
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: var(--mobilSpacingSmall);
+  }
+
+  h3 {
+    font-size: 1rem;
+    margin-bottom: var(--mobilSpacingSmall);
+  }
+
+  p,
+  li {
+    font-size: 0.75rem;
+    margin-bottom: var(--mobilSpacingSmall);
+  }
 }
 
 
@@ -115,7 +161,7 @@ p, li{
 /* Afstande */
 
 :root {
- /* spacing desktop */
+  /* spacing desktop */
 
   --spacingXSmall: 0.5rem;
   /* afstand imellem sammenhængende indhold */
@@ -173,15 +219,16 @@ p, li{
   width: 90%;
   margin: 0 auto;
 }
+
 /* utility classes slut --------------------------------------------------------*/
 
 
- /* Komponenter start --------------------------------------------------------*/
+/* Komponenter start --------------------------------------------------------*/
 
 
- /* knapper */
+/* knapper */
 
- .responsiveBtn {
+.responsiveBtn {
   padding: 12px 24px;
   font-size: 16px;
   font-family: inter;
@@ -192,8 +239,9 @@ p, li{
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 .responsiveBtn:hover {
-  
+
   background-color: var(--primaryCTAHover);
 }
 
@@ -261,7 +309,7 @@ p, li{
   z-index: 10;
 }
 
-.dropdown:hover > .dropdown-menu {
+.dropdown:hover>.dropdown-menu {
   display: block;
 }
 
@@ -291,7 +339,7 @@ p, li{
   height: 100vh;
   background-color: #222;
   padding: 2rem 1.5rem;
-  box-shadow: -3px 0 6px rgba(0,0,0,0.6);
+  box-shadow: -3px 0 6px rgba(0, 0, 0, 0.6);
   overflow-y: auto;
   transition: transform 0.3s ease;
   z-index: 15;
@@ -329,7 +377,7 @@ p, li{
   list-style: none;
 }
 
-.side-item.dropdown:hover > .dropdown-menu {
+.side-item.dropdown:hover>.dropdown-menu {
   display: block;
 }
 
@@ -339,21 +387,22 @@ p, li{
 }
 
 /* Position hamburger and close exactly overlapping */
-#hamburgerToggle, #hamburgerClose {
+#hamburgerToggle,
+#hamburgerClose {
   position: relative;
   z-index: 20;
 }
 
 
- /* Komponenter slut --------------------------------------------------------*/
+/* Komponenter slut --------------------------------------------------------*/
 
 
 
- /* landingpage start --------------------------------------------------------*/
+/* landingpage start --------------------------------------------------------*/
 
- .textContentLanding p {
+.textContentLanding p {
   max-width: 600px;
-} 
+}
 
 
 img.align-right {
@@ -362,22 +411,22 @@ img.align-right {
 }
 
 
-.landingHero img{
+.landingHero img {
   max-width: 1600px;
   padding-top: 10rem;
   /* width: 90%; */
-  }
-  
+}
+
+.heroSection {
+  display: flex;
+  gap: var(--spacingMedium);
+  margin-bottom: var(--spacingXLarge);
+}
+
+@media screen and (max-width: 1500px) {
+
   .heroSection {
-   display: flex;
-   gap: var(--spacingMedium);
-   margin-bottom: var(--spacingXLarge);
-  }
-  
-  @media screen and (max-width: 1500px){
-    
-  .heroSection {
-   display: block;
+    display: block;
   }
 }
 
@@ -398,31 +447,35 @@ img.align-right {
 .openIcon {
   position: absolute;
   bottom: 20px;
-  left: 40%; 
+  left: 40%;
 }
 
-.valueEntrypoints{
+.valueEntrypoints {
   display: flex;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   align-items: flex-start;
 }
 
-.valueEntrypoints::-webkit-scrollbar{
+.valueEntrypoints::-webkit-scrollbar {
   height: 50px;
 }
+
 .valueEntrypoints::-webkit-scrollbar-thumb,
-.valueEntrypoints::-webkit-scrollbar-track{
+.valueEntrypoints::-webkit-scrollbar-track {
   border-radius: 92px;
 }
-.valueEntrypoints::-webkit-scrollbar-thumb{
+
+.valueEntrypoints::-webkit-scrollbar-thumb {
   background: var(--primaryCTA);
 }
-.valueEntrypoints::-webkit-scrollbar-track{
+
+.valueEntrypoints::-webkit-scrollbar-track {
   background: var(--white);
   margin: 0 5vw;
   margin: 2rem;
 }
+
 .value {
   scroll-snap-align: center;
   margin: 25px 25px 25px 25px;
@@ -432,35 +485,38 @@ img.align-right {
 .value:hover {
   transform: scale(1.1);
   transition: 0.3s ease-in-out;
- 
+
 }
+
 .value h3 {
   margin: 0 auto !important;
 }
+
 .valueBtn {
   background-color: transparent;
   border: none;
 
 }
 
-@media screen and (max-width: 950px){
+@media screen and (max-width: 950px) {
   .valueEntrypoints {
     gap: var(--mobilSpacingXSmall);
-    }
-    .value {
-      max-width: 150px;
-      margin: 0;
-    }
-  
+  }
+
+  .value {
+    max-width: 150px;
+    margin: 0;
+  }
+
 }
 
 article {
-  margin-bottom:8rem;
+  margin-bottom: 8rem;
 }
 
-@media screen and (max-width: 950px){
+@media screen and (max-width: 950px) {
   article {
-    margin-bottom:4rem;
+    margin-bottom: 4rem;
   }
 }
 
@@ -480,7 +536,7 @@ article {
 } */
 
 .closeModalBtn {
- margin-left: auto;
+  margin-left: auto;
 }
 
 .hidden {
@@ -493,7 +549,7 @@ article {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5); 
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -517,7 +573,8 @@ article {
 .valueModalContent {
   position: relative;
 }
-.valueModalContent .closeModalBtn{
+
+.valueModalContent .closeModalBtn {
   position: absolute;
   right: -15px;
   top: -50px;
@@ -525,7 +582,8 @@ article {
   background-color: transparent;
   border: none;
 }
-.valueModalContent .closeModalBtn img{
+
+.valueModalContent .closeModalBtn img {
   width: 32px;
   height: 32px;
 }
@@ -551,6 +609,7 @@ article {
   gap: var(--spacingMedium);
   margin-bottom: var(--spacingMedium);
 }
+
 .valueFlex h3 {
   margin: 0px;
 }
@@ -562,31 +621,32 @@ article {
 }
 
 
- /* landingpage slut --------------------------------------------------------*/
- 
- 
- 
- /* faq start--------------------------------------------------------*/
- 
- .heroSectionMain {
+/* landingpage slut --------------------------------------------------------*/
+
+
+
+/* faq start--------------------------------------------------------*/
+
+.heroSectionMain {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: var(--spacingXLarge);
   gap: var(--spacingMedium);
- }
- 
- .heroSectionMain a {
+}
+
+.heroSectionMain a {
   color: var(--primaryCTA);
- }
- .heroSectionMain a:hover{
+}
+
+.heroSectionMain a:hover {
   color: var(--primaryCTAHover);
- }
- 
- .faqSection article {
+}
+
+.faqSection article {
   display: flex;
   justify-content: space-between;
- }
+}
 
 .faq {
   width: 50%;
@@ -598,9 +658,10 @@ summary {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
 }
-summary:after{
+
+summary:after {
   content: "\002B";
   font-size: 3rem;
   font-weight: 600;
@@ -618,7 +679,7 @@ summary p {
   font-size: 1.6rem;
 }
 
-details[open] summary:after{
+details[open] summary:after {
   content: "\00D7";
 }
 
@@ -627,36 +688,38 @@ details[open] summary:after{
 .singleBorder {
   border-bottom: 3px solid var(--primaryCTA);
 }
+
 .doubleBorder {
   border-top: 3px solid var(--primaryCTA);
   border-bottom: 3px solid var(--primaryCTA);
 }
 
-@media screen and (max-width: 950px){
+@media screen and (max-width: 950px) {
   .faqSection article {
     display: block;
-   }
-   .faq {
-    width: 100%;
-   }
+  }
 
-   .heroSectionMain {
+  .faq {
+    width: 100%;
+  }
+
+  .heroSectionMain {
     text-align: left;
     display: flex;
     flex-direction: column;
-    align-items:left;
+    align-items: left;
     margin-bottom: var(--mobilSpacingXLarge);
     gap: var(--mobilSpacingSmall);
-   }
+  }
 }
 
- /* faq slut --------------------------------------------------------*/
- 
- .detKatolskeAspekt div {
+/* faq slut --------------------------------------------------------*/
+
+.detKatolskeAspekt div {
   margin-bottom: var(--spacingLarge);
- }
- 
- /* Det katolske aspekt start --------------------------------------------------------*/
+}
+
+/* Det katolske aspekt start --------------------------------------------------------*/
 .detKatolskeAspekt p,
 .detKatolskeAspekt h2 {
   max-width: 800px !important;
@@ -677,26 +740,30 @@ details[open] summary:after{
   align-items: center;
   gap: 2rem;
 }
-.citat{
- font-size: 2rem;
+
+.citat {
+  font-size: 2rem;
 }
 
 
-.citatContainer img{
+.citatContainer img {
   max-width: 300px;
 }
 
-.elevCitater, .ForeldreCitater {
+.elevCitater,
+.ForeldreCitater {
   margin-bottom: 4rem;
 }
-.elevCitater h2, .ForeldreCitater h2{
+
+.elevCitater h2,
+.ForeldreCitater h2 {
   margin-bottom: var(--spacingMedium) !important;
 }
 
 .entryPointVenteliste img {
   min-height: 500px !important;
   object-fit: cover;
- }
+}
 
 .entryPointVenteliste {
   display: flex;
@@ -708,6 +775,7 @@ details[open] summary:after{
 .entryPointVenteliste p {
   margin-bottom: var(--spacingMedium);
 }
+
 .entryPointVenteliste p:last-of-type {
   margin-bottom: var(--spacingSmall);
 }
@@ -720,7 +788,7 @@ details[open] summary:after{
   height: 100%;
   z-index: 1;
 }
- 
+
 
 .textBackground {
   background-color: var(--blue);
@@ -729,63 +797,71 @@ details[open] summary:after{
   border-bottom-left-radius: 28px;
 }
 
-@media screen and (max-width: 950px){
+@media screen and (max-width: 950px) {
   .entryPointVenteliste {
     flex-direction: column;
     gap: 0;
   }
+
   .textBackground {
     border-radius: 28px;
     transform: translateY(10px);
     z-index: -100;
   }
 
-  .entryPointVenteliste p, .detKatolskeAspekt p{
+  .entryPointVenteliste p,
+  .detKatolskeAspekt p {
     margin-bottom: var(--spacingSmall);
   }
-  .citat{
+
+  .citat {
     font-size: .75rem;
     font-weight: 600;
-   }
+  }
 
-   .citatContainer img {
-    max-width: 100px; 
-   }
+  .citatContainer img {
+    max-width: 100px;
+  }
 
-   .entryPointVenteliste img {
+  .entryPointVenteliste img {
     width: 80% !important;
     margin: 0 auto;
     z-index: 1000 !important;
-   }
+  }
 
-   .citatContainer {
+  .citatContainer {
     gap: 1rem;
     padding-bottom: var(--spacingSmall);
   }
-  .elevCitater, .ForeldreCitater {
+
+  .elevCitater,
+  .ForeldreCitater {
     margin-bottom: 2rem;
   }
-  .elevCitater h2, .ForeldreCitater h2{
+
+  .elevCitater h2,
+  .ForeldreCitater h2 {
     margin-bottom: var(--mobilSpacingMedium) !important;
   }
 
   .detKatolskeAspekt div {
     margin-bottom: var(--mobilSpacingLarge);
-   }
+  }
 }
 
- /* Det katolske aspekt slut --------------------------------------------------------*/
+/* Det katolske aspekt slut --------------------------------------------------------*/
 
 
- /* Vores Værdier side start --------------------------------------------------------*/
+/* Vores Værdier side start --------------------------------------------------------*/
 
 .verdi {
   display: flex;
   align-items: center;
   gap: 1rem;
- margin-bottom: var(--spacingSmall);
+  margin-bottom: var(--spacingSmall);
 }
-.verdi img{
+
+.verdi img {
   max-width: 100px;
 }
 
@@ -795,6 +871,7 @@ details[open] summary:after{
   gap: 2rem;
   margin-bottom: var(--spacingMedium);
 }
+
 .verdiContainer p {
   margin-bottom: var(--spacingMedium);
   text-wrap: balance;
@@ -802,11 +879,11 @@ details[open] summary:after{
 
 
 .verdiContainer img:last-of-type {
-width: 50%;
-border-radius: 28px;
+  width: 50%;
+  border-radius: 28px;
 }
 
-.vedtægterEntry{
+.vedtægterEntry {
   display: flex;
   gap: 2rem;
   overflow: hidden;
@@ -814,14 +891,17 @@ border-radius: 28px;
   align-items: center;
   margin-bottom: var(--spacingMedium);
 }
+
 .vedtægterEntry div {
   text-align: center;
 }
-.vedtægterEntry div p{
-  text-wrap:balance;
+
+.vedtægterEntry div p {
+  text-wrap: balance;
   margin-bottom: var(--spacingSmall);
 }
-.vedtægterEntry img{
+
+.vedtægterEntry img {
   border-radius: 28px;
 }
 
@@ -832,61 +912,67 @@ border-radius: 28px;
   padding-inline: 1rem;
   padding-block: 2rem;
 }
-.vision p, .vision h2{
- margin: 0 auto;
- text-wrap: balance;
+
+.vision p,
+.vision h2 {
+  margin: 0 auto;
+  text-wrap: balance;
 }
 
-@media screen and (max-width: 950px){ 
+@media screen and (max-width: 950px) {
   .verdiContainer p {
     margin-bottom: var(--mobilSpacingMedium);
   }
+
   .verdiContainer {
     display: block;
   }
-  .verdiContainer img{
+
+  .verdiContainer img {
     width: 100% !important;
     max-height: 200px !important;
     object-fit: cover;
   }
 
-  
-    .verdiGrid {
-      display: grid;
-      grid-template-areas:
-        "verdiTekst"
-        "verdiBillede";
-      grid-template-columns: 1fr;
-      gap: 0;
-    }
-    
-    .verdiTekst {
-      grid-area: verdiTekst;
-    }
-    
-    .verdiBillede {
-      grid-area: verdiBillede;
-    }
+
+  .verdiGrid {
+    display: grid;
+    grid-template-areas:
+      "verdiTekst"
+      "verdiBillede";
+    grid-template-columns: 1fr;
+    gap: 0;
   }
 
+  .verdiTekst {
+    grid-area: verdiTekst;
+  }
 
-@media screen and (max-width: 1120px){ 
+  .verdiBillede {
+    grid-area: verdiBillede;
+  }
+}
+
+
+@media screen and (max-width: 1120px) {
   .vedtægterEntry {
     width: 100%;
-  gap: 1rem;
+    gap: 1rem;
   }
+
   .vedtægterEntry div {
     min-width: 200px;
     text-align: left;
     text-wrap: balance;
   }
-  .vedtægterEntry img{
+
+  .vedtægterEntry img {
     border-radius: 0;
   }
 }
 
 
- /* Vores Værdier side slut --------------------------------------------------------*/
+/* Vores Værdier side slut --------------------------------------------------------*/
 
  /* Skolens historie start --------------------------------------------------------*/
 
@@ -897,9 +983,15 @@ border-radius: 28px;
  /* Skolens historie slut --------------------------------------------------------*/
 
 
- 
+/* vedtægter side start --------------------------------------------------------*/
 
+/* De forskellige vedtaegter */
+.boldVedtaegter {
+  font-weight: bold;
+}
 
- 
+.paragraf {
+  text-align: center;
+}
 
- 
+/* vedtægter side slut --------------------------------------------------------*/
