@@ -982,4 +982,16 @@ details[open] summary:after {
   text-align: center;
 }
 
+/* Godkendelse af vedtægter og downlode vedtægter */
+.godkendelseVedtaegter div p {
+  margin-top: 2rem;
+}
+
+.godkendelseVedtaegter div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+}
+
 /* vedtægter side slut --------------------------------------------------------*/
