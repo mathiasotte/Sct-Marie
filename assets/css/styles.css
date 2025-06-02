@@ -982,10 +982,23 @@ details[open] summary:after {
 
  /* Skolens historie slut --------------------------------------------------------*/
 
+.historieCardImgContainer img {
+height:300px;
+/* object-fit: cover; */
+}
 
- 
 
+.historieCardAligment {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
 
+}
+
+.historieCardText {
+  max-width: 400px !important;
+  text-wrap: balance !important;
+}
 /* vedtægter side start --------------------------------------------------------*/
 
 /* De forskellige vedtaegter */
