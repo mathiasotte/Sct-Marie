@@ -433,6 +433,8 @@ img.align-right {
 /* værdier sektion */
 /* inspireret af: https://webdesign.tutsplus.com/horizontal-scrolling-card-ui-flexbox-and-css-grid--cms-41922t */
 
+
+
 .value {
   position: relative;
   display: inline-block;
@@ -485,7 +487,6 @@ img.align-right {
 .value:hover {
   transform: scale(1.1);
   transition: 0.3s ease-in-out;
-
 }
 
 .value h3 {
@@ -988,7 +989,7 @@ height:300px;
 }
 
 
-.historieCardAligment {
+/* .historieCardAligment {
   display: flex;
   gap: 2rem;
   align-items: center;
@@ -999,6 +1000,43 @@ height:300px;
   max-width: 400px !important;
   text-wrap: balance !important;
 }
+
+.sideScrollContainer{
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  align-items: flex-start;
+}
+.sideScrollContainer::-webkit-scrollbar{
+  height: 12px;
+}
+.sideScrollContainer::-webkit-scrollbar-thumb,
+.sideScrollContainer::-webkit-scrollbar-track{
+  border-radius: 92px;
+}
+.sideScrollContainer::-webkit-scrollbar-thumb{
+  background: var(--specialCaseColor);
+}
+.sideScrollContainer::-webkit-scrollbar-track{
+  background: var(--headerColor);
+  margin: 0 5vw;
+}
+.sideScrollCard{
+  scroll-snap-align: center;
+  margin: 0 25px 25px 25px;
+}
+.sideScrollCard:first-child{
+  margin-left: 5vw;
+}
+.sideScrollCard:last-child{
+  margin-right: 5vw;
+}
+
+
+
+
+
+
 /* vedtægter side start --------------------------------------------------------*/
 
 /* De forskellige vedtaegter */
