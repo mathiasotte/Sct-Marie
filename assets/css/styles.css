@@ -1044,6 +1044,8 @@ min-width: 500px;
   margin-bottom: var(--spacingXLarge);
 }
 
+
+
 .arstal {
 font-size: 3rem;
 margin-bottom: 0;
@@ -1057,6 +1059,79 @@ font-family: libre baskerville;
   gap: 2rem;
   margin-bottom: var(--spacingXLarge);
 }
+
+
+
+/* Udforsk skolen entry point */
+
+.custom-shape-card {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 5 / 4;
+  background: url('../img/historie/borneGrottenEntry.svg') no-repeat center / contain;
+  overflow: hidden;
+}
+
+/* Background image (inside the SVG shape) */
+.background-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  inset: 0;
+  z-index: -1;
+}
+
+/* Overlay content */
+.contBorneGrottenEntrypointContentent {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  color: white; /* Or adjust for contrast */
+}
+
+.BorneGrottenEntrypointContent p {
+  font-size: 1.5rem;
+  font-family: "Libre Baskerville", serif;
+}
+
+.BorneGrottenEntrypointContent button {
+  background: #d6795a;
+  border: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+@media (max-width: 950px) {
+  .custom-shape-card {
+    max-width: 90vw;
+  }
+
+  .BorneGrottenEntrypointContent p {
+    font-size: 1.2rem;
+  }
+
+  .BorneGrottenEntrypointContent button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Udforsk skolen entry point */
+
+
+
+
 @media screen and (max-width: 1170px) {
 .detKatolskeAspektEntryPoint {
   display: flex;
@@ -1073,6 +1148,10 @@ font-family: libre baskerville;
 }
 
 @media screen and (max-width: 950px) {
+
+  #arstal {
+    font-size: unset;
+    }
 
   #SkolensHistorie section {
     margin-bottom: var(--mobilSpacingXLarge);
@@ -1103,16 +1182,6 @@ font-family: libre baskerville;
     min-width: 290px !important;
     margin-right: var(--mobilSpacingMedium);
     
-  }
-
-  
-
-  /* .historieCard {
-   max-width: 250px;
-   min-width: none !important;
-  } */
-  .historieCardText {
-  /* max-width: 80% !important; */
   }
 
 }
