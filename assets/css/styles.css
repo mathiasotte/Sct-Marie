@@ -1197,3 +1197,142 @@ font-family: libre baskerville;
 }
 
 /* vedtægter side slut --------------------------------------------------------*/
+
+
+/* Optagelse side start --------------------------------------------------------*/
+
+.ventelisteSection {
+display: flex;
+gap: 4rem;
+margin-bottom: var(--spacingXLarge);
+}
+.ventelisteSection a{
+ 
+    color: var(--primaryCTA);
+ 
+  
+  }
+  .ventelisteSection a:hover {
+    color: var(--primaryCTAHover);
+  }
+.ventelisteSection img{
+max-height: 500px;
+}
+.ventelisteSection button {
+display: flex;
+gap: 0.5rem;
+}
+
+.skolepengeSectionIntro {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: var(--spacingLarge);
+}
+
+.skolepengeSection {
+  margin-bottom: var(--spacingXLarge);
+}
+
+
+
+
+.prisOverblik h3 {
+  
+  margin-bottom: 2rem;
+  font-weight: normal;
+}
+
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+
+.prisOverblikTabel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 1px solid #d44f3f;
+  min-width: 700px;
+}
+
+
+.prisOverblikTabel > div {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #d44f3f;
+}
+
+
+.prisOverblikTabel > div:first-child {
+  border-left: 0px;
+}
+
+
+.prisOverblikTabel div > div {
+  padding: 1rem;
+  border-bottom: 1px solid #d44f3f;
+  display: flex;
+  align-items: center;
+}
+
+.prisOverblikTabel div > div:last-child {
+  border-bottom: none;
+}
+
+.prisOverblikTabel p{
+  margin: 0;
+}
+
+
+.priserHeader p {
+  font-weight: bold;
+  font-family: libre baskerville;
+ 
+  
+}
+@media screen and (max-width: 950px) {
+  .skolepengeSectionIntro {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: var(--spacingLarge);
+  }
+  .skolepengeSectionIntro img{
+    width: 90%;
+  }
+
+  .ventelisteSection {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: var(--spacingXLarge);
+    }
+    .prisOverblikTabel {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-bottom: 1px solid #d44f3f;
+      min-width: 200px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+  .prisOverblikTabel div > div {
+    padding-inline: 0rem;
+    padding-left: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .prisOverblikTabel {
+    font-size: 0.9rem;
+  }
+
+  .prisOverblik h3 {
+    font-size: 1.1rem;
+  }
+}
+
+
+/* Optagelse side slut --------------------------------------------------------*/
