@@ -56,6 +56,8 @@ p {
   text-wrap: pretty;
   line-height: 140%;
   max-width: 65ch !important;
+  /* min-width: 45ch !important; */
+
 }
 
 h1,
@@ -169,14 +171,14 @@ li {
   /* afstand imellem sektioner */
   --spacingMedium: 2rem;
   --spacingLarge: 3rem;
-  --spacingXLarge: 4rem;
+  --spacingXLarge: 6rem;
 
   /* spacing mobile */
   --mobilSpacingXSmall: 0.25rem;
   --mobilSpacingSmall: 0.5rem;
   --mobilSpacingMedium: 1rem;
   --mobilSpacingLarge: 1.5rem;
-  --mobilSpacingXLarge: 2rem;
+  --mobilSpacingXLarge: 3rem;
 
   /* gap desktop*/
 
@@ -199,7 +201,7 @@ li {
   /* Colors */
   --backgroundPrimaryColor: #fbf2d9;
   --primaryCTA: #d57a66;
-  --primaryCTAHover: #f9471f;
+  --primaryCTAHover: #ce5d15;
   --headerIconColor: #040404;
   --white: #FFFFFF;
   --blue: #A1BFB1;
@@ -460,7 +462,7 @@ img.align-right {
 }
 
 .valueEntrypoints::-webkit-scrollbar {
-  height: 50px;
+  height: 30px;
 }
 
 .valueEntrypoints::-webkit-scrollbar-thumb,
@@ -474,13 +476,11 @@ img.align-right {
 
 .valueEntrypoints::-webkit-scrollbar-track {
   background: var(--white);
-  margin: 0 5vw;
-  margin: 2rem;
 }
 
 .value {
   scroll-snap-align: center;
-  margin: 25px 25px 25px 25px;
+  margin-top: 25px;
 }
 
 
@@ -762,8 +762,8 @@ details[open] summary:after {
 }
 
 .entryPointVenteliste img {
-  min-height: 500px !important;
   object-fit: cover;
+  min-width: 450px;
 }
 
 .entryPointVenteliste {
@@ -828,6 +828,9 @@ details[open] summary:after {
     width: 80% !important;
     margin: 0 auto;
     z-index: 1000 !important;
+    
+      min-width: 0px;
+    
   }
 
   .citatContainer {
@@ -920,6 +923,12 @@ details[open] summary:after {
   text-wrap: balance;
 }
 
+#voresValuesBtn {
+
+text-align: center;
+margin-top: var(--spacingMedium);
+}
+
 @media screen and (max-width: 950px) {
   .verdiContainer p {
     margin-bottom: var(--mobilSpacingMedium);
@@ -984,12 +993,11 @@ details[open] summary:after {
  /* Skolens historie slut --------------------------------------------------------*/
 
 .historieCardImgContainer img {
-height:300px;
-/* object-fit: cover; */
+min-width: 500px;
 }
 
 
-/* .historieCardAligment {
+ .historieCardAligment {
   display: flex;
   gap: 2rem;
   align-items: center;
@@ -1001,42 +1009,113 @@ height:300px;
   text-wrap: balance !important;
 }
 
-.sideScrollContainer{
+.historieCardContainer{
   display: flex;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   align-items: flex-start;
+  height: 450px;
 }
-.sideScrollContainer::-webkit-scrollbar{
-  height: 12px;
+.historieCardContainer::-webkit-scrollbar {
+  height: 30px;
 }
-.sideScrollContainer::-webkit-scrollbar-thumb,
-.sideScrollContainer::-webkit-scrollbar-track{
+
+.historieCardContainer::-webkit-scrollbar-thumb,
+.historieCardContainer::-webkit-scrollbar-track {
   border-radius: 92px;
 }
-.sideScrollContainer::-webkit-scrollbar-thumb{
-  background: var(--specialCaseColor);
+
+.historieCardContainer::-webkit-scrollbar-thumb {
+  background: var(--primaryCTA);
 }
-.sideScrollContainer::-webkit-scrollbar-track{
-  background: var(--headerColor);
-  margin: 0 5vw;
+
+.historieCardContainer::-webkit-scrollbar-track {
+  background: var(--white);
 }
-.sideScrollCard{
+
+.historieCard {
   scroll-snap-align: center;
-  margin: 0 25px 25px 25px;
-}
-.sideScrollCard:first-child{
-  margin-left: 5vw;
-}
-.sideScrollCard:last-child{
-  margin-right: 5vw;
+  min-width: 900px;
+
+  margin-right: var(--spacingMedium);
 }
 
+#SkolensHistorie section {
+  margin-bottom: var(--spacingXLarge);
+}
+
+.arstal {
+font-size: 3rem;
+margin-bottom: 0;
+font-family: libre baskerville;
+}
 
 
+.detKatolskeAspektEntryPoint {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: var(--spacingXLarge);
+}
+@media screen and (max-width: 1170px) {
+.detKatolskeAspektEntryPoint {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+  margin-bottom: var(--spacingXLarge);
+  
+}
+
+.detKatolskeAspektEntryPoint p {
+  text-wrap: balance;
+}
+}
+
+@media screen and (max-width: 950px) {
+
+  #SkolensHistorie section {
+    margin-bottom: var(--mobilSpacingXLarge);
+  }
+
+ .historieCardAligment {
+  display: block;
+  flex-direction: column;
+  gap: var(--mobilSpacingMedium);
+  width: 80vw;
+ }
+ .historieCardContainer{
+  height: 430px!important; 
+}
 
 
+.historieCardImgContainer img {
+  min-width: 0;
+  margin-bottom: var(--mobilSpacingMedium);
+  }
+.historieCardImgContainer {
+ width:80vw;
+  min-width: 0;
+  }
 
+  .historieCard {
+    margin: 0;
+    min-width: 290px !important;
+    margin-right: var(--mobilSpacingMedium);
+    
+  }
+
+  
+
+  /* .historieCard {
+   max-width: 250px;
+   min-width: none !important;
+  } */
+  .historieCardText {
+  /* max-width: 80% !important; */
+  }
+
+}
 /* vedtægter side start --------------------------------------------------------*/
 
 /* De forskellige vedtaegter */
