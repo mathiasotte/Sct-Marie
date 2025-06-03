@@ -998,8 +998,29 @@ details[open] summary:after {
 
 /* Footer start --------------------------------------------------------*/
 .footer {
-  display: flex;
+  margin-top: 70px;
 }
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerContent a {
+  text-decoration: none;
+  color: var(--primaryCTA);
+}
+
+.footerContent .logoFooter img {
+  max-width: 100px;
+}
+
+.imgFooter {
+  display: flex;
+  max-width: 50%;
+}
+
+
 
 
 /* Footer slut --------------------------------------------------------*/
