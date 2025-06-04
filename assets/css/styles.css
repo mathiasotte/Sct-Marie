@@ -1037,9 +1037,28 @@ details[open] summary:after {
 }
 
 .footerContent a {
+  position: relative;
+  display: inline-block;
   text-decoration: none;
   color: var(--primaryCTA);
+  padding-bottom: 2px;
 }
+
+.footerContent a::after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: var(--primaryCTAHover);
+  transition: width 0.3s ease-in-out;
+}
+
+.footerContent a:hover::after {
+  width: 100%;
+}
+
+
 
 .footerContent .logoFooter img {
   max-width: 100px;
@@ -1065,5 +1084,120 @@ details[open] summary:after {
 .logoFooter p {
   font-size: 0.75rem;
 }
+
+.omSkolen {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.kontakt {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.footerMobil {
+  display: none;
+}
+
+@media screen and (max-width: 950px) {
+  /* .footerContent {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .optagelseFooter {
+    align-items: center;
+  }
+
+  .imgFooter {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .footerContent .logoFooter img {
+    max-width: 80px;
+  }
+
+  .footerContent a {
+    font-size: 1rem;
+  }
+
+  .logoFooter p {
+    font-size: 0.7rem;
+  }
+
+  .imgFooter :nth-child(2) {
+    display: none;
+  }
+
+  .footerContent {
+    display: grid;
+    grid-template-areas:
+      "gridFooterEt"
+      "gridFooterTo";
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .gridFooterEt {
+    grid-area: gridFooterEt;
+  }
+
+  .gridFooterTo {
+    grid-area: gridFooterTo;
+  } */
+
+  .footer {
+    display: none;
+  }
+
+  .footerMobil {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footerMobil summary {
+    padding-block: .5rem;
+    padding-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  .footerMobil summary:after {
+    content: "\e313";
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--primaryCTA);
+    margin-left: 1rem;
+  }
+
+  .footerMobil summary:hover {
+    cursor: pointer;
+    background-color: #d57a667b;
+  }
+
+  .footerMobil summary p {
+    /* font-weight:600; */
+    font-size: 1.6rem;
+  }
+
+  .footerMobil details[open] summary:after {
+    content: "\00D7";
+  }
+}
+
 
 /* Footer slut --------------------------------------------------------*/
