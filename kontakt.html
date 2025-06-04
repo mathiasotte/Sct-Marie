@@ -29,15 +29,11 @@
     <section class="content kontaktSkolen">
         <div class="kontaktOplysninger">
             <h2>Kontakt skolen</h2>
-
             <a href="#">
-
                 <span class="material-symbols-outlined">
                     call
                 </span>+45 98 13 60 03
-
             </a>
-
             <a href="#">
                 <span class="material-symbols-outlined">
                     mail
@@ -52,22 +48,53 @@
         </div>
         <div class="aabningstider">
             <h2>Åbningstider</h2>
-            <div class="aabningstiderSkole">
-                <h3>Skolen</h3>
-                <p>08:00 - 15:00</p>
-            </div>
-            <div class="aabningstiderSfo">
-                <h3>Børnegrotten - SFO</h3>
-                <h3>Morgenpasning</h3>
-                <p>06:45 - 08:00</p>
-                <h3>Almindeligpasning</h3>
-                <p>12:50 - 17:00</p>
+            <div class="aabningstiderSfoSkole">
+                <div class="aabningstiderSkole">
+                    <h3>Skolen</h3>
+                    <p>08:00 - 15:00</p>
+                </div>
+                <div class="aabningstiderSfo">
+                    <h3>Børnegrotten - SFO</h3>
+                    <h3 class="aabningstiderUnderoverskrift">Morgenpasning</h3>
+                    <p>06:45 - 08:00</p>
+                    <h3 class="aabningstiderUnderoverskrift">Almindeligpasning</h3>
+                    <p>12:50 - 17:00</p>
+                </div>
             </div>
             <div class="aabningstiderDato">
                 <p>Har du brug for at vide noget om de vigtige datoer for skolen eller ferie for dit barn, så se med her
                 </p>
-
+                <a href="#"><button class="responsiveBtn">
+                        <span class="btnText">Vigtige datoer</span>
+                    </button></a>
             </div>
+        </div>
+    </section>
+    <section class="medarbejder content">
+        <h2>Medarbejder på skolen</h2>
+        <button class="tablink" onclick="openPage('Lærere', this)">Lærere</button>
+        <button class="tablink" onclick="openPage('Pædagoger', this)" id="defaultOpen">Pædagoger</button>
+        <button class="tablink" onclick="openPage('Adminstation', this)">Adminstation</button>
+        <div id="Lærere" class="tabcontent">
+            <div class="maria">
+                <video class="lazy-video" muted loop playsinline preload="none"
+                    data-src="./assets/img/kontakt/ansatte/blikket.mp4"></video>
+                <h3>Maria Jensen</h3>
+                <p>Dansk- og religionslærer</p>
+                <p>+45 25 12 34 56</p>
+                <p>mj@sctms.dk</p>
+                <p>"Jeg er passioneret og elsker at inddrage kreative aktiviteter i undervisningen”</p>
+            </div>
+        </div>
+
+        <div id="Pædagoger" class="tabcontent">
+            <h3>News</h3>
+            <p>Some news this fine day!</p>
+        </div>
+
+        <div id="Contact" class="tabcontent">
+            <h3>Contact</h3>
+            <p>Get in touch, or swing by for a cup of coffee.</p>
         </div>
     </section>
 </body>
