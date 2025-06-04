@@ -40,6 +40,12 @@ select {
 }
 
 
+
+
+p {
+  
+}
+
 h1,
 h2,
 h3,
@@ -49,24 +55,7 @@ h6 {
   overflow-wrap: break-word;
   max-width: 65ch;
   max-width: 65ch !important;
-}
-
-
-p {
-  text-wrap: pretty;
-  line-height: 140%;
-  max-width: 65ch !important;
-  /* min-width: 45ch !important; */
-
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-wrap: pretty;
+  text-wrap: balance;
   line-height: 100%;
   margin-bottom: var(--spacingXSmall);
 }
@@ -126,8 +115,10 @@ p,
 li {
   font-size: 1.125rem;
   font-family: inter;
-  line-height: 150%;
   margin-bottom: var(--spacingSmall);
+  text-wrap: balance;
+  line-height: 140%;
+  max-width: 65ch !important;
 }
 
 @media screen and (max-width: 950px) {
@@ -1330,7 +1321,7 @@ gap: 0.5rem;
 }
 
 .venteListeRabatContainer {
-  width: 1/3;
+  width: 33.33%;
 }
 
 .venteListeRabatContainer div{
@@ -1354,6 +1345,51 @@ gap: 0.5rem;
   margin: 0;
 }
 
+.SFO {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.SFO img {
+  width : 50%;
+}
+
+.rundvisningContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 2rem;
+}
+.rundvisningContainer input{
+  width: 100%;
+}
+.rundvisningContainer div {
+  width: 50%;
+}
+.rundvisningContainer img {
+  width: 50%;
+}
+
+.rundvisningContainer form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.rundvisningContainer form label span,
+.rundvisningContainer form legend span{
+ color: #d57a66;
+}
+
+.rundvisningContainer form label {
+  margin-bottom: var(--spacingXSmall);
+}
+.rundvisningContainer form input {
+  margin-bottom: var(--spacingSmall);
+}
+.rundvisningOverskift {
+  font-weight: thin;
+}
+
 
 
 @media screen and (max-width: 450px) {
@@ -1363,6 +1399,14 @@ gap: 0.5rem;
 }
 
 @media screen and (max-width: 950px) {
+  .SFO {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .SFO img {
+    width: 100%;
+  }
+
   .skolepengeSectionIntro {
     display: flex;
     flex-direction: column;
@@ -1378,6 +1422,7 @@ gap: 0.5rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    align-items: center;
     margin-bottom: var(--spacingXLarge);
     }
     .prisOverblikTabel {
@@ -1385,6 +1430,12 @@ gap: 0.5rem;
       grid-template-columns: repeat(4, 1fr);
       border-bottom: 1px solid #d44f3f;
       min-width: 200px;
+    }
+
+    .venteListeRabatContainer div {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      padding-inline: 0.5rem;
     }
 }
 
