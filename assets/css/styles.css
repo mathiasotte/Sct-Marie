@@ -1253,6 +1253,7 @@ details[open] summary:after {
 .kontaktSkolen {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-bottom: var(--spacingXLarge);
 }
 
 .aabningstiderUnderoverskrift {
@@ -1268,37 +1269,45 @@ details[open] summary:after {
   margin-top: 4rem;
 }
 
-/* Medarbejder */
-/* https://www.w3schools.com/howto/howto_js_full_page_tabs.asp */
+/* Medarbejder tab bar*/
 
-.tablink {
-  background-color: #555;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 25%;
+.medarbejder h2 {
+  margin-bottom: var(--spacingMedium);
 }
 
-.tablink:hover {
-  background-color: #777;
+.tabBar {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background-color: #d57a66b3;
+  border-radius: 28px;
+  margin-bottom: var(--spacingMedium);
 }
 
-/* Style the tab content (and add height:100% for full page content) */
-.tabcontent {
-  color: white;
-  display: none;
-  padding: 100px 20px;
-  height: 100%;
+.tab {
+  color: var(--white);
+  padding-block: 15px;
+  padding-inline: 20px;
+  width: 33.33%;
+
 }
 
-#Home {background-color: red;}
-#News {background-color: green;}
-#Contact {background-color: blue;}
-#About {background-color: orange;}
+.tab:first-child {
+  background-color: #d57a66;
+  border-radius: 28px;
+}
+
+.tab p {
+  margin: 0;
+}
+
+/* tab indhold*/
+
+#lærere {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 
 /* Kontakt siden slut --------------------------------------------------------*/
 
