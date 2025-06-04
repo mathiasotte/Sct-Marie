@@ -117,11 +117,20 @@ h3 {
 }
 
 p,
-li {
+li,
+a {
   font-size: 1.125rem;
   font-family: inter;
   line-height: 150%;
   margin-bottom: var(--spacingSmall);
+}
+
+a {
+  color: var(--primaryCTA);
+}
+
+a:hover {
+  color: var(--primaryCTAHover);
 }
 
 @media screen and (max-width: 950px) {
@@ -1005,10 +1014,15 @@ details[open] summary:after {
 
 
 /* Kontakt siden start --------------------------------------------------------*/
-.kontaktIkon {
+
+.kontaktOplysninger {
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  flex-direction: column;
+  gap: var(--spacingSmall);
+}
+
+.kontaktOplysninger img {
+  max-width: 20rem;
 }
 
 .kontaktOplysninger p {
@@ -1021,6 +1035,11 @@ details[open] summary:after {
 
 .kontaktOplysninger a:hover {
   color: var(--primaryCTAHover);
+}
+
+.kontaktSkolen {
+  display: flex;
+  justify-content: space-around;
 }
 
 /* Kontakt siden slut --------------------------------------------------------*/
