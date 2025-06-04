@@ -39,7 +39,6 @@ select {
   font: inherit;
 }
 
-
 h1,
 h2,
 h3,
@@ -823,9 +822,9 @@ details[open] summary:after {
     width: 80% !important;
     margin: 0 auto;
     z-index: 1000 !important;
-    
-      min-width: 0px;
-    
+
+    min-width: 0px;
+
   }
 
   .citatContainer {
@@ -920,8 +919,8 @@ details[open] summary:after {
 
 #voresValuesBtn {
 
-text-align: center;
-margin-top: var(--spacingMedium);
+  text-align: center;
+  margin-top: var(--spacingMedium);
 }
 
 @media screen and (max-width: 950px) {
@@ -988,7 +987,7 @@ margin-top: var(--spacingMedium);
 /* Skolens historie slut --------------------------------------------------------*/
 
 .historieCardImgContainer img {
-min-width: 500px;
+  min-width: 500px;
 }
 
 
@@ -1004,13 +1003,14 @@ min-width: 500px;
   text-wrap: balance !important;
 }
 
-.historieCardContainer{
+.historieCardContainer {
   display: flex;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   align-items: flex-start;
   height: 450px;
 }
+
 .historieCardContainer::-webkit-scrollbar {
   height: 30px;
 }
@@ -1042,9 +1042,9 @@ min-width: 500px;
 
 
 .arstal {
-font-size: 3rem;
-margin-bottom: 0;
-font-family: libre baskerville;
+  font-size: 3rem;
+  margin-bottom: 0;
+  font-family: libre baskerville;
 }
 
 
@@ -1089,7 +1089,8 @@ font-family: libre baskerville;
   align-items: center;
   padding: 2rem;
   text-align: center;
-  color: white; /* Or adjust for contrast */
+  color: white;
+  /* Or adjust for contrast */
 }
 
 .BorneGrottenEntrypointContent p {
@@ -1128,58 +1129,61 @@ font-family: libre baskerville;
 
 
 @media screen and (max-width: 1170px) {
-.detKatolskeAspektEntryPoint {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 1rem;
-  margin-bottom: var(--spacingXLarge);
-  
-}
+  .detKatolskeAspektEntryPoint {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+    margin-bottom: var(--spacingXLarge);
 
-.detKatolskeAspektEntryPoint p {
-  text-wrap: balance;
-}
+  }
+
+  .detKatolskeAspektEntryPoint p {
+    text-wrap: balance;
+  }
 }
 
 @media screen and (max-width: 950px) {
 
   #arstal {
     font-size: unset;
-    }
+  }
 
   #SkolensHistorie section {
     margin-bottom: var(--mobilSpacingXLarge);
   }
 
- .historieCardAligment {
-  display: block;
-  flex-direction: column;
-  gap: var(--mobilSpacingMedium);
-  width: 80vw;
- }
- .historieCardContainer{
-  height: 430px!important; 
-}
-
-
-.historieCardImgContainer img {
-  min-width: 0;
-  margin-bottom: var(--mobilSpacingMedium);
+  .historieCardAligment {
+    display: block;
+    flex-direction: column;
+    gap: var(--mobilSpacingMedium);
+    width: 80vw;
   }
-.historieCardImgContainer {
- width:80vw;
-  min-width: 0;
+
+  .historieCardContainer {
+    height: 430px !important;
+  }
+
+
+  .historieCardImgContainer img {
+    min-width: 0;
+    margin-bottom: var(--mobilSpacingMedium);
+  }
+
+  .historieCardImgContainer {
+    width: 80vw;
+    min-width: 0;
   }
 
   .historieCard {
     margin: 0;
     min-width: 290px !important;
     margin-right: var(--mobilSpacingMedium);
-    
+
   }
 
 }
+
 /* vedtægter side start --------------------------------------------------------*/
 
 /* De forskellige vedtaegter */
@@ -1232,6 +1236,10 @@ font-family: libre baskerville;
 
 .kontaktOplysninger a {
   color: var(--primaryCTA);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: var(--mobilSpacingXSmall);
 }
 
 .kontaktOplysninger a:hover {
@@ -1239,9 +1247,63 @@ font-family: libre baskerville;
 }
 
 .kontaktSkolen {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: var(--spacingXLarge);
+}
+
+.aabningstiderUnderoverskrift {
+  font-size: 25px;
+}
+
+.aabningstiderSfoSkole {
+  display: flex;
+  gap: var(--spacingXLarge);
+}
+
+.aabningstiderDato {
+  margin-top: 4rem;
+}
+
+/* Medarbejder tab bar*/
+
+.medarbejder h2 {
+  margin-bottom: var(--spacingMedium);
+}
+
+.tabBar {
   display: flex;
   justify-content: space-around;
+  text-align: center;
+  background-color: #d57a66b3;
+  border-radius: 28px;
+  margin-bottom: var(--spacingMedium);
 }
+
+.tab {
+  color: var(--white);
+  padding-block: 15px;
+  padding-inline: 20px;
+  width: 33.33%;
+
+}
+
+.tab:first-child {
+  background-color: #d57a66;
+  border-radius: 28px;
+}
+
+.tab p {
+  margin: 0;
+}
+
+/* tab indhold*/
+
+#lærere {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 
 /* Kontakt siden slut --------------------------------------------------------*/
 
@@ -1392,25 +1454,29 @@ a {
 /* Optagelse side start --------------------------------------------------------*/
 
 .ventelisteSection {
-display: flex;
-gap: 4rem;
-margin-bottom: var(--spacingXLarge);
+  display: flex;
+  gap: 4rem;
+  margin-bottom: var(--spacingXLarge);
 }
-.ventelisteSection a{
- 
-    color: var(--primaryCTA);
- 
-  
-  }
-  .ventelisteSection a:hover {
-    color: var(--primaryCTAHover);
-  }
-.ventelisteSection img{
-max-height: 500px;
+
+.ventelisteSection a {
+
+  color: var(--primaryCTA);
+
+
 }
+
+.ventelisteSection a:hover {
+  color: var(--primaryCTAHover);
+}
+
+.ventelisteSection img {
+  max-height: 500px;
+}
+
 .ventelisteSection button {
-display: flex;
-gap: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
 }
 
 .skolepengeSectionIntro {
@@ -1428,7 +1494,7 @@ gap: 0.5rem;
 
 
 .prisOverblik h3 {
-  
+
   margin-bottom: 2rem;
   font-weight: normal;
 }
@@ -1447,30 +1513,30 @@ gap: 0.5rem;
 }
 
 
-.prisOverblikTabel > div {
+.prisOverblikTabel>div {
   display: flex;
   flex-direction: column;
   border-left: 1px solid #d44f3f;
 }
 
 
-.prisOverblikTabel > div:first-child {
+.prisOverblikTabel>div:first-child {
   border-left: 0px;
 }
 
 
-.prisOverblikTabel div > div {
+.prisOverblikTabel div>div {
   padding: 1rem;
   border-bottom: 1px solid #d44f3f;
   display: flex;
   align-items: center;
 }
 
-.prisOverblikTabel div > div:last-child {
+.prisOverblikTabel div>div:last-child {
   border-bottom: none;
 }
 
-.prisOverblikTabel p{
+.prisOverblikTabel p {
   margin: 0;
 }
 
@@ -1481,28 +1547,29 @@ gap: 0.5rem;
 }
 
 .soskendeRabatPrisOverblikTabel {
- display: flex;
- justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .soskendeRabatContainer {
   width: 50%;
 }
-.soskendeRabatContainer div{
-  padding:1rem ;
+
+.soskendeRabatContainer div {
+  padding: 1rem;
   border-bottom: 1px solid #d44f3f;
 }
 
-.soskendeRabatPrisOverblikTabel > div:nth-child(2) > div {
+.soskendeRabatPrisOverblikTabel>div:nth-child(2)>div {
   border-left: 1px solid #d44f3f;
 }
 
-.soskendeRabatPriserHeader p{
+.soskendeRabatPriserHeader p {
   font-weight: bold;
   font-family: libre baskerville;
 }
 
-.soskendeRabatContainer p{
+.soskendeRabatContainer p {
   margin: 0;
 }
 
@@ -1523,24 +1590,27 @@ gap: 0.5rem;
   width: 33.33%;
 }
 
-.venteListeRabatContainer div{
-  padding:1rem ;
+.venteListeRabatContainer div {
+  padding: 1rem;
   border-bottom: 1px solid #d44f3f;
 }
 
-.venteListePrisOverblikTabel > div:nth-child(2) > div, .venteListePrisOverblikTabel > div:nth-child(3) > div {
-  border-left: 1px solid #d44f3f;
-}
-.venteListePrisOverblikTabel > div:nth-child(2) > div, .venteListePrisOverblikTabel > div:nth-child(3) > div {
+.venteListePrisOverblikTabel>div:nth-child(2)>div,
+.venteListePrisOverblikTabel>div:nth-child(3)>div {
   border-left: 1px solid #d44f3f;
 }
 
-.venteListeRabatPriserHeader p{
+.venteListePrisOverblikTabel>div:nth-child(2)>div,
+.venteListePrisOverblikTabel>div:nth-child(3)>div {
+  border-left: 1px solid #d44f3f;
+}
+
+.venteListeRabatPriserHeader p {
   font-weight: bold;
   font-family: libre baskerville;
 }
 
-.venteListeRabatContainer p{
+.venteListeRabatContainer p {
   margin: 0;
 }
 
@@ -1549,8 +1619,9 @@ gap: 0.5rem;
   justify-content: space-between;
   gap: 2rem;
 }
+
 .SFO img {
-  width : 50%;
+  width: 50%;
 }
 
 .rundvisningContainer {
@@ -1559,12 +1630,18 @@ gap: 0.5rem;
   align-items: start;
   gap: 2rem;
 }
-.rundvisningContainer input{
+
+.rundvisningContainer input {
   width: 100%;
 }
+
 .rundvisningContainer div {
   width: 100%;
 }
+
+
+.rundvisningContainer img {
+  width: 50%;
 
 
 #rundvisningImg {
@@ -1572,8 +1649,6 @@ gap: 0.5rem;
     width: 50%;
     height: 50%;
    
-  
-  
 }
 
 .rundvisningContainer form {
@@ -1581,20 +1656,23 @@ gap: 0.5rem;
   flex-direction: column;
   width: 100%;
 }
+
 .rundvisningContainer form label span,
-.rundvisningContainer form legend span{
- color: #d57a66;
+.rundvisningContainer form legend span {
+  color: #d57a66;
 }
 
 .rundvisningContainer form label {
   margin-bottom: var(--spacingXSmall);
 }
+
 .rundvisningContainer form input {
   margin-bottom: var(--spacingSmall);
   padding: 0.5rem;
   border-radius: 28px;
   border: 1px #d57a66 solid;
 }
+
 .rundvisningOverskift {
   font-weight: thin;
 }
@@ -1673,7 +1751,7 @@ textarea {
 
 
 @media screen and (max-width: 450px) {
-  .soskendeRabatPrisOverblikTabel > div:nth-child(2){
+  .soskendeRabatPrisOverblikTabel>div:nth-child(2) {
     width: 70%;
   }
 }
@@ -1693,6 +1771,7 @@ textarea {
     flex-direction: column;
     gap: 1rem;
   }
+
   .SFO img {
     width: 100%;
   }
@@ -1703,16 +1782,22 @@ textarea {
     align-items: center;
     margin-bottom: var(--mobilSpacingLarge);
   }
+
+
+
   .skolepengeSectionIntro img{
     width: 50%;
+
   }
 
   .ventelisteSection {
     display: flex;
     gap: 2rem;
     align-items: center;
-    margin-bottom: var(--mobilSpacingXLarge);
-    }
+
+    margin-bottom: var(--spacingXLarge);
+  }
+
     #ventelisteImg {
    display: none;
     }
@@ -1724,15 +1809,23 @@ textarea {
       min-width: 200px;
     }
 
-    .venteListeRabatContainer div {
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
-      padding-inline: 0.5rem;
-    }
+
+  .prisOverblikTabel {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-bottom: 1px solid #d44f3f;
+    min-width: 200px;
+  }
+
+  .venteListeRabatContainer div {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-inline: 0.5rem;
+  }
 }
 
 @media screen and (max-width: 550px) {
-  .prisOverblikTabel div > div {
+  .prisOverblikTabel div>div {
     padding-inline: 0rem;
     padding-left: 0.5rem;
   }
@@ -1772,5 +1865,6 @@ textarea {
   border-radius: 28px;
 }
 /* Sct. Marie side slut--------------------*/
+
 
 
