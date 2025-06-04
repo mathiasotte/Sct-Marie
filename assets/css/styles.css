@@ -141,7 +141,8 @@ a:hover {
   }
 
   p,
-  li {
+  li,
+  a {
     font-size: 0.75rem;
     margin-bottom: var(--mobilSpacingSmall);
   }
@@ -1246,8 +1247,26 @@ font-family: libre baskerville;
 
 
 /* Footer start --------------------------------------------------------*/
-.footer {
-  margin-top: 70px;
+#footer {
+  border-top: 1px solid var(--primaryCTA);
+  padding-top: var(--spacingLarge);
+}
+#footer a,
+h3{
+  margin-bottom: 0 !important;
+}
+#footer
+a {
+ font-size: 3.5rem !important;
+}
+
+#footerMobil {
+  border-top: 1px solid var(--primaryCTA);
+  padding-top: var(--mobilSpacingXLarge);
+}
+
+.footer a {
+  text-decoration: underline;
 }
 
 .footerContent {
@@ -1258,7 +1277,6 @@ font-family: libre baskerville;
 .footerContent a {
   position: relative;
   display: inline-block;
-  text-decoration: none;
   color: var(--primaryCTA);
   padding-bottom: 2px;
 }
@@ -1276,7 +1294,6 @@ font-family: libre baskerville;
 .footerContent a:hover::after {
   width: 100%;
 }
-
 
 
 .footerContent .logoFooter img {
@@ -1347,6 +1364,7 @@ font-family: libre baskerville;
 
   .footerMobil a {
     color: var(--primaryCTA);
+    direction: underline;
   }
 
   .footerMobilContent {
@@ -1545,10 +1563,17 @@ gap: 0.5rem;
   width: 100%;
 }
 .rundvisningContainer div {
-  width: 50%;
+  width: 100%;
 }
-.rundvisningContainer img {
-  width: 50%;
+
+
+#rundvisningImg {
+  
+    width: 50%;
+    height: 50%;
+   
+  
+  
 }
 
 .rundvisningContainer form {
@@ -1566,10 +1591,84 @@ gap: 0.5rem;
 }
 .rundvisningContainer form input {
   margin-bottom: var(--spacingSmall);
+  padding: 0.5rem;
+  border-radius: 28px;
+  border: 1px #d57a66 solid;
 }
 .rundvisningOverskift {
   font-weight: thin;
 }
+
+#labelTekst {
+  color: black;
+}
+
+input#antal{
+max-width: 45px;
+}
+
+.rundvisningContainer fieldset {
+  border: 0;
+  padding: 0;
+  margin-block: 8px;
+}
+.rundvisningContainer fieldset label{
+  display: flex;
+}
+
+.rundvisningContainer fieldset legend {
+  margin-bottom: var(--spacingXSmall);
+}
+
+.checkbox-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.checkbox-label input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.rundvisningContentContainer {
+  display: flex;
+  gap: 2rem;
+}
+
+.rundvisningContentContainer button {
+  margin-top: var(--spacingSmall);
+}
+
+.custom-radio {
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 1px solid #d57a66;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  color: #d57a66;
+}
+
+
+.checkbox-label input[type="radio"]:checked + .custom-radio::before {
+  content: "✕"; 
+}
+
+textarea {
+  border-radius: 28px;
+  border: 1px solid #d57a66;
+  padding: 1rem;
+  width: 100%;
+ 
+}
+
 
 
 
@@ -1580,6 +1679,16 @@ gap: 0.5rem;
 }
 
 @media screen and (max-width: 950px) {
+
+  #Optagelse .heroSectionMain {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #rundvisningImg {
+    display: none;
+  }
+
   .SFO {
     flex-direction: column;
     gap: 1rem;
@@ -1590,22 +1699,24 @@ gap: 0.5rem;
 
   .skolepengeSectionIntro {
     display: flex;
-    flex-direction: column;
-    gap: 4rem;
+    gap: 2rem;
     align-items: center;
-    margin-bottom: var(--spacingLarge);
+    margin-bottom: var(--mobilSpacingLarge);
   }
   .skolepengeSectionIntro img{
-    width: 90%;
+    width: 50%;
   }
 
   .ventelisteSection {
     display: flex;
-    flex-direction: column;
     gap: 2rem;
     align-items: center;
-    margin-bottom: var(--spacingXLarge);
+    margin-bottom: var(--mobilSpacingXLarge);
     }
+    #ventelisteImg {
+   display: none;
+    }
+
     .prisOverblikTabel {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
