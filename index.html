@@ -7,237 +7,234 @@
     <meta name="description" content="" />
     <script src="./assets/js/app.js" defer></script>
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <!-- desktop nav -->
-    <header class="main-header">
-      <nav class="desktop-nav">
-        <a href="index.html" class="logo">
-          <div>
-            <img
-              src="./assets/img/logo/sct-mariae-logo.svg"
-              alt="Sct. Mariæ skole logo"
-              class="logo-img"
-            />
-          </div>
-        </a>
-        <ul class="nav-list">
-          <li class="nav-item dropdown">
-            <a href="#">Menu 1 <span class="dropdown-icon">▼</span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Submenu 1</a></li>
-              <li><a href="#">Submenu 2</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a href="#">Menu 2 <span class="dropdown-icon">▼</span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Submenu A</a></li>
-              <li><a href="#">Submenu B</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a href="#">Menu 3</a></li>
-        </ul>
+    <!-- inspiret af nedenstående tredjepartskode -->
+    <!-- W3Schools. (u.å.). How TO - Sub Navigation. Tilgængelig på: https://www.w3schools.com/howto/howto_css_subnav.asp [Tilgået 4. juni 2025]. -->
 
-        <!-- Hamburger and Close button in the same place -->
-        <button id="hamburgerToggle" class="hamburger" aria-label="Open menu">
-          ☰
-        </button>
-        <button
-          id="hamburgerClose"
-          class="hamburger close"
-          aria-label="Close menu"
-          style="display: none"
-        >
-          ✕
-        </button>
+    <header>
+      <nav>
+        <!-- <div class="utilities">
+          <img src="" alt="" />
+          <a href="./optagelse.html"
+            ><button class="responsiveBtn">
+              <span class="btnText">Optagelse</span>
+            </button></a
+          >
+        </div> -->
+
+        <div class="navbar">
+          <a href="./index.html" class="logo" id="logo">
+            <img
+              src="./assets/img/footer/logo.png"
+              alt="Sct. Mariæ skole logo"
+            />
+          </a>
+
+          <div class="subnav">
+            <button class="subnavbtn">
+              About <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="subnav-content">
+              <a href="#company">Company</a>
+              <a href="#team">Team</a>
+              <a href="#careers">Careers</a>
+            </div>
+          </div>
+          <div class="subnav">
+            <button class="subnavbtn">
+              Services <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="subnav-content">
+              <a href="#bring">Bring</a>
+              <a href="#deliver">Deliver</a>
+              <a href="#package">Package</a>
+              <a href="#express">Express</a>
+            </div>
+          </div>
+          <div class="subnav">
+            <button class="subnavbtn">
+              Partners <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="subnav-content">
+              <a href="#link1">Link 1</a>
+              <a href="#link2">Link 2</a>
+              <a href="#link3">Link 3</a>
+              <a href="#link4">Link 4</a>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
+    <main>
+      <section class="content heroSection">
+        <div class="textContentLanding">
+          <h1>Sct. Mariæ skole: et trygt og levende læringsfællesskab</h1>
+          <p>
+            Sct. Mariæ er en tryg og inkluderende skole med fokus på trivsel,
+            nærvær, kreativitet og faglighed.
+          </p>
+          <a href=""
+            ><button class="responsiveBtn">
+              <span class="btnText">Læs mere om Sct. Mariæ</span>
+            </button></a
+          >
+        </div>
+        <div class="landingHero">
+          <img
+            src="assets/img/forside/hero.webp"
+            alt="Elever fra Sct. Mariæ skole"
+            class="responsiveImg align-right"
+          />
+        </div>
+      </section>
 
-    <aside id="sideNav" class="side-nav hidden" aria-hidden="true">
-      <ul class="side-nav-list">
-        <li class="side-item dropdown">
-          <a href="#">Side Menu 1 <span class="dropdown-icon">▼</span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Sub Link 1</a></li>
-            <li><a href="#">Sub Link 2</a></li>
-          </ul>
-        </li>
-        <li class="side-item dropdown">
-          <a href="#">Side Menu 2 <span class="dropdown-icon">▼</span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Sub Link A</a></li>
-            <li><a href="#">Sub Link B</a></li>
-          </ul>
-        </li>
-        <li class="side-item"><a href="#">Side Menu 3</a></li>
-      </ul>
-    </aside>
-
-    <section class="content heroSection">
-      <div class="textContentLanding">
-        <h1>Sct. Mariæ skole: et trygt og levende læringsfællesskab</h1>
-        <p>
-          Sct. Mariæ er en tryg og inkluderende skole med fokus på trivsel,
-          nærvær, kreativitet og faglighed.
-        </p>
-        <a href=""
-          ><button class="responsiveBtn">
-            <span class="btnText">Læs mere om Sct. Mariæ</span>
-          </button></a
-        >
+      <div class="valueModalContainer hidden" id="valueModalContainer">
+        <div class="valueModal content hidden" id="valueModal">
+          <div class="valueModalContent">
+            <button class="closeModalBtn" id="closeModalBtn">
+              <img src="./assets/img/vaedier/close.svg" alt="Luk ikon" />
+            </button>
+            <div class="df gapMedium">
+              <div>
+                <div class="valueFlex">
+                  <img
+                    src="./assets/img/vaedier/faellesskab.webp"
+                    alt="Fællesskab ikon"
+                  />
+                  <h3>Fællesskab</h3>
+                </div>
+                <p>
+                  På Sct. Mariæ er fællesskabet hjertet i hverdagen. Her kender
+                  vi hinanden på tværs af årgange, fag og forskelligheder. Vi
+                  tror på, at børn trives og udvikler sig bedst, når de føler
+                  sig set, hørt og anerkendt.
+                </p>
+                <br />
+                <p>
+                  Vi møder hinanden med respekt, hjælper når det er svært, og
+                  fejrer når det går godt. For os handler fællesskab ikke kun om
+                  at være sammen – men om at høre til.
+                </p>
+              </div>
+              <img
+                src="./assets/img/vaedier/eksempelFaellesskab.webp"
+                alt="Skolebørn der holder om hinanden"
+              />
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="landingHero">
-        <img
-          src="assets/img/forside/hero.webp"
-          alt="Elever fra Sct. Mariæ skole"
-          class="responsiveImg align-right"
-        />
-      </div>
-    </section>
 
-    <div class="valueModalContainer hidden" id="valueModalContainer">
-      <div class="valueModal content hidden" id="valueModal">
-        <div class="valueModalContent">
-          <button class="closeModalBtn" id="closeModalBtn">
-            <img src="./assets/img/vaedier/close.svg" alt="Luk ikon" />
-          </button>
-          <div class="df gapMedium">
+      <section class="voresValues content">
+        <div>
+          <h2>Vores værdier</h2>
+        </div>
+        <div class="valueEntrypoints">
+          <button class="valueBtn" id="valueBtn">
             <div>
-              <div class="valueFlex">
+              <div class="value">
                 <img
                   src="./assets/img/vaedier/faellesskab.webp"
                   alt="Fællesskab ikon"
                 />
-                <h3>Fællesskab</h3>
+                <img
+                  class="openIcon"
+                  src="./assets/img/vaedier/åbenIkon.png"
+                  alt=""
+                />
               </div>
-              <p>
-                På Sct. Mariæ er fællesskabet hjertet i hverdagen. Her kender vi
-                hinanden på tværs af årgange, fag og forskelligheder. Vi tror
-                på, at børn trives og udvikler sig bedst, når de føler sig set,
-                hørt og anerkendt.
-              </p>
-              <br />
-              <p>
-                Vi møder hinanden med respekt, hjælper når det er svært, og
-                fejrer når det går godt. For os handler fællesskab ikke kun om
-                at være sammen – men om at høre til.
-              </p>
+              <h3>Fællesskab</h3>
             </div>
-            <img
-              src="./assets/img/vaedier/eksempelFaellesskab.webp"
-              alt="Skolebørn der holder om hinanden"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <section class="voresValues content">
-      <div>
-        <h2>Vores værdier</h2>
-      </div>
-      <div class="valueEntrypoints">
-        <button class="valueBtn" id="valueBtn">
+          </button>
           <div>
-            <div class="value">
-              <img
-                src="./assets/img/vaedier/faellesskab.webp"
-                alt="Fællesskab ikon"
-              />
-              <img
-                class="openIcon"
-                src="./assets/img/vaedier/åbenIkon.png"
-                alt=""
-              />
-            </div>
-            <h3>Fællesskab</h3>
+            <button class="valueBtn">
+              <div class="value">
+                <img
+                  src="./assets/img/vaedier/naevaer.webp"
+                  alt="Fællesskab ikon"
+                />
+                <img
+                  class="openIcon"
+                  src="./assets/img/vaedier/åbenIkon.png"
+                  alt="Nærvær ikon"
+                />
+              </div>
+              <h3>Nærvær</h3>
+            </button>
           </div>
-        </button>
-        <div>
-          <button class="valueBtn">
-            <div class="value">
-              <img
-                src="./assets/img/vaedier/naevaer.webp"
-                alt="Fællesskab ikon"
-              />
-              <img
-                class="openIcon"
-                src="./assets/img/vaedier/åbenIkon.png"
-                alt="Nærvær ikon"
-              />
-            </div>
-            <h3>Nærvær</h3>
-          </button>
+          <div>
+            <button class="valueBtn">
+              <div class="value">
+                <img
+                  src="./assets/img/vaedier/kreativitet.webp"
+                  alt="Fællesskab ikon"
+                />
+                <img
+                  class="openIcon"
+                  src="./assets/img/vaedier/åbenIkon.png"
+                  alt="kreativitet ikon"
+                />
+              </div>
+              <h3>Kreativitet</h3>
+            </button>
+          </div>
+          <div>
+            <button class="valueBtn">
+              <div class="value">
+                <img
+                  src="./assets/img/vaedier/faglighed.webp"
+                  alt="Fællesskab ikon"
+                />
+                <img
+                  class="openIcon"
+                  src="./assets/img/vaedier/åbenIkon.png"
+                  alt="Fglighed ikon"
+                />
+              </div>
+              <h3>Faglighed</h3>
+            </button>
+          </div>
+          <div>
+            <button class="valueBtn">
+              <div class="value">
+                <img
+                  src="./assets/img/vaedier/ansvarlighed.webp"
+                  alt="Ansvarlighed ikon"
+                />
+                <img
+                  class="openIcon"
+                  src="./assets/img/vaedier/åbenIkon.png"
+                  alt="Ansvarlighed ikon"
+                />
+              </div>
+              <h3>Ansvarlighed</h3>
+            </button>
+          </div>
+          <div>
+            <button class="valueBtn">
+              <div class="value">
+                <img
+                  src="./assets/img/vaedier/mangfoldighed.webp"
+                  alt="Fællesskab ikon"
+                />
+                <img
+                  class="openIcon"
+                  src="./assets/img/vaedier/åbenIkon.png"
+                  alt="Mangfoldighed ikon"
+                />
+              </div>
+              <h3>Mangfoldighed</h3>
+            </button>
+          </div>
         </div>
-        <div>
-          <button class="valueBtn">
-            <div class="value">
-              <img
-                src="./assets/img/vaedier/kreativitet.webp"
-                alt="Fællesskab ikon"
-              />
-              <img
-                class="openIcon"
-                src="./assets/img/vaedier/åbenIkon.png"
-                alt="kreativitet ikon"
-              />
-            </div>
-            <h3>Kreativitet</h3>
-          </button>
-        </div>
-        <div>
-          <button class="valueBtn">
-            <div class="value">
-              <img
-                src="./assets/img/vaedier/faglighed.webp"
-                alt="Fællesskab ikon"
-              />
-              <img
-                class="openIcon"
-                src="./assets/img/vaedier/åbenIkon.png"
-                alt="Fglighed ikon"
-              />
-            </div>
-            <h3>Faglighed</h3>
-          </button>
-        </div>
-        <div>
-          <button class="valueBtn">
-            <div class="value">
-              <img
-                src="./assets/img/vaedier/ansvarlighed.webp"
-                alt="Ansvarlighed ikon"
-              />
-              <img
-                class="openIcon"
-                src="./assets/img/vaedier/åbenIkon.png"
-                alt="Ansvarlighed ikon"
-              />
-            </div>
-            <h3>Ansvarlighed</h3>
-          </button>
-        </div>
-        <div>
-          <button class="valueBtn">
-            <div class="value">
-              <img
-                src="./assets/img/vaedier/mangfoldighed.webp"
-                alt="Fællesskab ikon"
-              />
-              <img
-                class="openIcon"
-                src="./assets/img/vaedier/åbenIkon.png"
-                alt="Mangfoldighed ikon"
-              />
-            </div>
-            <h3>Mangfoldighed</h3>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <article></article>
+      </section>
+    </main>
 
     <footer class="footer" id="footer">
       <div class="footerContent content">
