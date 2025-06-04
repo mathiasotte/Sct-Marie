@@ -1288,9 +1288,80 @@ gap: 0.5rem;
 .priserHeader p {
   font-weight: bold;
   font-family: libre baskerville;
- 
-  
 }
+
+.soskendeRabatPrisOverblikTabel {
+ display: flex;
+ justify-content: space-between;
+}
+
+.soskendeRabatContainer {
+  width: 50%;
+}
+.soskendeRabatContainer div{
+  padding:1rem ;
+  border-bottom: 1px solid #d44f3f;
+}
+
+.soskendeRabatPrisOverblikTabel > div:nth-child(2) > div {
+  border-left: 1px solid #d44f3f;
+}
+
+.soskendeRabatPriserHeader p{
+  font-weight: bold;
+  font-family: libre baskerville;
+}
+
+.soskendeRabatContainer p{
+  margin: 0;
+}
+
+#soskendeRabat a {
+  color: var(--primaryCTA);
+}
+
+#soskendeRabat a:hover {
+  color: var(--primaryCTAHover);
+}
+
+.venteListePrisOverblikTabel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.venteListeRabatContainer {
+  width: 1/3;
+}
+
+.venteListeRabatContainer div{
+  padding:1rem ;
+  border-bottom: 1px solid #d44f3f;
+}
+
+.venteListePrisOverblikTabel > div:nth-child(2) > div, .venteListePrisOverblikTabel > div:nth-child(3) > div {
+  border-left: 1px solid #d44f3f;
+}
+.venteListePrisOverblikTabel > div:nth-child(2) > div, .venteListePrisOverblikTabel > div:nth-child(3) > div {
+  border-left: 1px solid #d44f3f;
+}
+
+.venteListeRabatPriserHeader p{
+  font-weight: bold;
+  font-family: libre baskerville;
+}
+
+.venteListeRabatContainer p{
+  margin: 0;
+}
+
+
+
+@media screen and (max-width: 450px) {
+  .soskendeRabatPrisOverblikTabel > div:nth-child(2){
+    width: 70%;
+  }
+}
+
 @media screen and (max-width: 950px) {
   .skolepengeSectionIntro {
     display: flex;
