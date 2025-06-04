@@ -1753,8 +1753,24 @@ textarea {
 
 
 /* Sct. Marie side start---------------------*/
+.sctMarie_FlexContianer{
+  display: flex;
+  justify-content: space-between;
+}
+.sctMaire-citatIndhold{
+  width: 30.3%;
+}
+.sctMarie-img{
+  border-radius: 28px;
+  margin-bottom: var(--spacingSmall);
+}
+.citatAfsender{
+  text-align: right;
+}
 
-
+.traditionImg{
+  border-radius: 28px;
+}
 /* Sct. Marie side slut--------------------*/
 
 
