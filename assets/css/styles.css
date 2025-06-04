@@ -716,7 +716,7 @@ details[open] summary:after {
 
 .elevCitater,
 .ForeldreCitater {
-  margin-bottom: 4rem;
+  margin-bottom: var(--spacingXLarge);
 }
 
 .elevCitater h2,
