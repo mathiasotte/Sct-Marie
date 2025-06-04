@@ -28,7 +28,7 @@
           skoleliv.
         </p>
       </div>
-      <div>
+      <div id="optagelseHeroImgContainer">
         <img
           src="assets/img/detKatolskeAspekt/venteliste.webp"
           alt="Pige der holder ballon"
@@ -41,6 +41,7 @@
       <img
         src="./assets/img/optagelse/familieeVenteliste.webp"
         alt="Familie der sidder ved en computer"
+        id="ventelisteImg"
       />
 
       <div>
@@ -67,8 +68,8 @@
             <span class="btnText"
               >Skriv dit barn på ventelisten til Sct. Mariæ Skolen</span
             >
-            <img src="./assets/img/optagelse/openNewLink.png" alt="" /></button
-        ></a>
+          </button></a
+        >
       </div>
     </section>
 
@@ -220,74 +221,190 @@
       </article>
 
       <article>
-        <div>
-          <h2>Rundvisning af skolen</h2>
-          <p>Bestil en rundvisning af skolen</p>
-          <p>
-            Vi tilbyder rundvisninger for alle interesserede – enten fysisk
-            eller online. Udfyld venligst formularen herunder, så vender vi
-            tilbage til dig hurtigst muligt.
-          </p>
-          <p>
-            Hvis i har spørgsmål er i også velkommen til at ringe
-            <a href="#ring">+45 98 13 60 03</a>
-          </p>
-        </div>
-
-        <div class="rundvisningContainer">
+        <div class="rundvisningContentContainer">
           <div>
-            <h3>Bestil rundvisning</h3>
-            <form class="rundvisning-form">
-              <label for="navn">Fulde navn<span>*</span></label>
-              <input type="text" id="navn" name="navn" required />
+            <div>
+              <h2>Rundvisning af skolen</h2>
+              <p>Bestil en rundvisning af skolen</p>
+              <p>
+                Vi tilbyder rundvisninger for alle interesserede – enten fysisk
+                eller online. Udfyld venligst formularen herunder, så vender vi
+                tilbage til dig hurtigst muligt.
+              </p>
+              <p>
+                Hvis i har spørgsmål er i også velkommen til at ringe
+                <a href="#ring">+45 98 13 60 03</a>
+              </p>
+            </div>
 
-              <label for="email">Email<span>*</span></label>
-              <input type="email" id="email" name="email" required />
+            <div class="rundvisningContainer">
+              <div>
+                <h3>Bestil rundvisning</h3>
+                <form class="rundvisning-form">
+                  <label for="navn">Fulde navn<span>*</span></label>
+                  <input type="text" id="navn" name="navn" required />
 
-              <label for="telefon">Telefonnummer</label>
-              <input type="tel" id="telefon" name="telefon" required />
+                  <label for="email">Email<span>*</span></label>
+                  <input type="email" id="email" name="email" required />
 
-              <label for="antal">Antal deltagere (1-5)</label>
-              <input
-                type="number"
-                id="antal"
-                name="antal"
-                min="1"
-                max="5"
-                required
-              />
+                  <label for="telefon">Telefonnummer</label>
+                  <input type="tel" id="telefon" name="telefon" required />
 
-              <fieldset>
-                <legend>Type af rundvisning<span>*</span></legend>
-                <label class="checkbox-label">
+                  <label for="antal" class="antal">Antal deltagere (1-5)</label>
                   <input
-                    type="radio"
-                    name="rundvisning"
-                    value="fysisk"
+                    type="number"
+                    id="antal"
+                    name="antal"
+                    min="1"
+                    max="5"
                     required
                   />
-                  Fysisk
-                </label>
-                <label class="checkbox-label">
-                  <input type="radio" name="rundvisning" value="online" />
-                  Online
-                </label>
-              </fieldset>
 
-              <label for="kommentar"
-                >Evt. kommentarer eller specielle ønsker</label
-              >
-              <textarea id="kommentar" name="kommentar" rows="4"></textarea>
+                  <fieldset>
+                    <legend>Type af rundvisning<span>*</span></legend>
 
-              <button type="submit">Indsend formular</button>
-            </form>
+                    <label class="checkbox-label">
+                      <input
+                        type="radio"
+                        name="rundvisning"
+                        value="fysisk"
+                        required
+                      />
+                      <span class="custom-radio"></span>
+                      <span id="labelTekst">Fysisk</span>
+                    </label>
+
+                    <label class="checkbox-label">
+                      <input type="radio" name="rundvisning" value="online" />
+                      <span class="custom-radio"></span>
+                      <span id="labelTekst">Online</span>
+                    </label>
+                  </fieldset>
+
+                  <label for="kommentar"
+                    >Evt. kommentarer eller specielle ønsker</label
+                  >
+                  <textarea id="kommentar" name="kommentar" rows="4"></textarea>
+                  <a href="#"
+                    ><button class="responsiveBtn">
+                      <span class="btnText" type="submit"
+                        >Indsend formular</span
+                      >
+                    </button></a
+                  >
+                </form>
+              </div>
+            </div>
           </div>
           <img
             src="./assets/img/optagelse/rundvisning.webp"
+            id="rundvisningImg"
             alt="Illustration af sct mariæs kvalitet med kreativitet og musikalitet"
           />
         </div>
       </article>
     </section>
+
+    <footer class="footer" id="footer">
+      <div class="footerContent content">
+        <div class="logoFooter">
+          <img src="./assets/img/footer/logo.png" alt="logo" />
+          <p>© Sct. Mariæ Skolen 2025</p>
+        </div>
+        <div class="kontakt">
+          <h3><a href="./kontakt.html">Kontakt</a></h3>
+          <a href="#">Kastetvej 3</a>
+          <a href="#">9000 Aalborg</a>
+          <a href="#">+45 98 13 60 03</a>
+          <a href="#">kontoret@sctms.dk</a>
+        </div>
+        <div class="omSkolen">
+          <h3><a href="./omSctMarie.html">Om Skolen</a></h3>
+          <a href="./skolensHistorie.html">Skolens historie</a>
+          <a href="./detKatolskeAspekt.html">Det katolske aspekt</a>
+          <a href="./voresVærdier.html">Vores værdier</a>
+          <a href="#">Skolens bestyrelse</a>
+          <a href="#">Tilsyn og evaluering</a>
+        </div>
+        <div class="information">
+          <h3><a href="#">Information</a></h3>
+          <a href="#">Økonomi</a>
+          <a href="#">For forældre</a>
+          <a href="#">Politikker</a>
+          <a href="./faq.html">FAQ</a>
+        </div>
+        <div class="optagelseFooter">
+          <a href="./optagelse.html"
+            ><button class="responsiveBtn">
+              <span class="btnText">Optagelse</span>
+            </button></a
+          >
+          <a href="https://www.facebook.com/Sct.Mariae"
+            ><img src="./assets/img/footer/facebook.png" alt="facebooklogo"
+          /></a>
+        </div>
+      </div>
+      <div class="imgFooter">
+        <img src="./assets/img/footer/footerImg.png" alt="footerImg" />
+        <img src="./assets/img/footer/footerImg.png" alt="footerImg" />
+      </div>
+    </footer>
+    <footer class="footerMobil" id="footerMobil">
+      <div class="footerOptagelseMobil content">
+        <a href="./optagelse.html"
+          ><button class="responsiveBtn">
+            <span class="btnText">Optagelse</span>
+          </button></a
+        >
+        <a href="https://www.facebook.com/Sct.Mariae"
+          ><img src="./assets/img/footer/facebook.png" alt="facebooklogo"
+        /></a>
+      </div>
+      <div class="doubleBorder content">
+        <details>
+          <summary>
+            <h3><a href="./kontakt.html">Kontakt</a></h3>
+          </summary>
+          <div class="footerMobilContent">
+            <a href="#">Kastetvej 3</a>
+            <a href="#">9000 Aalborg</a>
+            <a href="#">+45 98 13 60 03</a>
+            <a href="#">kontoret@sctms.dk</a>
+          </div>
+        </details>
+      </div>
+      <div class="singleBorder content">
+        <details>
+          <summary>
+            <h3><a href="./omSctMarie.html">Om Skolen</a></h3>
+          </summary>
+          <div class="footerMobilContent">
+            <a href="./skolensHistorie.html">Skolens historie</a>
+            <a href="./detKatolskeAspekt.html">Det katolske aspekt</a>
+            <a href="./voresVærdier.html">Vores værdier</a>
+            <a href="#">Skolens bestyrelse</a>
+            <a href="#">Tilsyn og evaluering</a>
+          </div>
+        </details>
+      </div>
+      <div class="singleBorder content">
+        <details>
+          <summary>
+            <h3><a href="#">Information</a></h3>
+          </summary>
+          <div class="footerMobilContent">
+            <a href="#">Økonomi</a>
+            <a href="#">For forældre</a>
+            <a href="#">Politikker</a>
+            <a href="./faq.html">FAQ</a>
+          </div>
+        </details>
+      </div>
+      <div class="logoFooter content">
+        <img src="./assets/img/footer/logo.png" alt="logo" />
+        <p>© Sct. Mariæ Skolen 2025</p>
+      </div>
+      <img src="./assets/img/footer/footerImg.png" alt="footerImg" />
+    </footer>
   </body>
 </html>
