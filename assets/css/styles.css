@@ -1108,55 +1108,6 @@ details[open] summary:after {
 }
 
 @media screen and (max-width: 950px) {
-  /* .footerContent {
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    text-align: center;
-  }
-
-  .optagelseFooter {
-    align-items: center;
-  }
-
-  .imgFooter {
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
-  }
-
-  .footerContent .logoFooter img {
-    max-width: 80px;
-  }
-
-  .footerContent a {
-    font-size: 1rem;
-  }
-
-  .logoFooter p {
-    font-size: 0.7rem;
-  }
-
-  .imgFooter :nth-child(2) {
-    display: none;
-  }
-
-  .footerContent {
-    display: grid;
-    grid-template-areas:
-      "gridFooterEt"
-      "gridFooterTo";
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
-
-  .gridFooterEt {
-    grid-area: gridFooterEt;
-  }
-
-  .gridFooterTo {
-    grid-area: gridFooterTo;
-  } */
 
   .footer {
     display: none;
@@ -1167,35 +1118,31 @@ details[open] summary:after {
     flex-direction: column;
   }
 
-  .footerMobil summary {
-    padding-block: .5rem;
-    padding-right: 1rem;
+  .footerOptagelseMobil {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-
+    justify-content: space-between;
+    gap: var(--mobilSpacingSmall);
+    margin-bottom: var(--mobilSpacingMedium);
   }
 
-  .footerMobil summary:after {
-    content: "\e313";
-    font-size: 3rem;
-    font-weight: 600;
+  .footerMobil a {
     color: var(--primaryCTA);
-    margin-left: 1rem;
   }
 
-  .footerMobil summary:hover {
-    cursor: pointer;
-    background-color: #d57a667b;
+  .footerMobilContent {
+    display: flex;
+    flex-direction: column;
+    gap: var(--mobilSpacingSmall);
   }
 
-  .footerMobil summary p {
-    /* font-weight:600; */
-    font-size: 1.6rem;
+  .logoFooter img {
+    max-width: 100px;
+    margin-top: var(--mobilSpacingMedium);
   }
 
-  .footerMobil details[open] summary:after {
-    content: "\00D7";
+  .footerMobilContent:last-of-type {
+    margin-bottom: var(--mobilSpacingMedium);
   }
 }
 
