@@ -1044,13 +1044,14 @@ details[open] summary:after {
   justify-items: center;
   padding: 8% 1%;
   width: 100%;
-  
+  max-width: 100vmax;
 }
 
 .svgSti{
   background-image: url(../img/sctMarie/mariaSti.svg);
   background-repeat: no-repeat;
   width: 100%;
+  max-width: 100vmax;
   height: 99%;
   z-index: -1;
   padding-bottom: var(--spacingXLarge);
@@ -1060,7 +1061,7 @@ details[open] summary:after {
 .custom-shape-card {
   position: relative;
   width: 100%;
-  max-width: 410px;
+  max-width: 40vmax;
 }
 
 
@@ -1069,7 +1070,7 @@ details[open] summary:after {
   mask-image: url(../img/sctMarie/shape1.svg);
   mask-repeat: no-repeat;
   width: 100%;
-  max-width: 410px;
+  max-width: 40vmax;
   z-index: 2;
   border-radius: 28px;
 }
@@ -1083,14 +1084,14 @@ details[open] summary:after {
     bottom: 0;
     left: 0;
     z-index: 2;
-    padding: 10px;
-    max-width: 410px;
+    padding:  1vmax;
+    max-width: 40vmax;
 }
 .maskSvgImg2{
   mask-image: url(../img/sctMarie/image.svg);
   mask-repeat: no-repeat;
   width: 100%;
-  max-width: 410px;
+  max-width: 40vmax;
   z-index: 2;
 }
 
@@ -1105,14 +1106,14 @@ details[open] summary:after {
     left: 5;
     z-index: 2;
     width: 100%;
-    max-width: 410px;
+    max-width: 40vmax;
 }
 /* Overlay content */
 .BorneGrottenEntrypointContent {
   position: absolute;
   inset: 0;
   z-index: 3;
-  max-width: 400px;
+  max-width: 50vmax;
   display: flex;
   flex-direction: column;
   justify-content: top;
@@ -1143,13 +1144,10 @@ details[open] summary:after {
   cursor: pointer;
 }
 
-@media (max-width: 950px) {
-  .custom-shape-card {
-    max-width: 90vw;
-  }
+@media screen and (min-width: 950px) {
 
   .BorneGrottenEntrypointContent p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .BorneGrottenEntrypointContent button {
@@ -1158,10 +1156,33 @@ details[open] summary:after {
   }
 }
 
+@media screen and (min-width: 375px){
+    .BorneGrottenEntrypointContent p {
+    font-size: 0.7rem;
+    align-content: center;
+  }
+
+  .BorneGrottenEntrypointContent button {
+    font-size: 0.6rem;
+    padding: 0.3rem 0.5rem;
+  }
+  .udforskSkoleEntryPoint{
+    flex-wrap: wrap;
+    align-content: center;
+  
+}
+.custom-shape-card{
+  margin-bottom: 3vmax;
+}
+.svgSti{
+background-image: none;
+}
+
+}
+
+
+
 /* Udforsk skolen entry point */
-
-
-
 
 @media screen and (max-width: 1170px) {
   .detKatolskeAspektEntryPoint {
@@ -1888,11 +1909,13 @@ textarea {
 }
 .traditionCardContainer{
   display: flex;
+  flex-direction: row;
   overflow-x: scroll;
-  scroll-snap-type: x mandatory;
   align-items: flex-start;
-  max-height: 450px;
+  height: 100%;
+  max-height: 100vh;
   margin-top: var(--mobilSpacingSmall);
+  max-width: 100vmax;
 }
 
 
@@ -1912,50 +1935,71 @@ textarea {
 .traditionCardContainer::-webkit-scrollbar-track {
   background: var(--white);
 }
+.traditionCard{
+  display: flex;
+  overflow-x: scroll;
+  width: fit-content;
+  max-width: 100vmax;
+  margin-right: var(--spacingMedium);
+}
 .traditionImg{
   border-radius: 28px;
-}
+  width: 100%;
+  max-width: 614px;
 
-.himmelSvg{
-  background-image: url(../img/sctMarie/himmel.svg);
-  background-repeat: no-repeat;
-  padding-top: 10vh;
-  z-index: -1;
-}
-.solSvg{
-  background-image: url(../img/sctMarie/mosaik\ sol.svg);
-  background-repeat: no-repeat;
-  height: 10vh;
-  width: 10vh;
 }
 
 .hverdagCardContainer{
   display: flex;
   overflow-x: scroll;
-  scroll-snap-type: x mandatory;
   align-items: flex-start;
-  max-height: 450px;
+  height: 100%;
+  max-height: 100vh;
   margin-top: var(--mobilSpacingSmall);
+  max-width: 100vmax;
 }
-
-
 
 .hverdagCardContainer::-webkit-scrollbar {
-  height: 30px;
+  background-image: url(../img/sctMarie/himmel.svg);
+  background-repeat: no-repeat;
+  height: 20vh;
+  width: 100%;
+  max-width: 100vh;
 }
-
-.hverdagCardContainer::-webkit-scrollbar-thumb,
 .hverdagCardContainer::-webkit-scrollbar-track {
-  border-radius: 92px;
+    background-image: url(../img/sctMarie/himmel.svg);
+    background-repeat: no-repeat;
+    border-radius: 92px;
+    width: 100%;
+    max-width: 100vh;
 }
 
 .hverdagCardContainer::-webkit-scrollbar-thumb {
-  background: var(--primaryCTA);
+  background-image: url(../img/sctMarie/mosaik\ sol.svg); 
+  background-repeat: no-repeat;
+
 }
 
-.hverdagCardContainer::-webkit-scrollbar-track {
-  background: var(--white);
+@media screen and (min-width: 370px){
+.sctMarie_FlexContianer{
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+
 }
+.sctMaire-citatIndhold{
+  width: 100%;
+  max-width: 100vmax;
+
+}
+.sctMarie-img{
+  border-radius: 28px;
+  margin-bottom: var(--spacingSmall);
+  width: 100%;
+  max-width: 100vmax;
+}
+}
+
 /* Sct. Marie side slut--------------------*/
 
 
