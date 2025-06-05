@@ -1915,6 +1915,47 @@ textarea {
 .traditionImg{
   border-radius: 28px;
 }
+
+.himmelSvg{
+  background-image: url(../img/sctMarie/himmel.svg);
+  background-repeat: no-repeat;
+  padding-top: 10vh;
+  z-index: -1;
+}
+.solSvg{
+  background-image: url(../img/sctMarie/mosaik\ sol.svg);
+  background-repeat: no-repeat;
+  height: 10vh;
+  width: 10vh;
+}
+
+.hverdagCardContainer{
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  align-items: flex-start;
+  max-height: 450px;
+  margin-top: var(--mobilSpacingSmall);
+}
+
+
+
+.hverdagCardContainer::-webkit-scrollbar {
+  height: 30px;
+}
+
+.hverdagCardContainer::-webkit-scrollbar-thumb,
+.hverdagCardContainer::-webkit-scrollbar-track {
+  border-radius: 92px;
+}
+
+.hverdagCardContainer::-webkit-scrollbar-thumb {
+  background: var(--primaryCTA);
+}
+
+.hverdagCardContainer::-webkit-scrollbar-track {
+  background: var(--white);
+}
 /* Sct. Marie side slut--------------------*/
 
 
