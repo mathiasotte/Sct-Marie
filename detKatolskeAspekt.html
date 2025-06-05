@@ -1,18 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Det katolske Aspekt</title>
+    <meta
+      name="description"
+      content="Her kan du læse om hvordan Sct. Mariæs katolsk kristne værdigrundlag kommer til udtryk"
+    />
+    <script src="./assets/js/app.js" defer></script>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Det katolske Aspekt</title>
-  <meta name="description"
-    content="Her kan du læse om hvordan Sct. Mariæs katolsk kristne værdigrundlag kommer til udtryk" />
-  <script src="./assets/js/app.js" defer></script>
-  <link rel="stylesheet" href="./assets/css/styles.css" />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body id="detKatolskeAspekt">
-  <main>
+  <body id="detKatolskeAspekt">
+    <header id="navHeader">
+      <!-- Desktop nav -->
+      <div class="DesktopNavWrapper">
+        <section class="content utilityBarSection">
+          <div id="utilityBar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="./optagelse.html"
+              ><button class="responsiveBtn">
+                <span class="btnText">Optagelse</span>
+              </button></a
+            >
+
+            <a
+              href="https://sct-mariae-skole.m.skoleintra.dk/Account/IdpLogin?role=Parent&partnerSp=urn%3Aitslearning%3Ansi%3Asaml%3A2.0%3Asct-mariae-skole.skoleintra.dk"
+              >Forældreintra <i class="fa-solid fa-up-right-from-square"></i
+            ></a>
+            <a
+              href="https://sct-mariae-skole.m.skoleintra.dk/Account/IdpLogin?role=Student&partnerSp=urn%3Aitslearning%3Ansi%3Asaml%3A2.0%3Asct-mariae-skole.skoleintra.dk"
+              >Elevintra <i class="fa-solid fa-up-right-from-square"></i
+            ></a>
+            <a
+              href="https://sct-mariae-skole.m.skoleintra.dk/Account/IdpLogin?role=Teacher&partnerSp=urn%3Aitslearning%3Ansi%3Asaml%3A2.0%3Asct-mariae-skole.skoleintra.dk"
+              >Personleintra <i class="fa-solid fa-up-right-from-square"></i
+            ></a>
+          </div>
+        </section>
+
+        <nav>
+          <div class="navbar">
+            <a href="./index.html" id="homeLink"
+              ><img
+                src="./assets/img/footer/logo.png"
+                alt="Sct. Mariæ skole logo"
+                id="logo"
+            /></a>
+            <div class="navLinks">
+              <div class="subnav">
+                <button class="subnavbtn">
+                  Sct. Mariæ skole <i class="fa-solid fa-angle-down"></i>
+                </button>
+                <div class="subnav-content" id="textAlignLeft">
+                  <a href="./omSctMarie.html">Sct. Mariæ Skole</a>
+                  <a href="./skolensHistorie.html">Skolens Historie</a>
+                  <a href="./detKatolskeAspekt.html">Det Katolske Aspekt</a>
+                  <a href="./voresVerdier.html">Vores Værdier</a>
+                  <a href="#">Skole bestyrelsen</a>
+                  <a href="#">Tilsyn og evaluering</a>
+                </div>
+              </div>
+              <div class="subnav">
+                <button class="subnavbtn">
+                  Big Band<i class="fa-solid fa-angle-down"></i>
+                </button>
+                <div class="subnav-content">
+                  <a href="#">Repetoire</a>
+                  <a href="#">Booking</a>
+                </div>
+              </div>
+              <div class="subnav">
+                <button class="subnavbtn">
+                  Undervisning<i class="fa-solid fa-angle-down"></i>
+                </button>
+                <div class="subnav-content">
+                  <a href="#">Talentundervisning</a>
+                  <a href="#">Special Undervisning</a>
+                  <a href="#">Undervisningsplaner</a>
+                </div>
+              </div>
+              <div class="subnav">
+                <button class="subnavbtn">
+                  SFO<i class="fa-solid fa-angle-down"></i>
+                </button>
+                <div class="subnav-content">
+                  <a href="#">SFO</a>
+                  <a href="#">Pædagogiske Principper</a>
+                </div>
+              </div>
+              <div class="subnav">
+                <button class="subnavbtn" id="subnavbtnLast">
+                  Praktisk Info<i class="fa-solid fa-angle-down"></i>
+                </button>
+                <div class="subnav-content">
+                  <a href="./kontakt.html">Kontakt</a>
+                  <a href="./faq.html">Ofte Stillede Spørgsmål</a>
+                  <a href="#">Praktisk information</a>
+                  <a href="#">For Forældre</a>
+                  <a href="#">Politikker</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="MobileNavWrapper">
+        <div class="mobile-header">
+          <a href="./index.html">
+            <img
+              src="./assets/img/footer/logo.png"
+              alt="Sct. Mariæ skole logo"
+              class="mobile-logo"
+            />
+          </a>
+          <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+          <div class="mobile-links">
+            <details>
+              <summary>
+                Sct. Mariæ skole
+                <i class="fa-solid fa-angle-down dropdown-icon"></i>
+              </summary>
+              <div class="mobilLinksContainer">
+                <a href="./omSctMarie.html">Sct. Mariæ Skole</a>
+                <a href="./skolensHistorie.html">Skolens Historie</a>
+                <a href="./detKatolskeAspekt.html">Det Katolske Aspekt</a>
+                <a href="./voresVerdier.html">Vores Værdier</a>
+                <a href="#">Skole bestyrelsen</a>
+                <a href="#">Tilsyn og evaluering</a>
+              </div>
+            </details>
+            <details>
+              <summary>
+                Praktisk Info
+                <i class="fa-solid fa-angle-down dropdown-icon"></i>
+              </summary>
+              <div class="mobilLinksContainer">
+                <a href="./kontakt.html">Kontakt</a>
+                <a href="./faq.html">Ofte Stillede Spørgsmål</a>
+                <a href="#">Praktisk information</a>
+                <a href="#">For Forældre</a>
+                <a href="#">Politikker</a>
+              </div>
+            </details>
+            <details>
+              <summary>
+                Big Band <i class="fa-solid fa-angle-down dropdown-icon"></i>
+              </summary>
+              <div class="mobilLinksContainer">
+                <a href="#">Repetoire</a>
+                <a href="#">Booking</a>
+              </div>
+            </details>
+            <details>
+              <summary>
+                Undervisning
+                <i class="fa-solid fa-angle-down dropdown-icon"></i>
+              </summary>
+              <div class="mobilLinksContainer">
+                <a href="#">Talentundervisning</a>
+                <a href="#">Special Undervisning</a>
+                <a href="#">Undervisningsplaner</a>
+              </div>
+            </details>
+            <details>
+              <summary class="borderBottom">
+                SFO <i class="fa-solid fa-angle-down dropdown-icon"></i>
+              </summary>
+              <div class="mobilLinksContainer">
+                <a href="#">SFO</a>
+                <a href="#">Pædagogiske Principper</a>
+              </div>
+            </details>
+          </div>
+          <div class="mobile-utility">
+            <div>
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <a href="./optagelse.html">
+                <button class="responsiveBtn">
+                  <span class="btnText">Optagelse</span>
+                </button>
+              </a>
+            </div>
+            <div>
+              <a
+                href="https://sct-mariae-skole.m.skoleintra.dk/Account/IdpLogin?role=Parent&partnerSp=urn%3Aitslearning%3Ansi%3Asaml%3A2.0%3Asct-mariae-skole.skoleintra.dk"
+                >Forældreintra <i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+              <a
+                href="https://sct-mariae-skole.m.skoleintra.dk/Account/IdpLogin?role=Student&partnerSp=urn%3Aitslearning%3Ansi%3Asaml%3A2.0%3Asct-mariae-skole.skoleintra.dk"
+                >Elevintra <i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+              <a
+                href="https://sct-mariae-skole.m.skoleintra.dk/Account/IdpLogin?role=Teacher&partnerSp=urn%3Aitslearning%3Ansi%3Asaml%3A2.0%3Asct-mariae-skole.skoleintra.dk"
+                >Personleintra <i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
     <section class="content heroSectionMain">
       <div class="textContentLanding">
         <h1>Det katolske Aspekt</h1>
@@ -22,8 +226,11 @@
         </p>
       </div>
       <div>
-        <img src="assets/img/detKatolskeAspekt/detKatoskeAspektHero.webp" alt="Forældre der har et spørgsmål"
-          class="responsiveImg align-right" />
+        <img
+          src="assets/img/detKatolskeAspekt/detKatoskeAspektHero.webp"
+          alt="Forældre der har et spørgsmål"
+          class="responsiveImg align-right"
+        />
       </div>
     </section>
 
@@ -71,9 +278,11 @@
           Hvis du vil høre mere om hvordan vores katolske værdisæt bliver
           praktiseret på skolen kan du klikke på knappen herunder.
         </p>
-        <a href="voresVærdier.html"><button class="responsiveBtn">
+        <a href="voresVærdier.html"
+          ><button class="responsiveBtn">
             <span class="btnText">Vores værdier</span>
-          </button></a>
+          </button></a
+        >
       </div>
     </section>
 
@@ -100,7 +309,10 @@
           <p class="navn">- Mohamed, 5.kl</p>
         </div>
         <div>
-          <img src="./assets/img/detKatolskeAspekt/Mohamed.webp" alt="Mohamed" />
+          <img
+            src="./assets/img/detKatolskeAspekt/Mohamed.webp"
+            alt="Mohamed"
+          />
         </div>
       </div>
       <div class="citatContainer">
@@ -187,101 +399,175 @@
     </section>
   </main>
 
-  <footer class="footer" id="footer">
-    <div class="footerContent content">
-      <div class="logoFooter">
-        <img src="./assets/img/footer/logo.png" alt="logo" />
-        <p>© Sct. Mariæ Skolen 2025</p>
+    <section class="ForeldreCitater content">
+      <h2>
+        Hvad siger forældrene om det katolske værdigrundlag på Sct. Mariæ?
+      </h2>
+      <div class="citatContainer">
+        <div>
+          <img src="./assets/img/detKatolskeAspekt/helene.webp" alt="Helene" />
+        </div>
+        <div>
+          <p class="citat">
+            ”Det bedste ved Sct. Mariæ Skole er fagligheden – og det kristne
+            værdisæt, som også praktiseres i hverdagen.”
+          </p>
+          <p class="navn">- Helene, forældre</p>
+        </div>
       </div>
-      <div class="kontakt">
-        <h3><a href="./kontakt.html">Kontakt</a></h3>
-        <a href="#">Kastetvej 3</a>
-        <a href="#">9000 Aalborg</a>
-        <a href="#">+45 98 13 60 03</a>
-        <a href="#">kontoret@sctms.dk</a>
+      <div class="citatContainer">
+        <div>
+          <p class="citat">
+            ”At Sct. Mariæ Skole er en katolsk skole betyder religiøst set ikke
+            noget for os, men de fællesskabsorienterede værdier gør.”
+          </p>
+          <p class="navn">- Louis, forældre</p>
+        </div>
+        <div>
+          <img src="./assets/img/detKatolskeAspekt/Alex.webp" alt="Louis" />
+        </div>
       </div>
-      <div class="omSkolen">
-        <h3><a href="./omSctMarie.html">Om Skolen</a></h3>
-        <a href="./skolensHistorie.html">Skolens historie</a>
-        <a href="./detKatolskeAspekt.html">Det katolske aspekt</a>
-        <a href="./voresVærdier.html">Vores værdier</a>
-        <a href="#">Skolens bestyrelse</a>
-        <a href="#">Tilsyn og evaluering</a>
+      <div class="citatContainer">
+        <div>
+          <img src="./assets/img/detKatolskeAspekt/ming.webp" alt="Ming" />
+        </div>
+        <div>
+          <p class="citat">
+            “Jeg kan godt lide ordentligheden og medmenneskeligheden der gemmer
+            sig i det kristne budskab.”
+          </p>
+          <p class="navn">- Ming, forældre</p>
+        </div>
       </div>
-      <div class="information">
-        <h3><a href="#">Information</a></h3>
-        <a href="#">Økonomi</a>
-        <a href="#">For forældre</a>
-        <a href="#">Politikker</a>
-        <a href="./faq.html">FAQ</a>
+    </section>
+
+    <section class="entryPointVenteliste content">
+      <div>
+        <div class="textBackground">
+          <h2>Kom og vær med i noget stort</h2>
+          <p>Er du og dit barn klar til at blive en del af et fællesskab?</p>
+          <p>
+            Hvor både lærere og elever bliver som en ekstra familie. Hvor
+            tryghed, nærvær og respekt danner rammen om hverdagen, og hvor der
+            er plads til både faglighed, tro og trivsel.
+          </p>
+          <p>
+            Her har du mulighed for at skrive dit barn op og tage første skridt
+            ind i et skoleliv med mening, sammenhold og varme.
+          </p>
+          <a href="venteliste.html"
+            ><button class="responsiveBtn">
+              <span class="btnText">Skriv dit barn op på Sct. Marie</span>
+            </button></a
+          >
+        </div>
       </div>
-      <div class="optagelseFooter">
-        <a href="./optagelse.html"><button class="responsiveBtn">
-            <span class="btnText">Optagelse</span>
-          </button></a>
-        <a href="https://www.facebook.com/Sct.Mariae"><img src="./assets/img/footer/facebook.png"
-            alt="facebooklogo" /></a>
+      <div>
+        <img
+          src="./assets/img/detKatolskeAspekt/venteliste.webp"
+          alt="Pige med ballon i hånden"
+        />
       </div>
-    </div>
-    <div class="imgFooter">
-      <img src="./assets/img/footer/footerImg.png" alt="footerImg" />
-      <img src="./assets/img/footer/footerImg.png" alt="footerImg" />
-    </div>
-  </footer>
-  <footer class="footerMobil" id="footerMobil">
-    <div class="footerOptagelseMobil content">
-      <a href="./optagelse.html"><button class="responsiveBtn">
-          <span class="btnText">Optagelse</span>
-        </button></a>
-      <a href="https://www.facebook.com/Sct.Mariae"><img src="./assets/img/footer/facebook.png"
-          alt="facebooklogo" /></a>
-    </div>
-    <div class="doubleBorder content">
-      <details>
-        <summary>
+    </section>
+
+    <footer class="footer" id="footer">
+      <div class="footerContent content">
+        <div class="logoFooter">
+          <img src="./assets/img/footer/logo.png" alt="logo" />
+          <p>© Sct. Mariæ Skolen 2025</p>
+        </div>
+        <div class="kontakt">
           <h3><a href="./kontakt.html">Kontakt</a></h3>
-        </summary>
-        <div class="footerMobilContent">
           <a href="#">Kastetvej 3</a>
           <a href="#">9000 Aalborg</a>
           <a href="#">+45 98 13 60 03</a>
           <a href="#">kontoret@sctms.dk</a>
         </div>
-      </details>
-    </div>
-    <div class="singleBorder content">
-      <details>
-        <summary>
+        <div class="omSkolen">
           <h3><a href="./omSctMarie.html">Om Skolen</a></h3>
-        </summary>
-        <div class="footerMobilContent">
           <a href="./skolensHistorie.html">Skolens historie</a>
           <a href="./detKatolskeAspekt.html">Det katolske aspekt</a>
           <a href="./voresVærdier.html">Vores værdier</a>
           <a href="#">Skolens bestyrelse</a>
           <a href="#">Tilsyn og evaluering</a>
         </div>
-      </details>
-    </div>
-    <div class="singleBorder content">
-      <details>
-        <summary>
+        <div class="information">
           <h3><a href="#">Information</a></h3>
-        </summary>
-        <div class="footerMobilContent">
           <a href="#">Økonomi</a>
           <a href="#">For forældre</a>
           <a href="#">Politikker</a>
           <a href="./faq.html">FAQ</a>
         </div>
-      </details>
-    </div>
-    <div class="logoFooter content">
-      <img src="./assets/img/footer/logo.png" alt="logo" />
-      <p>© Sct. Mariæ Skolen 2025</p>
-    </div>
-    <img src="./assets/img/footer/footerImg.png" alt="footerImg" />
-  </footer>
-</body>
-
+        <div class="optagelseFooter">
+          <a href="./optagelse.html"
+            ><button class="responsiveBtn">
+              <span class="btnText">Optagelse</span>
+            </button></a
+          >
+          <a href="https://www.facebook.com/Sct.Mariae"
+            ><img src="./assets/img/footer/facebook.png" alt="facebooklogo"
+          /></a>
+        </div>
+      </div>
+      <div class="imgFooter">
+        <img src="./assets/img/footer/footerImg.png" alt="footerImg" />
+        <img src="./assets/img/footer/footerImg.png" alt="footerImg" />
+      </div>
+    </footer>
+    <footer class="footerMobil" id="footerMobil">
+      <div class="footerOptagelseMobil content">
+        <a href="./optagelse.html"
+          ><button class="responsiveBtn">
+            <span class="btnText">Optagelse</span>
+          </button></a>
+        <a href="https://www.facebook.com/Sct.Mariae"><img src="./assets/img/footer/facebook.png"
+            alt="facebooklogo" /></a>
+      </div>
+      <div class="doubleBorder content">
+        <details>
+          <summary>
+            <h3><a href="./kontakt.html">Kontakt</a></h3>
+          </summary>
+          <div class="footerMobilContent">
+            <a href="#">Kastetvej 3</a>
+            <a href="#">9000 Aalborg</a>
+            <a href="#">+45 98 13 60 03</a>
+            <a href="#">kontoret@sctms.dk</a>
+          </div>
+        </details>
+      </div>
+      <div class="singleBorder content">
+        <details>
+          <summary>
+            <h3><a href="./omSctMarie.html">Om Skolen</a></h3>
+          </summary>
+          <div class="footerMobilContent">
+            <a href="./skolensHistorie.html">Skolens historie</a>
+            <a href="./detKatolskeAspekt.html">Det katolske aspekt</a>
+            <a href="./voresVærdier.html">Vores værdier</a>
+            <a href="#">Skolens bestyrelse</a>
+            <a href="#">Tilsyn og evaluering</a>
+          </div>
+        </details>
+      </div>
+      <div class="singleBorder content">
+        <details>
+          <summary>
+            <h3><a href="#">Information</a></h3>
+          </summary>
+          <div class="footerMobilContent">
+            <a href="#">Økonomi</a>
+            <a href="#">For forældre</a>
+            <a href="#">Politikker</a>
+            <a href="./faq.html">FAQ</a>
+          </div>
+        </details>
+      </div>
+      <div class="logoFooter content">
+        <img src="./assets/img/footer/logo.png" alt="logo" />
+        <p>© Sct. Mariæ Skolen 2025</p>
+      </div>
+      <img src="./assets/img/footer/footerImg.png" alt="footerImg" />
+    </footer>
+  </body>
 </html>

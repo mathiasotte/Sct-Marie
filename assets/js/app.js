@@ -1,12 +1,28 @@
 
 // landing page JS ------------------------------------------
 
+  // mobil nav 
+
+ // Henter hamburger-knappen fra DOM'en og gemmer den i en variabel
+ const hamburgerBtn = document.getElementById("hamburgerBtn");
+
+ // Henter mobilmenu-elementet fra DOM'en og gemmer det i en variabel
+ const mobileMenu = document.getElementById("mobileMenu");
+ 
+ // Tilføjer en klik-event til hamburger-knappen
+ hamburgerBtn.addEventListener("click", () => {
+   // Når der klikkes: toggler klassen "open" på knappen for at animere ikonet
+   hamburgerBtn.classList.toggle("open");
+ 
+   // Toggler også klassen "open" på menuen for at åbne eller lukke den med transition
+   mobileMenu.classList.toggle("open");
+ });
+
 // JavaScript for modal funktionalitet
 const openBtn = document.getElementById('valueBtn');
 const closeBtn = document.getElementById('closeModalBtn');
 const modalOverlay = document.getElementById('valueModalContainer');
 const modal = document.getElementById('valueModal');
-
 
 
 // åben modal
@@ -30,24 +46,6 @@ modalOverlay.addEventListener('click', (e) => {
   }
 });
 
-
-  // desktop nav 
-  
-  const hamburgerToggle = document.getElementById("hamburgerToggle");
-  const hamburgerClose = document.getElementById("hamburgerClose");
-  const sideNav = document.getElementById("sideNav");
-  
-  hamburgerToggle.addEventListener("click", () => {
-    sideNav.classList.remove("hidden");
-    hamburgerToggle.style.display = "none";
-    hamburgerClose.style.display = "inline";
-  });
-  
-  hamburgerClose.addEventListener("click", () => {
-    sideNav.classList.add("hidden");
-    hamburgerToggle.style.display = "inline";
-    hamburgerClose.style.display = "none";
-  });
 
 // landing page JS slut ------------------------------------------
 
