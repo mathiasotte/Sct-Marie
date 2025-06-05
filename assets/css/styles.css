@@ -46,17 +46,6 @@ h6 {
 /* Fonte og fontstørrelser */
 
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-
-
-/* .inter-font{
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-} */
-
-
 h1 {
   font-size: 3.5rem;
   font-family: libre baskerville;
@@ -1398,7 +1387,7 @@ section.content.utilityBarSection {
   cursor: pointer;
 }
 
-@media screen and (min-width: 950px) {
+@media screen and (max-width: 950px) {
 
   .BorneGrottenEntrypointContent p {
     font-size: 1rem;
@@ -1410,7 +1399,7 @@ section.content.utilityBarSection {
   }
 }
 
-@media screen and (min-width: 375px){
+@media screen and (max-width: 600px){
     .BorneGrottenEntrypointContent p {
     font-size: 0.7rem;
     align-content: center;
@@ -2180,19 +2169,59 @@ textarea {
 
 
 /* Optagelse side slut --------------------------------------------------------*/
-
+.sctMarie_FlexContianer {
+display: flex;
+width: 100%;
+}
+.sctMaire-citatIndhold {
+  width: 100%;
+  padding: 2.5vmax;
+  max-width: 25vmax;
+}
 
 /* Sct. Marie side start---------------------*/
-.sctMarie_FlexContianer {
+@media screen and (max-width: 600px){
+.sctMarie_FlexContianer{
+  flex-direction: column;
+}
+.sctMaire-citatIndhold{
+  width: 100%;
+  max-width: 600px;
+}
+.sctMarie-img{
+  border-radius: 28px;
+  margin-bottom: var(--spacingSmall);
+  width: 100%;
+  max-width: 310px;
+}
+.traditionCard{
   display: flex;
-  justify-content: space-between;
+  align-items: flex-start;
+  margin-right: var(--spacingMedium);
+}
+.traditionImg{
+width: 310px;
+
+}
+.traditionText{
+  width: 200px;
+  padding: 0;
+
+}
 }
 
-.sctMaire-citatIndhold {
-  width: 30.3%;
+@media screen and (max-width:950px){
+  .sctMarie_FlexContianer {
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
 }
-
+.sctMaire-citatIndhold{
+  padding: 0;
+}
+}
 .sctMarie-img {
+  width: 100%;
   border-radius: 28px;
   margin-bottom: var(--spacingSmall);
 }
@@ -2202,15 +2231,9 @@ textarea {
 }
 .traditionCardContainer{
   display: flex;
-  flex-direction: row;
-  overflow-x: scroll;
   align-items: flex-start;
-  height: 100%;
-  max-height: 100vh;
-  margin-top: var(--mobilSpacingSmall);
-  max-width: 100vmax;
+  overflow-x: scroll;
 }
-
 
 .traditionCardContainer::-webkit-scrollbar {
   height: 30px;
@@ -2230,15 +2253,18 @@ textarea {
 }
 .traditionCard{
   display: flex;
-  overflow-x: scroll;
-  width: fit-content;
-  max-width: 100vmax;
+  align-items: flex-start;
   margin-right: var(--spacingMedium);
 }
 .traditionImg {
   border-radius: 28px;
-  width: 100%;
+  max-height: 310px;;
   max-width: 614px;
+  margin-right: 2%;
+}
+.traditionText{
+  width: 450px;
+  padding-left: 5%;
 
 }
 
@@ -2271,26 +2297,6 @@ textarea {
   background-image: url(../img/sctMarie/mosaik\ sol.svg); 
   background-repeat: no-repeat;
 
-}
-
-@media screen and (min-width: 370px){
-.sctMarie_FlexContianer{
-  flex-wrap: wrap;
-  flex-direction: column;
-  width: 100%;
-
-}
-.sctMaire-citatIndhold{
-  width: 100%;
-  max-width: 100vmax;
-
-}
-.sctMarie-img{
-  border-radius: 28px;
-  margin-bottom: var(--spacingSmall);
-  width: 100%;
-  max-width: 100vmax;
-}
 }
 
 /* Sct. Marie side slut--------------------*/
