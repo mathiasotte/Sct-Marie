@@ -459,7 +459,12 @@ img.align-right {
 .valueBtn {
   background-color: transparent;
   border: none;
+  margin-bottom: var(--spacingLarge);
 
+}
+
+article {
+  margin-bottom: 8rem;
 }
 
 @media screen and (max-width: 950px) {
@@ -467,16 +472,19 @@ img.align-right {
     gap: var(--mobilSpacingXSmall);
   }
 
-  .value {
+  .value img {
     max-width: 150px;
-    margin: 0;
   }
 
+  .value {
+    min-width: 0;
+  }
+
+  .df {
+    flex-direction: column;
+  }
 }
 
-article {
-  margin-bottom: 8rem;
-}
 
 @media screen and (max-width: 950px) {
   article {
@@ -582,6 +590,66 @@ article {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+}
+
+
+/* Entrypoint særlige muligheder */
+.entryPointMuligheder {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 1rem;
+}
+
+.entryPointContent {
+  flex: 0 0 30%;
+  scroll-snap-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60vh;
+  border-radius: 28px;
+  padding: 1rem;
+  color: var(--white);
+}
+
+.entryPointBigBand {
+  background-image: url(../img/forside/bigband.webp);
+}
+
+.entryPointKor {
+  background-image: url(../img/forside/kor.webp);
+}
+
+.entryPointCambridge {
+  background-image: url(../img/forside/cam.webp);
+}
+
+.entryPointSaerligeMuligheder {
+  margin-block: var(--spacingXLarge);
+}
+
+.entryPointContent a {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 650px) {
+  .entryPointMuligheder {
+    overflow-x: visible;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+
+  .entryPointContent {
+    flex: 0 0 100%;
+  }
 }
 
 
