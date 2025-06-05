@@ -7,174 +7,212 @@
     <meta name="description" content="" />
     <script src="./assets/js/app.js" defer></script>
     <link rel="stylesheet" href="./assets/css/styles.css" />
+
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_arrow_down"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
   </head>
-  <body>
-    <!-- desktop nav -->
-    <!-- inspiret af nedenstående tredjepartskode -->
-    <!-- W3Schools. (u.å.). How TO - Sub Navigation. Tilgængelig på: https://www.w3schools.com/howto/howto_css_subnav.asp [Tilgået 4. juni 2025]. -->
+  <body id="landingPage">
+    <header id="navHeader">
+      <!-- Desktop nav -->
+      <div class="DesktopNavWrapper">
+        <section class="content utilityBarSection">
+          <div id="utilityBar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="./optagelse.html"
+              ><button class="responsiveBtn">
+                <span class="btnText">Optagelse</span>
+              </button></a
+            >
 
-    <!-- <header>
-      <nav class="content">
-        <div class="utilities">
-          <img src="" alt="" />
-          <a href="./optagelse.html"
-            ><button class="responsiveBtn">
-              <span class="btnText">Optagelse</span>
-            </button></a
-          >
-        </div>
+            <a
+              href="https://sct-mariae-skole.m.skoleintra.dk/Account/IdpLogin?role=Parent&partnerSp=urn%3Aitslearning%3Ansi%3Asaml%3A2.0%3Asct-mariae-skole.skoleintra.dk"
+              >Forældreintra <i class="fa-solid fa-up-right-from-square"></i
+            ></a>
+            <a
+              href="https://sct-mariae-skole.m.skoleintra.dk/Account/IdpLogin?role=Student&partnerSp=urn%3Aitslearning%3Ansi%3Asaml%3A2.0%3Asct-mariae-skole.skoleintra.dk"
+              >Elevintra <i class="fa-solid fa-up-right-from-square"></i
+            ></a>
+            <a
+              href="https://sct-mariae-skole.m.skoleintra.dk/Account/IdpLogin?role=Teacher&partnerSp=urn%3Aitslearning%3Ansi%3Asaml%3A2.0%3Asct-mariae-skole.skoleintra.dk"
+              >Personleintra <i class="fa-solid fa-up-right-from-square"></i
+            ></a>
+          </div>
+        </section>
 
-        <div class="navbar">
-          <a href="./index.html" class="logo" id="logo">
+        <nav>
+          <div class="navbar">
+            <a href="./index.html" id="homeLink"
+              ><img
+                src="./assets/img/footer/logo.png"
+                alt="Sct. Mariæ skole logo"
+                id="logo"
+            /></a>
+            <div class="navLinks">
+              <div class="subnav">
+                <button class="subnavbtn">
+                  Sct. Mariæ skole <i class="fa-solid fa-angle-down"></i>
+                </button>
+                <div class="subnav-content" id="textAlignLeft">
+                  <a href="./omSctMarie.html">Sct. Mariæ Skole</a>
+                  <a href="./skolensHistorie.html">Skolens Historie</a>
+                  <a href="./detKatolskeAspekt.html">Det Katolske Aspekt</a>
+                  <a href="./voresVerdier.html">Vores Værdier</a>
+                  <a href="#">Skole bestyrelsen</a>
+                  <a href="#">Tilsyn og evaluering</a>
+                </div>
+              </div>
+              <div class="subnav">
+                <button class="subnavbtn">
+                  Big Band<i class="fa-solid fa-angle-down"></i>
+                </button>
+                <div class="subnav-content">
+                  <a href="#">Repetoire</a>
+                  <a href="#">Booking</a>
+                </div>
+              </div>
+              <div class="subnav">
+                <button class="subnavbtn">
+                  Undervisning<i class="fa-solid fa-angle-down"></i>
+                </button>
+                <div class="subnav-content">
+                  <a href="#">Talentundervisning</a>
+                  <a href="#">Special Undervisning</a>
+                  <a href="#">Undervisningsplaner</a>
+                </div>
+              </div>
+              <div class="subnav">
+                <button class="subnavbtn">
+                  SFO<i class="fa-solid fa-angle-down"></i>
+                </button>
+                <div class="subnav-content">
+                  <a href="#">SFO</a>
+                  <a href="#">Pædagogiske Principper</a>
+                </div>
+              </div>
+              <div class="subnav">
+                <button class="subnavbtn" id="subnavbtnLast">
+                  Praktisk Info<i class="fa-solid fa-angle-down"></i>
+                </button>
+                <div class="subnav-content">
+                  <a href="./kontakt.html">Kontakt</a>
+                  <a href="./faq.html">Ofte Stillede Spørgsmål</a>
+                  <a href="#">Praktisk information</a>
+                  <a href="#">For Forældre</a>
+                  <a href="#">Politikker</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="MobileNavWrapper">
+        <div class="mobile-header">
+          <a href="./index.html">
             <img
               src="./assets/img/footer/logo.png"
               alt="Sct. Mariæ skole logo"
+              class="mobile-logo"
             />
           </a>
-
-          <div class="subnav">
-            <button class="subnavbtn">
-              About <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="subnav-content">
-              <a href="#company">Company</a>
-              <a href="#team">Team</a>
-              <a href="#careers">Careers</a>
-            </div>
+          <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+          <div class="mobile-links">
+            <details>
+              <summary>
+                Sct. Mariæ skole
+                <i class="fa-solid fa-angle-down dropdown-icon"></i>
+              </summary>
+              <div class="mobilLinksContainer">
+                <a href="./omSctMarie.html">Sct. Mariæ Skole</a>
+                <a href="./skolensHistorie.html">Skolens Historie</a>
+                <a href="./detKatolskeAspekt.html">Det Katolske Aspekt</a>
+                <a href="./voresVerdier.html">Vores Værdier</a>
+                <a href="#">Skole bestyrelsen</a>
+                <a href="#">Tilsyn og evaluering</a>
+              </div>
+            </details>
+            <details>
+              <summary>
+                Praktisk Info
+                <i class="fa-solid fa-angle-down dropdown-icon"></i>
+              </summary>
+              <div class="mobilLinksContainer">
+                <a href="./kontakt.html">Kontakt</a>
+                <a href="./faq.html">Ofte Stillede Spørgsmål</a>
+                <a href="#">Praktisk information</a>
+                <a href="#">For Forældre</a>
+                <a href="#">Politikker</a>
+              </div>
+            </details>
+            <details>
+              <summary>
+                Big Band <i class="fa-solid fa-angle-down dropdown-icon"></i>
+              </summary>
+              <div class="mobilLinksContainer">
+                <a href="#">Repetoire</a>
+                <a href="#">Booking</a>
+              </div>
+            </details>
+            <details>
+              <summary>
+                Undervisning
+                <i class="fa-solid fa-angle-down dropdown-icon"></i>
+              </summary>
+              <div class="mobilLinksContainer">
+                <a href="#">Talentundervisning</a>
+                <a href="#">Special Undervisning</a>
+                <a href="#">Undervisningsplaner</a>
+              </div>
+            </details>
+            <details>
+              <summary class="borderBottom">
+                SFO <i class="fa-solid fa-angle-down dropdown-icon"></i>
+              </summary>
+              <div class="mobilLinksContainer">
+                <a href="#">SFO</a>
+                <a href="#">Pædagogiske Principper</a>
+              </div>
+            </details>
           </div>
-          <div class="subnav">
-            <button class="subnavbtn">
-              Services <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="subnav-content">
-              <a href="#bring">Bring</a>
-              <a href="#deliver">Deliver</a>
-              <a href="#package">Package</a>
-              <a href="#express">Express</a>
+          <div class="mobile-utility">
+            <div>
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <a href="./optagelse.html">
+                <button class="responsiveBtn">
+                  <span class="btnText">Optagelse</span>
+                </button>
+              </a>
             </div>
-          </div>
-          <div class="subnav">
-            <button class="subnavbtn">
-              Partners <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="subnav-content">
-              <a href="#link1">Link 1</a>
-              <a href="#link2">Link 2</a>
-              <a href="#link3">Link 3</a>
-              <a href="#link4">Link 4</a>
+            <div>
+              <a
+                href="https://sct-mariae-skole.m.skoleintra.dk/Account/IdpLogin?role=Parent&partnerSp=urn%3Aitslearning%3Ansi%3Asaml%3A2.0%3Asct-mariae-skole.skoleintra.dk"
+                >Forældreintra <i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+              <a
+                href="https://sct-mariae-skole.m.skoleintra.dk/Account/IdpLogin?role=Student&partnerSp=urn%3Aitslearning%3Ansi%3Asaml%3A2.0%3Asct-mariae-skole.skoleintra.dk"
+                >Elevintra <i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+              <a
+                href="https://sct-mariae-skole.m.skoleintra.dk/Account/IdpLogin?role=Teacher&partnerSp=urn%3Aitslearning%3Ansi%3Asaml%3A2.0%3Asct-mariae-skole.skoleintra.dk"
+                >Personleintra <i class="fa-solid fa-up-right-from-square"></i
+              ></a>
             </div>
           </div>
         </div>
-      </nav>
-    </header> -->
-    <!-- <header class="navbar">
-      <nav class="nav-container">
-        <a href="./index.html" class="logo" id="logo">
-          <img src="./assets/img/footer/logo.png" alt="Sct. Mariæ skole logo" />
-        </a>
-        <div class="menu-toggle" id="menuToggle">&#9776;</div>
-        <ul class="nav-links" id="navLinks">
-          <li>
-            <a href="#">Om Skolen</a>
-            <ul class="dropdown">
-              <li><a href="#">Historie</a></li>
-              <li><a href="#">Vision</a></li>
-              <li><a href="#">Personale</a></li>
-              <li><a href="#">Værdier</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Undervisning</a>
-            <ul class="dropdown">
-              <li><a href="#">Indskoling</a></li>
-              <li><a href="#">Mellemtrin</a></li>
-              <li><a href="#">Udskoling</a></li>
-              <li><a href="#">Specialtilbud</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Aktiviteter</a>
-            <ul class="dropdown">
-              <li><a href="#">Musik</a></li>
-              <li><a href="#">Idræt</a></li>
-              <li><a href="#">Kreativ</a></li>
-              <li><a href="#">Udeliv</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Kontakt</a>
-            <ul class="dropdown">
-              <li><a href="#">Adresse</a></li>
-              <li><a href="#">Tilmelding</a></li>
-              <li><a href="#">Ny elev</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Kontakt</a>
-            <ul class="dropdown">
-              <li><a href="#">Adresse</a></li>
-              <li><a href="#">Tilmelding</a></li>
-              <li><a href="#">Ny elev</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-    </header> -->
-    <nav class="desktop-nav">
-      <a href="./index.html" class="logo" id="logo">
-        <img src="./assets/img/footer/logo.png" alt="Sct. Mariæ skole logo" />
-      </a>
-      <div class="nav-container">
-        <ul class="first-tier">
-          <li>
-            <a href="#">Om Skolen</a>
-            <ul class="second-tier">
-              <li><a href="#">Historie</a></li>
-              <li><a href="#">Mission</a></li>
-              <li><a href="#">Værdier</a></li>
-              <li><a href="#">Teamet</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Undervisning</a>
-            <ul class="second-tier">
-              <li><a href="#">Fag</a></li>
-              <li><a href="#">Kreative fag</a></li>
-              <li><a href="#">Trivsel</a></li>
-              <li><a href="#">Skema</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Kontakt</a>
-            <ul class="second-tier">
-              <li><a href="#">Find vej</a></li>
-              <li><a href="#">Book møde</a></li>
-              <li><a href="#">Ledelse</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Kontakt</a>
-            <ul class="second-tier">
-              <li><a href="#">Find vej</a></li>
-              <li><a href="#">Book møde</a></li>
-              <li><a href="#">Ledelse</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
-          </li>
-        </ul>
       </div>
-    </nav>
+    </header>
+
     <main>
       <section class="content heroSection">
         <div class="textContentLanding">
@@ -189,13 +227,12 @@
             </button></a
           >
         </div>
-        <div class="landingHero">
-          <img
-            src="assets/img/forside/hero.webp"
-            alt="Elever fra Sct. Mariæ skole"
-            class="responsiveImg align-right"
-          />
-        </div>
+
+        <img
+          src="assets/img/forside/hero.webp"
+          alt="Elever fra Sct. Mariæ skole"
+          class="responsiveImg align-right"
+        />
       </section>
 
       <div class="valueModalContainer hidden" id="valueModalContainer">
@@ -366,7 +403,7 @@
           <a href="#">Økonomi</a>
           <a href="#">For forældre</a>
           <a href="#">Politikker</a>
-          <a href="./faq.html">FAQ</a>
+          <a href="./faq.html">Ofte stillede spørgsmål</a>
         </div>
         <div class="optagelseFooter">
           <a href="./optagelse.html"
@@ -431,7 +468,7 @@
             <a href="#">Økonomi</a>
             <a href="#">For forældre</a>
             <a href="#">Politikker</a>
-            <a href="./faq.html">FAQ</a>
+            <a href="./faq.html">Ofte Stillede Spørgsmål</a>
           </div>
         </details>
       </div>
