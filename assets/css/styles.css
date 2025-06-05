@@ -540,6 +540,23 @@ nav {
 
 
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.page-fade-in {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
 /* landingpage start --------------------------------------------------------*/
 
 
@@ -1369,8 +1386,8 @@ section.content.utilityBarSection {
 
 /* Background image (inside the SVG shape) */
 .maskSvgImg1{
-  mask-image: url(../img/sctMarie/shape1.svg);
-  mask-repeat: no-repeat;
+  /* mask-image: url(../img/sctMarie/shape1.svg);
+  mask-repeat: no-repeat; */
   width: 100%;
   max-width: 40vmax;
   z-index: 2;
@@ -1447,6 +1464,11 @@ section.content.utilityBarSection {
 }
 
 @media screen and (max-width: 950px) {
+  .udforskSkoleEntryPoint{
+    display: flex;
+  flex-direction: column;
+}
+
 
 
    #arstal {
@@ -1477,11 +1499,7 @@ section.content.utilityBarSection {
     font-size: 0.6rem;
     padding: 0.3rem 0.5rem;
   }
-  .udforskSkoleEntryPoint{
-    flex-wrap: wrap;
-    align-content: center;
-  
-}
+ 
 .custom-shape-card{
   margin-bottom: 3vmax;
 }
