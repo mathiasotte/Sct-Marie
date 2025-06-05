@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sct. Mariæ skoles vedtægter</title>
-    <meta name="description" content="Her kan du læse om Sct. Mariæ skoles vedtægter" />
+    <meta
+      name="description"
+      content="Her kan du læse om Sct. Mariæ skoles vedtægter"
+    />
     <script src="./assets/js/app.js" defer></script>
     <script src="./assets/js/app.js" defer></script>
     <link rel="stylesheet" href="./assets/css/styles.css" />
-
+    <link rel="icon" type="image/png" href="./assets/img/Favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -17,21 +19,191 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header id="navHeader">
-        <!-- Desktop nav -->
-        <div class="DesktopNavWrapper">
-          <section class="content utilityBarSection">
-            <div id="utilityBar">
+      <!-- Desktop nav -->
+      <div class="DesktopNavWrapper">
+        <section class="content utilityBarSection">
+          <div id="utilityBar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="./optagelse.html"
+              ><button class="responsiveBtn">
+                <span class="btnText">Optagelse</span>
+              </button></a
+            >
+
+            <a
+              href="https://sct-mariae-skole.m.skoleintra.dk/Account/IdpLogin?role=Parent&partnerSp=urn%3Aitslearning%3Ansi%3Asaml%3A2.0%3Asct-mariae-skole.skoleintra.dk"
+              >Forældreintra <i class="fa-solid fa-up-right-from-square"></i
+            ></a>
+            <a
+              href="https://sct-mariae-skole.m.skoleintra.dk/Account/IdpLogin?role=Student&partnerSp=urn%3Aitslearning%3Ansi%3Asaml%3A2.0%3Asct-mariae-skole.skoleintra.dk"
+              >Elevintra <i class="fa-solid fa-up-right-from-square"></i
+            ></a>
+            <a
+              href="https://sct-mariae-skole.m.skoleintra.dk/Account/IdpLogin?role=Teacher&partnerSp=urn%3Aitslearning%3Ansi%3Asaml%3A2.0%3Asct-mariae-skole.skoleintra.dk"
+              >Personleintra <i class="fa-solid fa-up-right-from-square"></i
+            ></a>
+          </div>
+        </section>
+
+        <nav>
+          <div class="navbar">
+            <a href="./index.html" id="homeLink"
+              ><img
+                src="./assets/img/footer/logo.png"
+                alt="Sct. Mariæ skole logo"
+                id="logo"
+            /></a>
+            <div class="navLinks">
+              <div class="subnav">
+                <button class="subnavbtn">
+                  Sct. Mariæ skole <i class="fa-solid fa-angle-down"></i>
+                </button>
+                <div class="subnav-content" id="textAlignLeft">
+                  <a href="./omSctMarie.html">Sct. Mariæ Skole</a>
+                  <a href="./skolensHistorie.html">Skolens Historie</a>
+                  <a href="./detKatolskeAspekt.html">Det Katolske Aspekt</a>
+                  <a href="./voresVerdier.html">Vores Værdier</a>
+                  <a href="#">Skole bestyrelsen</a>
+                  <a href="#">Tilsyn og evaluering</a>
+                </div>
+              </div>
+              <div class="subnav">
+                <button class="subnavbtn">
+                  Big Band<i class="fa-solid fa-angle-down"></i>
+                </button>
+                <div class="subnav-content">
+                  <a href="#">Repetoire</a>
+                  <a href="#">Booking</a>
+                </div>
+              </div>
+              <div class="subnav">
+                <button class="subnavbtn">
+                  Undervisning<i class="fa-solid fa-angle-down"></i>
+                </button>
+                <div class="subnav-content">
+                  <a href="#">Talentundervisning</a>
+                  <a href="#">Special Undervisning</a>
+                  <a href="#">Undervisningsplaner</a>
+                </div>
+              </div>
+              <div class="subnav">
+                <button class="subnavbtn">
+                  SFO<i class="fa-solid fa-angle-down"></i>
+                </button>
+                <div class="subnav-content">
+                  <a href="#">SFO</a>
+                  <a href="#">Pædagogiske Principper</a>
+                </div>
+              </div>
+              <div class="subnav">
+                <button class="subnavbtn" id="subnavbtnLast">
+                  Praktisk Info<i class="fa-solid fa-angle-down"></i>
+                </button>
+                <div class="subnav-content">
+                  <a href="./kontakt.html">Kontakt</a>
+                  <a href="./faq.html">Ofte Stillede Spørgsmål</a>
+                  <a href="#">Praktisk information</a>
+                  <a href="#">For Forældre</a>
+                  <a href="#">Politikker</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="MobileNavWrapper">
+        <div class="mobile-header">
+          <a href="./index.html">
+            <img
+              src="./assets/img/footer/logo.png"
+              alt="Sct. Mariæ skole logo"
+              class="mobile-logo"
+            />
+          </a>
+          <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+          <div class="mobile-links">
+            <details>
+              <summary>
+                Sct. Mariæ skole
+                <i class="fa-solid fa-angle-down dropdown-icon"></i>
+              </summary>
+              <div class="mobilLinksContainer">
+                <a href="./omSctMarie.html">Sct. Mariæ Skole</a>
+                <a href="./skolensHistorie.html">Skolens Historie</a>
+                <a href="./detKatolskeAspekt.html">Det Katolske Aspekt</a>
+                <a href="./voresVerdier.html">Vores Værdier</a>
+                <a href="#">Skole bestyrelsen</a>
+                <a href="#">Tilsyn og evaluering</a>
+              </div>
+            </details>
+            <details>
+              <summary>
+                Praktisk Info
+                <i class="fa-solid fa-angle-down dropdown-icon"></i>
+              </summary>
+              <div class="mobilLinksContainer">
+                <a href="./kontakt.html">Kontakt</a>
+                <a href="./faq.html">Ofte Stillede Spørgsmål</a>
+                <a href="#">Praktisk information</a>
+                <a href="#">For Forældre</a>
+                <a href="#">Politikker</a>
+              </div>
+            </details>
+            <details>
+              <summary>
+                Big Band <i class="fa-solid fa-angle-down dropdown-icon"></i>
+              </summary>
+              <div class="mobilLinksContainer">
+                <a href="#">Repetoire</a>
+                <a href="#">Booking</a>
+              </div>
+            </details>
+            <details>
+              <summary>
+                Undervisning
+                <i class="fa-solid fa-angle-down dropdown-icon"></i>
+              </summary>
+              <div class="mobilLinksContainer">
+                <a href="#">Talentundervisning</a>
+                <a href="#">Special Undervisning</a>
+                <a href="#">Undervisningsplaner</a>
+              </div>
+            </details>
+            <details>
+              <summary class="borderBottom">
+                SFO <i class="fa-solid fa-angle-down dropdown-icon"></i>
+              </summary>
+              <div class="mobilLinksContainer">
+                <a href="#">SFO</a>
+                <a href="#">Pædagogiske Principper</a>
+              </div>
+            </details>
+          </div>
+          <div class="mobile-utility">
+            <div>
               <i class="fa-solid fa-magnifying-glass"></i>
-              <a href="./optagelse.html"
-                ><button class="responsiveBtn">
+              <a href="./optagelse.html">
+                <button class="responsiveBtn">
                   <span class="btnText">Optagelse</span>
-                </button></a
-              >
-  
+                </button>
+              </a>
+            </div>
+            <div>
               <a
                 href="https://sct-mariae-skole.m.skoleintra.dk/Account/IdpLogin?role=Parent&partnerSp=urn%3Aitslearning%3Ansi%3Asaml%3A2.0%3Asct-mariae-skole.skoleintra.dk"
                 >Forældreintra <i class="fa-solid fa-up-right-from-square"></i
@@ -45,1153 +217,817 @@
                 >Personleintra <i class="fa-solid fa-up-right-from-square"></i
               ></a>
             </div>
-          </section>
-  
-          <nav>
-            <div class="navbar">
-              <a href="./index.html" id="homeLink"
-                ><img
-                  src="./assets/img/footer/logo.png"
-                  alt="Sct. Mariæ skole logo"
-                  id="logo"
-              /></a>
-              <div class="navLinks">
-                <div class="subnav">
-                  <button class="subnavbtn">
-                    Sct. Mariæ skole <i class="fa-solid fa-angle-down"></i>
-                  </button>
-                  <div class="subnav-content" id="textAlignLeft">
-                    <a href="./omSctMarie.html">Sct. Mariæ Skole</a>
-                    <a href="./skolensHistorie.html">Skolens Historie</a>
-                    <a href="./detKatolskeAspekt.html">Det Katolske Aspekt</a>
-                    <a href="./voresVerdier.html">Vores Værdier</a>
-                    <a href="#">Skole bestyrelsen</a>
-                    <a href="#">Tilsyn og evaluering</a>
-                  </div>
-                </div>
-                <div class="subnav">
-                  <button class="subnavbtn">
-                    Big Band<i class="fa-solid fa-angle-down"></i>
-                  </button>
-                  <div class="subnav-content">
-                    <a href="#">Repetoire</a>
-                    <a href="#">Booking</a>
-                  </div>
-                </div>
-                <div class="subnav">
-                  <button class="subnavbtn">
-                    Undervisning<i class="fa-solid fa-angle-down"></i>
-                  </button>
-                  <div class="subnav-content">
-                    <a href="#">Talentundervisning</a>
-                    <a href="#">Special Undervisning</a>
-                    <a href="#">Undervisningsplaner</a>
-                  </div>
-                </div>
-                <div class="subnav">
-                  <button class="subnavbtn">
-                    SFO<i class="fa-solid fa-angle-down"></i>
-                  </button>
-                  <div class="subnav-content">
-                    <a href="#">SFO</a>
-                    <a href="#">Pædagogiske Principper</a>
-                  </div>
-                </div>
-                <div class="subnav">
-                  <button class="subnavbtn" id="subnavbtnLast">
-                    Praktisk Info<i class="fa-solid fa-angle-down"></i>
-                  </button>
-                  <div class="subnav-content">
-                    <a href="./kontakt.html">Kontakt</a>
-                    <a href="./faq.html">Ofte Stillede Spørgsmål</a>
-                    <a href="#">Praktisk information</a>
-                    <a href="#">For Forældre</a>
-                    <a href="#">Politikker</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </nav>
-        </div>
-  
-        <div class="MobileNavWrapper">
-          <div class="mobile-header">
-            <a href="./index.html">
-              <img
-                src="./assets/img/footer/logo.png"
-                alt="Sct. Mariæ skole logo"
-                class="mobile-logo"
-              />
-            </a>
-            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </button>
-          </div>
-          <div class="mobile-menu" id="mobileMenu">
-            <div class="mobile-links">
-              <details>
-                <summary>
-                  Sct. Mariæ skole
-                  <i class="fa-solid fa-angle-down dropdown-icon"></i>
-                </summary>
-                <div class="mobilLinksContainer">
-                  <a href="./omSctMarie.html">Sct. Mariæ Skole</a>
-                  <a href="./skolensHistorie.html">Skolens Historie</a>
-                  <a href="./detKatolskeAspekt.html">Det Katolske Aspekt</a>
-                  <a href="./voresVerdier.html">Vores Værdier</a>
-                  <a href="#">Skole bestyrelsen</a>
-                  <a href="#">Tilsyn og evaluering</a>
-                </div>
-              </details>
-              <details>
-                <summary>
-                  Praktisk Info
-                  <i class="fa-solid fa-angle-down dropdown-icon"></i>
-                </summary>
-                <div class="mobilLinksContainer">
-                  <a href="./kontakt.html">Kontakt</a>
-                  <a href="./faq.html">Ofte Stillede Spørgsmål</a>
-                  <a href="#">Praktisk information</a>
-                  <a href="#">For Forældre</a>
-                  <a href="#">Politikker</a>
-                </div>
-              </details>
-              <details>
-                <summary>
-                  Big Band <i class="fa-solid fa-angle-down dropdown-icon"></i>
-                </summary>
-                <div class="mobilLinksContainer">
-                  <a href="#">Repetoire</a>
-                  <a href="#">Booking</a>
-                </div>
-              </details>
-              <details>
-                <summary>
-                  Undervisning
-                  <i class="fa-solid fa-angle-down dropdown-icon"></i>
-                </summary>
-                <div class="mobilLinksContainer">
-                  <a href="#">Talentundervisning</a>
-                  <a href="#">Special Undervisning</a>
-                  <a href="#">Undervisningsplaner</a>
-                </div>
-              </details>
-              <details>
-                <summary class="borderBottom">
-                  SFO <i class="fa-solid fa-angle-down dropdown-icon"></i>
-                </summary>
-                <div class="mobilLinksContainer">
-                  <a href="#">SFO</a>
-                  <a href="#">Pædagogiske Principper</a>
-                </div>
-              </details>
-            </div>
-            <div class="mobile-utility">
-              <div>
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <a href="./optagelse.html">
-                  <button class="responsiveBtn">
-                    <span class="btnText">Optagelse</span>
-                  </button>
-                </a>
-              </div>
-              <div>
-                <a
-                  href="https://sct-mariae-skole.m.skoleintra.dk/Account/IdpLogin?role=Parent&partnerSp=urn%3Aitslearning%3Ansi%3Asaml%3A2.0%3Asct-mariae-skole.skoleintra.dk"
-                  >Forældreintra <i class="fa-solid fa-up-right-from-square"></i
-                ></a>
-                <a
-                  href="https://sct-mariae-skole.m.skoleintra.dk/Account/IdpLogin?role=Student&partnerSp=urn%3Aitslearning%3Ansi%3Asaml%3A2.0%3Asct-mariae-skole.skoleintra.dk"
-                  >Elevintra <i class="fa-solid fa-up-right-from-square"></i
-                ></a>
-                <a
-                  href="https://sct-mariae-skole.m.skoleintra.dk/Account/IdpLogin?role=Teacher&partnerSp=urn%3Aitslearning%3Ansi%3Asaml%3A2.0%3Asct-mariae-skole.skoleintra.dk"
-                  >Personleintra <i class="fa-solid fa-up-right-from-square"></i
-                ></a>
-              </div>
-            </div>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <main>
-    <section class="content heroSectionMain">
+    <main>
+      <section class="content heroSectionMain">
         <div class="textContentLanding">
-            <h1>Vedtægter</h1>
-            <h3>For den selvejende institution Sct. Mariæ Skolen</h3>
-            <p>
-                Sct. Mariæ Skoles vedtægter beskriver skolens formål, værdigrundlag og organisatoriske rammer. De
-                sikrer, at skolen drives i overensstemmelse med både lovgivning og vores katolske værdier.
-            </p>
+          <h1>Vedtægter</h1>
+          <h3>For den selvejende institution Sct. Mariæ Skolen</h3>
+          <p>
+            Sct. Mariæ Skoles vedtægter beskriver skolens formål, værdigrundlag
+            og organisatoriske rammer. De sikrer, at skolen drives i
+            overensstemmelse med både lovgivning og vores katolske værdier.
+          </p>
         </div>
-    </section>
-    <section class="content" id="vedtaegterIndhold">
+      </section>
+      <section class="content" id="vedtaegterIndhold">
         <div class="doubleBorder">
-            <details>
-                <summary>
-                    <p>I. Skolens navn, adressen, hjemsted og status</p>
-                </summary>
-                <div>
-                    <p class="boldVedtaegter paragraf">§1</p>
-                    <p>
-                        Skolens navn er "Den selvejende institution Sct. Mariæ Skolen". Skolen er oprettet i året 1899
-                    </p>
-                    <p><span class="boldVedtaegter">Stk. 2.</span> Skolens hjemsted er Aalborz kemmune, Skolen driver
-                        virksomhed fra adressen
-                        Valdemarsgade 14, 9000 Aalborg</p>
-                    <p><span class="boldVedtaegter">Stk. 3.</span> Skolen er en selvejende uddannelsemnstitution, der i
-                        sit virke er uafhzengig. Skolen har CVR- ar. 65521911</p>
-                </div>
-            </details>
+          <details>
+            <summary>
+              <p>I. Skolens navn, adressen, hjemsted og status</p>
+            </summary>
+            <div>
+              <p class="boldVedtaegter paragraf">§1</p>
+              <p>
+                Skolens navn er "Den selvejende institution Sct. Mariæ Skolen".
+                Skolen er oprettet i året 1899
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 2.</span> Skolens hjemsted er
+                Aalborz kemmune, Skolen driver virksomhed fra adressen
+                Valdemarsgade 14, 9000 Aalborg
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 3.</span> Skolen er en
+                selvejende uddannelsemnstitution, der i sit virke er uafhzengig.
+                Skolen har CVR- ar. 65521911
+              </p>
+            </div>
+          </details>
         </div>
         <div class="singleBorder">
-            <details>
-                <summary>
-                    <p>II. Skolens formål</p>
-                </summary>
-                <div>
-                    <p class="boldVedtaegter paragraf">§2</p>
-                    <p>Sct. Mariæ Skolen bygger hele sit virke på det katolsk-kristne livs- og menneskesyn og har som
-                        sit særlige kendetegn til formål at skabe et værdibaseret skolemiljø, hvor Evangeliets ånd af
-                        frihed og kærlighed er levende.</p>
-                    <p><span class="boldVedtaegter">Stk. 2.</span> På Sct. Mariæ Skole skabes rammerne for, at den
-                        enkeltes indsigt i kristendommen vokser, og at den enkeltes tro afklares og modnes.</p>
-                    <p><span class="boldVedtaegter">Stk. 3.</span> På Sct. Mariæ Skole er sin økumeniske opgave bevidst.
-                    </p>
-                    <p><span class="boldVedtaegter">Stk. 4.</span> Sct. Mariæ Skole skal søge at danne og uddanne
-                        eleverne til demokrati og ligeværd som en livsholdning.</p>
-                    <p><span class="boldVedtaegter">Stk. 5.</span> På Sct. Mariæ skole skal elever i frihed udvikle sine
-                        evner og særlige potentialer til gavn for den enkelte og fællesskabet.</p>
-                    <p><span class="boldVedtaegter">Stk. 6.</span> Sct. Mariæ Skolen skal styrke elevernes mod til at
-                        træffe etisk funderede valg.</p>
-                    <p><span class="boldVedtaegter">Stk. 7.</span> Skolen drives efter de til enhver tid gældende love
-                        og andre regler for friskoler og private grundskoler m. v.</p>
-                    <p><span class="boldVedtaegter">Stk. 8.</span> Skolen skal give en undervisning, som står mål med,
-                        hvad der almindeligvis kræves i folkeskolen.</p>
-                    <p><span class="boldVedtaegter">Stk. 9.</span> Skolen skal forberede eleverne til at leve i et
-                        samfund med frihed og folkestyr.</p>
-                </div>
-            </details>
+          <details>
+            <summary>
+              <p>II. Skolens formål</p>
+            </summary>
+            <div>
+              <p class="boldVedtaegter paragraf">§2</p>
+              <p>
+                Sct. Mariæ Skolen bygger hele sit virke på det katolsk-kristne
+                livs- og menneskesyn og har som sit særlige kendetegn til formål
+                at skabe et værdibaseret skolemiljø, hvor Evangeliets ånd af
+                frihed og kærlighed er levende.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 2.</span> På Sct. Mariæ Skole
+                skabes rammerne for, at den enkeltes indsigt i kristendommen
+                vokser, og at den enkeltes tro afklares og modnes.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 3.</span> På Sct. Mariæ Skole
+                er sin økumeniske opgave bevidst.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 4.</span> Sct. Mariæ Skole
+                skal søge at danne og uddanne eleverne til demokrati og ligeværd
+                som en livsholdning.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 5.</span> På Sct. Mariæ skole
+                skal elever i frihed udvikle sine evner og særlige potentialer
+                til gavn for den enkelte og fællesskabet.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 6.</span> Sct. Mariæ Skolen
+                skal styrke elevernes mod til at træffe etisk funderede valg.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 7.</span> Skolen drives efter
+                de til enhver tid gældende love og andre regler for friskoler og
+                private grundskoler m. v.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 8.</span> Skolen skal give en
+                undervisning, som står mål med, hvad der almindeligvis kræves i
+                folkeskolen.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 9.</span> Skolen skal
+                forberede eleverne til at leve i et samfund med frihed og
+                folkestyr.
+              </p>
+            </div>
+          </details>
         </div>
         <div class="singleBorder">
-            <details>
-                <summary>
-                    <p>III. Skolens bestyrelse og leder</p>
-                </summary>
-                <div>
-                    <p class="boldVedtaegter paragraf">§3</p>
-                    <p>Skolens bestyrelse varetager den overordnede ledelse af skolen og er ansvarlig over for
-                        undervisningsministeren for, at skolens økonomi og drift - herunder forvaltningen af de
-                        statslige tilskud - er i overensstemmelse med skolens vedtægt og med de til enhver til glædende
-                        love og andre regler for friskoler og privatskoler.</p>
-                    <p><span class="boldVedtaegter">Stk. 2.</span> Skolens leder varetager den daglige pædagogiske
-                        ledelse af skolen, jfr. §6, stk. 1 i lov om friskoler og private grundskoler m.v. Skolens leder
-                        har tillige ansvaret for, at den daglige drift af skolen er forsvarlig og i overensstemmelse med
-                        gældende regler og vilkår.</p>
-                    <p><span class="boldVedtaegter">Stk. 3.</span> Bestyrelsen består af 5 medlemmer, der for to år ad
-                        gangen udpeges/vælges således:</p>
-                    <ol type="a">
-                        <li>Et medlem udpeges af den katolske kirkes pastoralråd</li>
-                        <li>Et medlem udpeges af den katolske biskop af København</li>
-                        <li>Et medlem udpeges af menighedsrådet ved Sct. Mariæ Kirke</li>
-                        <li>To medlemmer vælges af og blandt forældrene til elever på skolen (forældrekredsen) efter
-                            reglerne i bekendtgørelsen om valg af tilsynsførende.</li>
-                    </ol>
-                    <p><span class="boldVedtaegter">Stk. 4.</span> De under stk. 3 litra aog b udpegede
-                        bestyrelsesmedlemmer samt det ene under litra d. valgte medlem afgår i ulige årstal pr. den 1.
-                        januar, medens det andet under litra d. valgte medlem og det under litra c udpegede medlem afgår
-                        i lige årstal ligeledes pr. den 1. januar. Hvert år vælges for et år et af forældrekredsen
-                        fastsat antal suppleanter for de under litra d nævnte medlemmer. Suppleanterne optages
-                        automatisk i bestyrelsen, hvis en eller begge medlemmer nævnt under litra d træder ud af
-                        bestyrelsen.</p>
-                    <p><span class="boldVedtaegter">Stk. 5.</span> Meddelelse om, hvem der er udpeget som
-                        bestyrelsesmedlemmer i henhold til § 3, stk. 3, litra a, b og c, afgives ekriftligt senest den 1
-                        december i det ár, hvor udpeg* ningen har fundet sted.</p>
-                    <p><span class="boldVedtaegter">Stk. 6.</span> Bestyrelsesmedlemmerne kan ikke afsttes i funktions
-                        perioden.</p>
-                    <p><span class="boldVedtaegter">Stk. 7.</span> De under stk. 3 litra d. valgte bestyrelsesmedlemmer
-                        skal ikke udtrade al be-styrelsen, hvis deres bern i valgperioden udskrives af skelen mod
-                        foreldrenes enske.</p>
-                    <p><span class="boldVedtaegter">Stk. 8.</span> Bestyrelsen ber sà vidt muligt have en afbalanceret
-                        sammensatning al lvinder og meend jfr. § 11, stk. 2 i lov om ligestilling af kvinder og mend.
-                    </p>
-                    <p><span class="boldVedtaegter">Stk. 9.</span> Skolens ansatte kan ikke viere medlem af bestyrelsen
-                        og kan kun deltage i valg af bestyrelsen, när disse samtidigt er mediem af forteldrekredsen.
-                        Bestyrelsen kan be-slutte, at skolens ledelse, det vil eige skolelederen og viceinspektaren,
-                        samt en reprie-sentant for de ansatte kan deltage i bestyrelsens meder uden stemmeret. Ved
-                        behandling af enkeltsager, der vedrerer personer i «kolen= ledelse eller enkelte ansatte, kan
-                        bestyrelsen surpendere mededeltagelsen for en. Dere eller alle de pâgrldende.</p>
-                    <p><span class="boldVedtaegter">Stk. 10.</span> Bestyrelsesmedlemmerne er ikke ved udovelson af
-                        bestyrelseshvervet under givet beslutninger truftet af den organisation, institution, forening
-                        eller lignende, som har valgt eller udpeget den pägreldende.</p>
-                    <p><span class="boldVedtaegter">Stk. 11.</span> Bestyrelsen konstituerer sig colv af sin midte med
-                        formand og nestformand. Nestformanden trader i formandens sted ved formandens forfald</p>
-                    <p><span class="boldVedtaegter">Stk. 12.</span> Bestyrelsesmediemmerne skal vere myndige, og mindet
-                        et fertal, herunder formanden, «kal viere rezistreret i CPR med bopil i Danmark</p>
-                    <p><span class="boldVedtaegter">Stk. 13.</span> Bestyrelsesmedlemmer hrefter ikke personligt for
-                        skolena geld, men kan blive ansvarlig efter dansk rete almindelige erstatning-regler.</p>
-                    <p><span class="boldVedtaegter">Stk. 14.</span> Bestyrelsesmedlemmerne kan ikke modtage honorar af
-                        skolens midler for varetagelsen af hvervet som bestyrelsesmedlem.</p>
-                    <p><span class="boldVedtaegter">Stk. 15.</span> Et bestyrelsesmedlem udtreeder af bestyrelsen
-                        ojeblikkeligt, hvis medlemmet ikke lngere opfylder habilitetsbetingelserne for at vare medlem af
-                        bestyrelsen jfr. lov om friskoler og private grundskoler m.v. og bekendtgerelsen om vedtaegter
-                        for fri-ekoler og private grundskoler m.v.</p>
-                    <p><span class="boldVedtaegter">Stk. 16.</span> I tilfzelde af et bestyrelsesmedlems udtrreden i
-                        funktionsperioden feks. ved generel inhabilitet indtrieder suppleanten i den pägeldendes
-                        resterende funktionspe* riode. Hvis dette ikke er muligt, skal der valges henholdsvis udpeger et
-                        nyt medlem hurtigst muligt for resten af perioden. Yed supplering af bestyrelsen i
-                        funktionsperio-den skal antallet af medlemmer (to) valgt af og blandt foreldrekredsens medlommer
-                        opretholdes.</p>
-                    <p><span class="boldVedtaegter">Stk. 17.</span> For bestyrelsen, lederen og andre ansatte ved skolen
-                        samt den eller de tilsyns foronde grelder i ovrigt bestemmelserne i forvaltningslovens kapitel 2
-                        om inhabilitet og kapitel 8 om tavshedspligt m.v.</p>
-                    <p><span class="boldVedtaegter">Stk. 18.</span> Bestyrelsen er beslutningsdygtig, när mindst
-                        halvdelen al medlemmerne er modt personligt frem. Bestyrelsen triefler beslutninger ved
-                        almindelig stemmeflerhed. idet en rrekke beslutninger dog alene kan triefles ved sarlig
-                        majoritet jfr. 9 3, stk, 22. og § 10, stk. 2. Der kan ikke stemmes ved fuldmagt eller ved brev.
-                        Ved stemmelighed er formandens - og i dennes fraveer nestformandens - etemme udslagegivende.</p>
-                    <p><span class="boldVedtaegter">Stk. 19.</span> Bestyrelsen skal fore protokol over eine
-                        beslutnunger. Ethyert bestyrelsesmed-lem har ret til at fä fort sin afvigende mening til
-                        protokole. Protokollen skal underskrives af de mediemmer, der har doltaget z modet. Konstateret
-                        inhabilitot skal indfo-ros i protokollen.</p>
-                    <p><span class="boldVedtaegter">Stk. 20.</span> Bestyrelsen fastswtter en forretninesorden for sin
-                        vurksomhed, der mindst skal indeholde bestemmelser om. hvordan indkaldelse til bestyrelsesmoder
-                        skal ske. Forretningsordenen optages som bilag til vedtegten.</p>
-                    <p><span class="boldVedtaegter">Stk. 21.</span> Bestyrelsen ansetter of afskediger «kolene leder og
-                        «kolen» ovrige personale. Kompetencen til at ansette og af-kedige «kolens ovrige personale kan
-                        bestyrelsen de legere til skolen» leder, idet «kolelederen dos, udea at delegation er nodvendig,
-                        til en-hver tid pà egen hind kan ansiette og af-kedige vikarer of andea midiertidig med-hjelp
-                        til kortvarie tjeneste</p>
-                    <p><span class="boldVedtaegter">Stk. 22.</span> Bestyrelsen treffer beslutming om keb, cale of
-                        pantsetning af fast ejendom. Til beslutning om keb, salg og pantsetning af tast ejendom samt om
-                        andre viesentlige kebs og lejekontrakter krieves det, at mindst 3 medlemmer stemmer herfor.</p>
-                    <p><span class="boldVedtaegter">Stk. 23.</span> Bestyrelsen fastsatter sterrelsen af skolepengene og
-                        sterrelsen af foraeldrebe-talingen for skolefritidsordningen.</p>
-                    <p><span class="boldVedtaegter">Stk. 24.</span> Bestyrelsen traeffer beslutning om ethvert
-                        overordnet spergsmäl om skolen, som bestyrelsen selv ensker at triffe beslutning om, jfr. dog
-                        bestemmelsen i § 3 stk. 2 om, at skolens leder har den daglige paedagogiske ledelse af skolen,
-                        jfr, dog bestem-melserne om, at bestyrelsen og den katolske biskop af Kabenhavn i fiellesskab
-                        traffer beslutning om visse vedtagtsendringer (§ 10, stk. 3) og jfr. dog foreldrekredsens :
-                        kompetencer (§ 7, stk. 14).</p>
-                </div>
-            </details>
+          <details>
+            <summary>
+              <p>III. Skolens bestyrelse og leder</p>
+            </summary>
+            <div>
+              <p class="boldVedtaegter paragraf">§3</p>
+              <p>
+                Skolens bestyrelse varetager den overordnede ledelse af skolen
+                og er ansvarlig over for undervisningsministeren for, at skolens
+                økonomi og drift - herunder forvaltningen af de statslige
+                tilskud - er i overensstemmelse med skolens vedtægt og med de
+                til enhver til glædende love og andre regler for friskoler og
+                privatskoler.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 2.</span> Skolens leder
+                varetager den daglige pædagogiske ledelse af skolen, jfr. §6,
+                stk. 1 i lov om friskoler og private grundskoler m.v. Skolens
+                leder har tillige ansvaret for, at den daglige drift af skolen
+                er forsvarlig og i overensstemmelse med gældende regler og
+                vilkår.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 3.</span> Bestyrelsen består
+                af 5 medlemmer, der for to år ad gangen udpeges/vælges således:
+              </p>
+              <ol type="a">
+                <li>Et medlem udpeges af den katolske kirkes pastoralråd</li>
+                <li>Et medlem udpeges af den katolske biskop af København</li>
+                <li>
+                  Et medlem udpeges af menighedsrådet ved Sct. Mariæ Kirke
+                </li>
+                <li>
+                  To medlemmer vælges af og blandt forældrene til elever på
+                  skolen (forældrekredsen) efter reglerne i bekendtgørelsen om
+                  valg af tilsynsførende.
+                </li>
+              </ol>
+              <p>
+                <span class="boldVedtaegter">Stk. 4.</span> De under stk. 3
+                litra aog b udpegede bestyrelsesmedlemmer samt det ene under
+                litra d. valgte medlem afgår i ulige årstal pr. den 1. januar,
+                medens det andet under litra d. valgte medlem og det under litra
+                c udpegede medlem afgår i lige årstal ligeledes pr. den 1.
+                januar. Hvert år vælges for et år et af forældrekredsen fastsat
+                antal suppleanter for de under litra d nævnte medlemmer.
+                Suppleanterne optages automatisk i bestyrelsen, hvis en eller
+                begge medlemmer nævnt under litra d træder ud af bestyrelsen.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 5.</span> Meddelelse om, hvem
+                der er udpeget som bestyrelsesmedlemmer i henhold til § 3, stk.
+                3, litra a, b og c, afgives ekriftligt senest den 1 december i
+                det ár, hvor udpeg* ningen har fundet sted.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 6.</span>
+                Bestyrelsesmedlemmerne kan ikke afsttes i funktions perioden.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 7.</span> De under stk. 3
+                litra d. valgte bestyrelsesmedlemmer skal ikke udtrade al
+                be-styrelsen, hvis deres bern i valgperioden udskrives af skelen
+                mod foreldrenes enske.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 8.</span> Bestyrelsen ber sà
+                vidt muligt have en afbalanceret sammensatning al lvinder og
+                meend jfr. § 11, stk. 2 i lov om ligestilling af kvinder og
+                mend.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 9.</span> Skolens ansatte kan
+                ikke viere medlem af bestyrelsen og kan kun deltage i valg af
+                bestyrelsen, när disse samtidigt er mediem af forteldrekredsen.
+                Bestyrelsen kan be-slutte, at skolens ledelse, det vil eige
+                skolelederen og viceinspektaren, samt en reprie-sentant for de
+                ansatte kan deltage i bestyrelsens meder uden stemmeret. Ved
+                behandling af enkeltsager, der vedrerer personer i «kolen=
+                ledelse eller enkelte ansatte, kan bestyrelsen surpendere
+                mededeltagelsen for en. Dere eller alle de pâgrldende.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 10.</span>
+                Bestyrelsesmedlemmerne er ikke ved udovelson af
+                bestyrelseshvervet under givet beslutninger truftet af den
+                organisation, institution, forening eller lignende, som har
+                valgt eller udpeget den pägreldende.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 11.</span> Bestyrelsen
+                konstituerer sig colv af sin midte med formand og nestformand.
+                Nestformanden trader i formandens sted ved formandens forfald
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 12.</span>
+                Bestyrelsesmediemmerne skal vere myndige, og mindet et fertal,
+                herunder formanden, «kal viere rezistreret i CPR med bopil i
+                Danmark
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 13.</span>
+                Bestyrelsesmedlemmer hrefter ikke personligt for skolena geld,
+                men kan blive ansvarlig efter dansk rete almindelige
+                erstatning-regler.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 14.</span>
+                Bestyrelsesmedlemmerne kan ikke modtage honorar af skolens
+                midler for varetagelsen af hvervet som bestyrelsesmedlem.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 15.</span> Et
+                bestyrelsesmedlem udtreeder af bestyrelsen ojeblikkeligt, hvis
+                medlemmet ikke lngere opfylder habilitetsbetingelserne for at
+                vare medlem af bestyrelsen jfr. lov om friskoler og private
+                grundskoler m.v. og bekendtgerelsen om vedtaegter for fri-ekoler
+                og private grundskoler m.v.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 16.</span> I tilfzelde af et
+                bestyrelsesmedlems udtrreden i funktionsperioden feks. ved
+                generel inhabilitet indtrieder suppleanten i den pägeldendes
+                resterende funktionspe* riode. Hvis dette ikke er muligt, skal
+                der valges henholdsvis udpeger et nyt medlem hurtigst muligt for
+                resten af perioden. Yed supplering af bestyrelsen i
+                funktionsperio-den skal antallet af medlemmer (to) valgt af og
+                blandt foreldrekredsens medlommer opretholdes.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 17.</span> For bestyrelsen,
+                lederen og andre ansatte ved skolen samt den eller de tilsyns
+                foronde grelder i ovrigt bestemmelserne i forvaltningslovens
+                kapitel 2 om inhabilitet og kapitel 8 om tavshedspligt m.v.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 18.</span> Bestyrelsen er
+                beslutningsdygtig, när mindst halvdelen al medlemmerne er modt
+                personligt frem. Bestyrelsen triefler beslutninger ved
+                almindelig stemmeflerhed. idet en rrekke beslutninger dog alene
+                kan triefles ved sarlig majoritet jfr. 9 3, stk, 22. og § 10,
+                stk. 2. Der kan ikke stemmes ved fuldmagt eller ved brev. Ved
+                stemmelighed er formandens - og i dennes fraveer nestformandens
+                - etemme udslagegivende.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 19.</span> Bestyrelsen skal
+                fore protokol over eine beslutnunger. Ethyert bestyrelsesmed-lem
+                har ret til at fä fort sin afvigende mening til protokole.
+                Protokollen skal underskrives af de mediemmer, der har doltaget
+                z modet. Konstateret inhabilitot skal indfo-ros i protokollen.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 20.</span> Bestyrelsen
+                fastswtter en forretninesorden for sin vurksomhed, der mindst
+                skal indeholde bestemmelser om. hvordan indkaldelse til
+                bestyrelsesmoder skal ske. Forretningsordenen optages som bilag
+                til vedtegten.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 21.</span> Bestyrelsen
+                ansetter of afskediger «kolene leder og «kolen» ovrige
+                personale. Kompetencen til at ansette og af-kedige «kolens
+                ovrige personale kan bestyrelsen de legere til skolen» leder,
+                idet «kolelederen dos, udea at delegation er nodvendig, til
+                en-hver tid pà egen hind kan ansiette og af-kedige vikarer of
+                andea midiertidig med-hjelp til kortvarie tjeneste
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 22.</span> Bestyrelsen treffer
+                beslutming om keb, cale of pantsetning af fast ejendom. Til
+                beslutning om keb, salg og pantsetning af tast ejendom samt om
+                andre viesentlige kebs og lejekontrakter krieves det, at mindst
+                3 medlemmer stemmer herfor.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 23.</span> Bestyrelsen
+                fastsatter sterrelsen af skolepengene og sterrelsen af
+                foraeldrebe-talingen for skolefritidsordningen.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 24.</span> Bestyrelsen
+                traeffer beslutning om ethvert overordnet spergsmäl om skolen,
+                som bestyrelsen selv ensker at triffe beslutning om, jfr. dog
+                bestemmelsen i § 3 stk. 2 om, at skolens leder har den daglige
+                paedagogiske ledelse af skolen, jfr, dog bestem-melserne om, at
+                bestyrelsen og den katolske biskop af Kabenhavn i fiellesskab
+                traffer beslutning om visse vedtagtsendringer (§ 10, stk. 3) og
+                jfr. dog foreldrekredsens : kompetencer (§ 7, stk. 14).
+              </p>
+            </div>
+          </details>
         </div>
         <div class="singleBorder">
-            <details>
-                <summary>
-                    <p>IV. Regnskab M.V.</p>
-                </summary>
-                <div>
-                    <p class="boldVedtaegter paragraf">§4</p>
-                    <p>Skolens regnskabsär felger kalenderaret.</p>
-                    <p><span class="boldVedtaegter">Stk. 2.</span> Bestyrelsen er ansvarlig for, at der hvert är
-                        udarbejdes et retvisende Ärsregn-skab for skolen i overensstemmelse med geldende regler.</p>
-                    <p><span class="boldVedtaegter">Stk. 3.</span> Bestyrelsen har ansvaret for, at ärsregnskabet
-                        underkastes betryggende revision i overensstemmelse med greldende regler.</p>
-                    <p><span class="boldVedtaegter">Stk. 4.</span> Bestyrelsen or ansvarlig for, at et revideret og
-                        originait underskrevet regnskab samt revisionsprotokoller sendes til Undervisning-ministeriet
-                        inden den 15. april i äret efter regnskabsäret, Alle bestyrelse-medlemmer skal underskrive
-                        regnskabet og afgive erklering pà tro og love om, at de opfylder betingelserne for medlemskab.
-                    </p>
-                    <p><span class="boldVedtaegter">Stk. 5.</span> Bestyrelsen vielger skolens revisor.</p>
-                    <p><span class="boldVedtaegter">Stk. 6.</span> Forieldre til elever og fastansatte ved «kolen har
-                        altd ret til at fa kendskab til budgetter, regnskaber og revisionsprotokol, som er godkendt af
-                        bestyrelsen. Bestyrelsen kan udstriekke denne ret til andre. Bestyrelsen kan fastsrette narmere
-                        regler for retten til indsigt i skolens forhold. Oplysninger, der er omfattet af bestemmelserne
-                        om tavshedspligt i forvaltningsloven, kan dog ikke videregives.</p>
-                </div>
-            </details>
+          <details>
+            <summary>
+              <p>IV. Regnskab M.V.</p>
+            </summary>
+            <div>
+              <p class="boldVedtaegter paragraf">§4</p>
+              <p>Skolens regnskabsär felger kalenderaret.</p>
+              <p>
+                <span class="boldVedtaegter">Stk. 2.</span> Bestyrelsen er
+                ansvarlig for, at der hvert är udarbejdes et retvisende
+                Ärsregn-skab for skolen i overensstemmelse med geldende regler.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 3.</span> Bestyrelsen har
+                ansvaret for, at ärsregnskabet underkastes betryggende revision
+                i overensstemmelse med greldende regler.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 4.</span> Bestyrelsen or
+                ansvarlig for, at et revideret og originait underskrevet
+                regnskab samt revisionsprotokoller sendes til
+                Undervisning-ministeriet inden den 15. april i äret efter
+                regnskabsäret, Alle bestyrelse-medlemmer skal underskrive
+                regnskabet og afgive erklering pà tro og love om, at de opfylder
+                betingelserne for medlemskab.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 5.</span> Bestyrelsen vielger
+                skolens revisor.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 6.</span> Forieldre til elever
+                og fastansatte ved «kolen har altd ret til at fa kendskab til
+                budgetter, regnskaber og revisionsprotokol, som er godkendt af
+                bestyrelsen. Bestyrelsen kan udstriekke denne ret til andre.
+                Bestyrelsen kan fastsrette narmere regler for retten til indsigt
+                i skolens forhold. Oplysninger, der er omfattet af
+                bestemmelserne om tavshedspligt i forvaltningsloven, kan dog
+                ikke videregives.
+              </p>
+            </div>
+          </details>
         </div>
         <div class="singleBorder">
-            <details>
-                <summary>
-                    <p>V. Forældrekreds, valg af tilsynsførende M.V., forældrekredsmøde og forældrerepræsentskab</p>
-                </summary>
-                <div>
-                    <p class="boldVedtaegter paragraf">§5</p>
-                    <p>Foraldrekredsen bestär af forieldrene til bern pä skolen.</p>
-                    <p><span class="boldVedtaegter">Stk. 2.</span> Forldrenes rettigheder i medfor af denne vedtagt og
-                        lov om friskoler og private grundskoler m.v. tilkommer den eller de personer, der har
-                        foreldremyndigheden over eleven eller har barnet i pleje, idet den, der har eleven i pleje, dog
-                        ikke kan traeffe beslutning om skolegangens begyndelse og varighed
-                    </p>
-                    <p><span class="boldVedtaegter">Stk. 3.</span> Skolen forer en liste over de personer, som har
-                        tilmeldt sig som herende til for feldrekredsen. Listen rendres kun efter begrundet - om
-                        nodvendigt tillige dokumente ret - skriftlig anmodning herom med efterfalgende behorig
-                        underretning til den eller de personer, der optages henholdsvis slettes pä listen.
-                        Foreldremyndighedsindehave-re har altid ret til at udove deres rettigheder, uanset om de er
-                        opfart pà listen.</p>
-                    <p class="boldVedtaegter paragraf">§6</p>
-                    <p>Bestyrelsen er ansvarlig for, at forteldrekredsen indkaldes til made, bvor foraldre* kredsen skal
-                        vielge en eller fere personer eller kommunalbestyrelsen ul at fore tilayn med elevernes
-                        standpunkt i dansk, regning/matematik oe engelek, og med at «kolens samlede undervisningstilbud
-                        ud fra en helbedsvurderine stár mál med. hvad der al-mindeligvis krieves i folkeskolen, samt med
-                        at undervisningasproget er dannk</p>
-                    <p><span class="boldVedtaegter">Stk. 2.</span> Bestyrelsen er tallige ansvartig for, at der fivos l
-                        ndervisning-ministeriet or kommunen underretning om. hvem der er valgt som tilsynsterende, at
-                        kommunen anmodes om at varetage tilsynet, hvis foreldrekredeen ikke volgor tilaynsfarende, og at
-                        forreldrekredsen fir underretning om den arlige risynserklering</p>
-                    <p><span class="boldVedtaegter">Stk. 3.</span> Bestyrelsen er endvidere anevarlig for, nt
-                        fürieldrukredeen vielger den eller de tilsynsfarende og fastsntter retningslinier for
-                        foreldrekredsens eget tilsyn med skolens almindelige virksomhed herunder med, at akoten fiver en
-                        undervisning der stär mil med. hvad der almindeligvis kraves i fotkeskolen.
-                    </p>
-                    <p class="boldVedtaegter paragraf">§7</p>
-                    <p>Forzeldrekredsmade afholdes hvert ur pi skolen eller et andet sted i hjemstedskom-munen inden
-                        udgangen af november mäned. Bestyrelsen er ansvarlie for, at foreeldre kredsen indkaldes til
-                        foreldrekredsmedet. Indkaldelsen sker ved almindeligt brov, e-mail eller anden sikker
-                        forsendelsesmêde med mindse 14 dages varsol med angivelse af dagsorden. Indkaldelsen til
-                        forrldrekredsmode «kal indeholde falgende dagsorden:</p>
-                    <ol>
-                        <li>Valg af dirigent.</li>
-                        <li>Bestyrelsen og ledelsen orienterer om skolens ekonomiske, driftamessige og pedagogiske
-                            forhold.</li>
-                        <li>Valg af bestyrelsesmediem i medfar af § 3, stk. 3 litra d.</li>
-                        <li>Pastsettelse af det hejeste antal suppleanter og valg af suppleanter, jfr. § 3, stk. 4.</li>
-                        <li>Eventuelt.</li>
-                    </ol>
-                    <p><span class="boldVedtaegter">Stk. 2.</span> Pä forieldrekredsmoder, hvor der vielges
-                        tilsynsfarende jfr. § 6, stk. 1, suppleres dagsordenen med fölgende punkter:</p>
-                    <ol>
-                        <li>Fastsrettelse af funktionsperiode (hejst 4 är) for skolens tilsynsferende.</li>
-                        <li>Beslutning om hvorvidt tilsynet skal udferes af en eller flere personer eller af
-                            kommunalbestyrelsen</li>
-                        <li>Fastsrettelse af det hojeste antal tilsynsferende og eventuel opdeling i
-                            tilaynenkti-viteter.</li>
-                        <li>Valg af tilsynsforende</li>
-                    </ol>
-                    <p><span class="boldVedtaegter">Stk. 3.</span> Af indkaldelsen skal fremgl geldende regler for valg
-                        af bestyrelsesmedlemmer og - i de är hvor der skal eke valg af tilsynsforende - geldende regler
-                        for valg af til* synsforende samt tileynsregler. For begge valg galder, at det af indkaldelsen
-                        bl.a, skal fremgä, at enhver forelder har ret til at foreslá kandidater pä modet. Bestyrelsen er
-                        ansvarlig for, at det bäde i indkaldelsen og under forreldrekredsmodet rydeliggares, at valgene
-                        angär valg af foreldrerepriesentanter til bestyrelsen henholdevis vale af til-synsforende.
-                        Reglerne i bekendtgorelse om vale af tilsynsferende er ogsà greldende for valg af
-                        forreldrerepriesentanter til bestyrelsen.</p>
-                    <p><span class="boldVedtaegter">Stk. 4.</span> Hvert medlem hur en stemme. Bestyrelsen er ansvarlig
-                        for, at det alene er per soner, der tilherer forreldrekredsen, der stemmer</p>
-                    <p><span class="boldVedtaegter">Stk. 5.</span> Der kan kun gives fuldmagt til en person, med hvem
-                        man har faelles forseldre" myndighed over et barn pá =kolen.</p>
-                    <p><span class="boldVedtaegter">Stk. 6.</span> Forieldrekredsmodet er beslutningsdvstigt uden hensyn
-                        til antallet af frem-medte medlemmer. Forieldrekredamodet trietfer beslutninger ved almindelig
-                        stemme-flerhed</p>
-                    <p><span class="boldVedtaegter">Stk. 7.</span> Bestyrelsen of ekolens leder har mederet og taleret
-                        pa forreldrekredsens me-der. Herudover trieffer forwldrekredsen selv afgarelse om, hvorvidt
-                        personer uden for forrldrekredsen kan deltage i forieldrekredsmeder og i givet fald hvilke
-                        personer.</p>
-                    <p><span class="boldVedtaegter">Stk. 8.</span> Skolens ansatte samt kandidater til bestyrelsen og
-                        til tilsynsforende kan ikke viere dirigent pà forrldrekredameder.</p>
-                    <p><span class="boldVedtaegter">Stk. 9.</span> Der skal feres protokol over det pü
-                        foreldrekredsmoder vedtagne. Protokollen skal underskrives af dirigenten</p>
-                    <p><span class="boldVedtaegter">Stk. 10.</span> Valghandlinger «kal viere hemmelige, hvis et eller
-                        fere medlemmer af foreel-drekredsen onsker det.</p>
-                    <p><span class="boldVedtaegter">Stk. 11.</span> Ved valg af bestyrelsesmedlemmer, suppleanter og
-                        tilsynsterende kan hver forzlder afgive stemme pà det antal medlemmer, der skal valges til
-                        bestyrelsen, henholdsvis pà et antal personer svarende dels til det besluttede hojeste antal
-                        suppleanter og dels det besluttede hojeste antal tilsynsforende.</p>
-                    <p><span class="boldVedtaegter">Stk. 12.</span> Kandidaterne er valgt i reekkefelge efter sterrelsen
-                        af de personlige stemme-tal. I tilfrelde af stemmelighed foretages lodtriekning.</p>
-                    <p><span class="boldVedtaegter">Stk. 13.</span> Genvalg af bestyrelsesmedlemmer, suppleanter og
-                        tilsynsferende kan finde sted.</p>
-                    <p><span class="boldVedtaegter">Stk. 14.</span> Foreldrekredsmedete kompetencer er anfert i § 3,
-                        stk. 3 litra d., § 6, stk. 1, og $ 6, stk. 3.</p>
-                    <p><span class="boldVedtaegter">Stk. 15.</span> Forieldrene til bern pà skolen vielger et
-                        forreldrerepresentantskab, for hvilket der er fastsat ot serligt sat vedtegter.
-                        Foroldrerepresentantekabet har til formäl at medvirke til det bedst mulige samarbejde skole,
-                        elever og foraeldre imellem.</p>
-                </div>
-            </details>
+          <details>
+            <summary>
+              <p>
+                V. Forældrekreds, valg af tilsynsførende M.V., forældrekredsmøde
+                og forældrerepræsentskab
+              </p>
+            </summary>
+            <div>
+              <p class="boldVedtaegter paragraf">§5</p>
+              <p>Foraldrekredsen bestär af forieldrene til bern pä skolen.</p>
+              <p>
+                <span class="boldVedtaegter">Stk. 2.</span> Forldrenes
+                rettigheder i medfor af denne vedtagt og lov om friskoler og
+                private grundskoler m.v. tilkommer den eller de personer, der
+                har foreldremyndigheden over eleven eller har barnet i pleje,
+                idet den, der har eleven i pleje, dog ikke kan traeffe
+                beslutning om skolegangens begyndelse og varighed
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 3.</span> Skolen forer en
+                liste over de personer, som har tilmeldt sig som herende til for
+                feldrekredsen. Listen rendres kun efter begrundet - om
+                nodvendigt tillige dokumente ret - skriftlig anmodning herom med
+                efterfalgende behorig underretning til den eller de personer,
+                der optages henholdsvis slettes pä listen.
+                Foreldremyndighedsindehave-re har altid ret til at udove deres
+                rettigheder, uanset om de er opfart pà listen.
+              </p>
+              <p class="boldVedtaegter paragraf">§6</p>
+              <p>
+                Bestyrelsen er ansvarlig for, at forteldrekredsen indkaldes til
+                made, bvor foraldre* kredsen skal vielge en eller fere personer
+                eller kommunalbestyrelsen ul at fore tilayn med elevernes
+                standpunkt i dansk, regning/matematik oe engelek, og med at
+                «kolens samlede undervisningstilbud ud fra en helbedsvurderine
+                stár mál med. hvad der al-mindeligvis krieves i folkeskolen,
+                samt med at undervisningasproget er dannk
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 2.</span> Bestyrelsen er
+                tallige ansvartig for, at der fivos l ndervisning-ministeriet or
+                kommunen underretning om. hvem der er valgt som tilsynsterende,
+                at kommunen anmodes om at varetage tilsynet, hvis
+                foreldrekredeen ikke volgor tilaynsfarende, og at
+                forreldrekredsen fir underretning om den arlige risynserklering
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 3.</span> Bestyrelsen er
+                endvidere anevarlig for, nt fürieldrukredeen vielger den eller
+                de tilsynsfarende og fastsntter retningslinier for
+                foreldrekredsens eget tilsyn med skolens almindelige virksomhed
+                herunder med, at akoten fiver en undervisning der stär mil med.
+                hvad der almindeligvis kraves i fotkeskolen.
+              </p>
+              <p class="boldVedtaegter paragraf">§7</p>
+              <p>
+                Forzeldrekredsmade afholdes hvert ur pi skolen eller et andet
+                sted i hjemstedskom-munen inden udgangen af november mäned.
+                Bestyrelsen er ansvarlie for, at foreeldre kredsen indkaldes til
+                foreldrekredsmedet. Indkaldelsen sker ved almindeligt brov,
+                e-mail eller anden sikker forsendelsesmêde med mindse 14 dages
+                varsol med angivelse af dagsorden. Indkaldelsen til
+                forrldrekredsmode «kal indeholde falgende dagsorden:
+              </p>
+              <ol>
+                <li>Valg af dirigent.</li>
+                <li>
+                  Bestyrelsen og ledelsen orienterer om skolens ekonomiske,
+                  driftamessige og pedagogiske forhold.
+                </li>
+                <li>
+                  Valg af bestyrelsesmediem i medfar af § 3, stk. 3 litra d.
+                </li>
+                <li>
+                  Pastsettelse af det hejeste antal suppleanter og valg af
+                  suppleanter, jfr. § 3, stk. 4.
+                </li>
+                <li>Eventuelt.</li>
+              </ol>
+              <p>
+                <span class="boldVedtaegter">Stk. 2.</span> Pä
+                forieldrekredsmoder, hvor der vielges tilsynsfarende jfr. § 6,
+                stk. 1, suppleres dagsordenen med fölgende punkter:
+              </p>
+              <ol>
+                <li>
+                  Fastsrettelse af funktionsperiode (hejst 4 är) for skolens
+                  tilsynsferende.
+                </li>
+                <li>
+                  Beslutning om hvorvidt tilsynet skal udferes af en eller flere
+                  personer eller af kommunalbestyrelsen
+                </li>
+                <li>
+                  Fastsrettelse af det hojeste antal tilsynsferende og eventuel
+                  opdeling i tilaynenkti-viteter.
+                </li>
+                <li>Valg af tilsynsforende</li>
+              </ol>
+              <p>
+                <span class="boldVedtaegter">Stk. 3.</span> Af indkaldelsen skal
+                fremgl geldende regler for valg af bestyrelsesmedlemmer og - i
+                de är hvor der skal eke valg af tilsynsforende - geldende regler
+                for valg af til* synsforende samt tileynsregler. For begge valg
+                galder, at det af indkaldelsen bl.a, skal fremgä, at enhver
+                forelder har ret til at foreslá kandidater pä modet. Bestyrelsen
+                er ansvarlig for, at det bäde i indkaldelsen og under
+                forreldrekredsmodet rydeliggares, at valgene angär valg af
+                foreldrerepriesentanter til bestyrelsen henholdevis vale af
+                til-synsforende. Reglerne i bekendtgorelse om vale af
+                tilsynsferende er ogsà greldende for valg af
+                forreldrerepriesentanter til bestyrelsen.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 4.</span> Hvert medlem hur en
+                stemme. Bestyrelsen er ansvarlig for, at det alene er per soner,
+                der tilherer forreldrekredsen, der stemmer
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 5.</span> Der kan kun gives
+                fuldmagt til en person, med hvem man har faelles forseldre"
+                myndighed over et barn pá =kolen.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 6.</span> Forieldrekredsmodet
+                er beslutningsdvstigt uden hensyn til antallet af frem-medte
+                medlemmer. Forieldrekredamodet trietfer beslutninger ved
+                almindelig stemme-flerhed
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 7.</span> Bestyrelsen of
+                ekolens leder har mederet og taleret pa forreldrekredsens
+                me-der. Herudover trieffer forwldrekredsen selv afgarelse om,
+                hvorvidt personer uden for forrldrekredsen kan deltage i
+                forieldrekredsmeder og i givet fald hvilke personer.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 8.</span> Skolens ansatte samt
+                kandidater til bestyrelsen og til tilsynsforende kan ikke viere
+                dirigent pà forrldrekredameder.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 9.</span> Der skal feres
+                protokol over det pü foreldrekredsmoder vedtagne. Protokollen
+                skal underskrives af dirigenten
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 10.</span> Valghandlinger «kal
+                viere hemmelige, hvis et eller fere medlemmer af
+                foreel-drekredsen onsker det.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 11.</span> Ved valg af
+                bestyrelsesmedlemmer, suppleanter og tilsynsterende kan hver
+                forzlder afgive stemme pà det antal medlemmer, der skal valges
+                til bestyrelsen, henholdsvis pà et antal personer svarende dels
+                til det besluttede hojeste antal suppleanter og dels det
+                besluttede hojeste antal tilsynsforende.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 12.</span> Kandidaterne er
+                valgt i reekkefelge efter sterrelsen af de personlige
+                stemme-tal. I tilfrelde af stemmelighed foretages lodtriekning.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 13.</span> Genvalg af
+                bestyrelsesmedlemmer, suppleanter og tilsynsferende kan finde
+                sted.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 14.</span> Foreldrekredsmedete
+                kompetencer er anfert i § 3, stk. 3 litra d., § 6, stk. 1, og $
+                6, stk. 3.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 15.</span> Forieldrene til
+                bern pà skolen vielger et forreldrerepresentantskab, for hvilket
+                der er fastsat ot serligt sat vedtegter.
+                Foroldrerepresentantekabet har til formäl at medvirke til det
+                bedst mulige samarbejde skole, elever og foraeldre imellem.
+              </p>
+            </div>
+          </details>
         </div>
         <div class="singleBorder">
-            <details>
-                <summary>
-                    <p>VI. Skolens drift</p>
-                </summary>
-                <div>
-                    <p class="boldVedtaegter paragraf">§8</p>
-                    <p>Skolens drift gennemferes ved offentlige tilskud og ved egendekning herunder skole-penge for
-                        eleverne og foreldrebetaling for skolefnitidsordning efter lov om friskoler og private
-                        grundekoler m.v. og eventuelt ved bidrag fra andro.</p>
-                    <p><span class="boldVedtaegter">Stk. 2.</span> Skolens midler mä kun komme skolens skole og
-                        undervisningevirksomhed til gode.</p>
-                    <p><span class="boldVedtaegter">Stk. 3.</span> Et eventuelt overskud ved ekolens drift tilfalder
-                        skolen.</p>
-                    <p><span class="boldVedtaegter">Stk. 4.</span> Bidrag til skolen giver ikke ret til nogen del af
-                        skolens formue eller til udbytte af nogen art.</p>
-                    <p><span class="boldVedtaegter">Stk. 5.</span> Bestyrelsen skal forvalte skolens midler til sterst
-                        mulig gavn for skolen og skal tage skyldige okonomiske hensyn.</p>
-                    <p><span class="boldVedtaegter">Stk. 6.</span> Skolens likvide midler skal anbringes i
-                        overensstemmelse med bestemmelserne i lov om friskoler og private grundskoler m.v. og mä ikke
-                        anbringes pá konti m.v., som andre end skolen har rädighed over.</p>
-                </div>
-            </details>
+          <details>
+            <summary>
+              <p>VI. Skolens drift</p>
+            </summary>
+            <div>
+              <p class="boldVedtaegter paragraf">§8</p>
+              <p>
+                Skolens drift gennemferes ved offentlige tilskud og ved
+                egendekning herunder skole-penge for eleverne og
+                foreldrebetaling for skolefnitidsordning efter lov om friskoler
+                og private grundekoler m.v. og eventuelt ved bidrag fra andro.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 2.</span> Skolens midler mä
+                kun komme skolens skole og undervisningevirksomhed til gode.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 3.</span> Et eventuelt
+                overskud ved ekolens drift tilfalder skolen.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 4.</span> Bidrag til skolen
+                giver ikke ret til nogen del af skolens formue eller til udbytte
+                af nogen art.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 5.</span> Bestyrelsen skal
+                forvalte skolens midler til sterst mulig gavn for skolen og skal
+                tage skyldige okonomiske hensyn.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 6.</span> Skolens likvide
+                midler skal anbringes i overensstemmelse med bestemmelserne i
+                lov om friskoler og private grundskoler m.v. og mä ikke
+                anbringes pá konti m.v., som andre end skolen har rädighed over.
+              </p>
+            </div>
+          </details>
         </div>
         <div class="singleBorder">
-            <details>
-                <summary>
-                    <p>VII. Tegningsret</p>
-                </summary>
-                <div>
-                    <p class="boldVedtaegter paragraf">§9</p>
-                    <p>Skolen tegnes enten af bestyrelsens formand og skolens leder i forenine eller af en af disse i
-                        forening med bestyrelsens nestformand</p>
-                    <p><span class="boldVedtaegter">Stk. 2.</span> Ved keb salg og pantsetning eller andre disponitioner
-                        over «kolens faste ejen* domme tegnes skolen dog af mindst 3 medlemmer af bestyrelsen i
-                        forening.</p>
-                    <p><span class="boldVedtaegter">Stk. 3.</span> Tegningsretten kan ikke delegeres, og der kan ikke
-                        gaves prokura jfr, dog stk.</p>
-                    <p><span class="boldVedtaegter">Stk. 4.</span> Bestyrelsen kan treefle beslutning om. at
-                        «kolelederen 1 et neermere fastlagt omfang og under bestyrelsens ansvar bemvndiges til at udfere
-                        overordnede ledelses funktioner, när dette er nodvendigt for at opnà en hensigtemmssig daglig
-                        ledelse.</p>
-                </div>
-            </details>
+          <details>
+            <summary>
+              <p>VII. Tegningsret</p>
+            </summary>
+            <div>
+              <p class="boldVedtaegter paragraf">§9</p>
+              <p>
+                Skolen tegnes enten af bestyrelsens formand og skolens leder i
+                forenine eller af en af disse i forening med bestyrelsens
+                nestformand
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 2.</span> Ved keb salg og
+                pantsetning eller andre disponitioner over «kolens faste ejen*
+                domme tegnes skolen dog af mindst 3 medlemmer af bestyrelsen i
+                forening.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 3.</span> Tegningsretten kan
+                ikke delegeres, og der kan ikke gaves prokura jfr, dog stk.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 4.</span> Bestyrelsen kan
+                treefle beslutning om. at «kolelederen 1 et neermere fastlagt
+                omfang og under bestyrelsens ansvar bemvndiges til at udfere
+                overordnede ledelses funktioner, när dette er nodvendigt for at
+                opnà en hensigtemmssig daglig ledelse.
+              </p>
+            </div>
+          </details>
         </div>
         <div class="singleBorder">
-            <details>
-                <summary>
-                    <p>VIII. Ændring af skolens vedtægt</p>
-                </summary>
-                <div>
-                    <p class="boldVedtaegter paragraf">§10</p>
-                    <p>Medmindre andet or bestemt nedentor, kan «kolon: bestyrelse med almindelig stem* meflerhed
-                        vedtage vedtzegtsrendringer.</p>
-                    <p><span class="boldVedtaegter">Stk. 2.</span> Til sendring af vedtegtsbestemmelserne om skolens
-                        formäl (§ 2), om bestyrelsens sammensnetning (§ 3. stk. 3) om vedtrgtsendring (§ 10) eller om
-                        skolens nedlag gelse (§ 11) fordres det, at rendringen vedtagos med 4/5 majoritet af samtlige
-                        bestyrel-sesmedlemmer.</p>
-                    <p><span class="boldVedtaegter">Stk. 3.</span> Forslag til rondring af vedtregtsbestemmelser om
-                        skolens formäl (§ 2) og om bestyrelsens sammensetning (§ 3, stk. 3) -kal for at opnä gyldighed
-                        tillige godkendes af den katolske biskop af Kobenhava. Det samme galder rendring af § 10, stk.
-                        3.</p>
-                    <p><span class="boldVedtaegter">Stk. 4.</span> Skolens vedtagt samt fremtidige vedtegtsendringer
-                        skal godkendes af Under visningsministeriet for sä vidt angär bestemmelser om skolens styrelse
-                        og ekonomiske forhold.</p>
-                </div>
-            </details>
+          <details>
+            <summary>
+              <p>VIII. Ændring af skolens vedtægt</p>
+            </summary>
+            <div>
+              <p class="boldVedtaegter paragraf">§10</p>
+              <p>
+                Medmindre andet or bestemt nedentor, kan «kolon: bestyrelse med
+                almindelig stem* meflerhed vedtage vedtzegtsrendringer.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 2.</span> Til sendring af
+                vedtegtsbestemmelserne om skolens formäl (§ 2), om bestyrelsens
+                sammensnetning (§ 3. stk. 3) om vedtrgtsendring (§ 10) eller om
+                skolens nedlag gelse (§ 11) fordres det, at rendringen vedtagos
+                med 4/5 majoritet af samtlige bestyrel-sesmedlemmer.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 3.</span> Forslag til rondring
+                af vedtregtsbestemmelser om skolens formäl (§ 2) og om
+                bestyrelsens sammensetning (§ 3, stk. 3) -kal for at opnä
+                gyldighed tillige godkendes af den katolske biskop af Kobenhava.
+                Det samme galder rendring af § 10, stk. 3.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 4.</span> Skolens vedtagt samt
+                fremtidige vedtegtsendringer skal godkendes af Under
+                visningsministeriet for sä vidt angär bestemmelser om skolens
+                styrelse og ekonomiske forhold.
+              </p>
+            </div>
+          </details>
         </div>
         <div class="singleBorder">
-            <details>
-                <summary>
-                    <p>IX. Nedlæggelse af skolen M.V.</p>
-                </summary>
-                <div>
-                    <p class="boldVedtaegter paragraf">§11</p>
-                    <p>Beslutning om skolens nedleggelse traftes af bestyrelsen, dog kun efter torudgaende droftelse med
-                        den katolske biskop af Kebenhavn. Denne droftelse kraves dog ikke. hvis nedlreggelsen af «kolen
-                        er nodvendig til opfyl-delse al
-                        lovkray.</p>
-                    <p><span class="boldVedtaegter">Stk. 2.</span> Ophorer skolen med at drive skolevirksomhed efter
-                        bestemmelserne i $ 2, stk. 7 og 8, skal den nedkegges.</p>
-                    <p><span class="boldVedtaegter">Stk. 3.</span> Det pähviler bestyrelsen at orientere
-                        forseldrekredsen om beslutning om ned-laggelse og om grundlaget berfor. Orienteringen skal ske
-                        umiddelbart efter beslutningen om nedlegselsen or trufiet.</p>
-                    <p><span class="boldVedtaegter">Stk. 4.</span> Det pähviler bestyrelsen at give
-                        Undervisring-ministeriet og de kommuner, hvor eleverne er hjemmeherende, meddelelse om pkolens
-                        nedlsegelse.</p>
-                    <p><span class="boldVedtaegter">Stk. 5.</span> Det pähviler bestyrelsen at onentere
-                        ndervisningsministeriet, hvis skolen standser sine betalinger, begœres konkurs, oller der 1
-                        ovrigt er fare for, at skolene virksombed mà indstilles.</p>
-                    <p><span class="boldVedtaegter">Stk. 6.</span> Bestyrelsen bar ansvuret for bevarelsen af atolens
-                        aktiver og for, at den oko* nomiske opzorelse i anledning af «kolens nedlezgolso foretages efter
-                        guldende regler, samt at «kolens nettoformue anvendes i overensstemmelee med vedtagten.</p>
-                    <p><span class="boldVedtaegter">Stk. 7.</span> Eventuelle overskydende midier skal med
-                        Undervisningsministeriets godken-delse anvendes til brug for okoleformäl pl en eller flere
-                        katolske skoler, der stettos gennem lov om friskoler of private grundskoler m.v.</p>
-                    <p><span class="boldVedtaegter">Stk. 8.</span> Det pähviler bestyrelsen at fungere videre, indtil
-                        den ekonomiske afvikling af «kolens aktiver of passiver er tilendobragt efter guldende rogler,
-                        herunder at «kolons nettoformue anvendes i overensstemmelsen vedtægten.</p>
-                </div>
-            </details>
+          <details>
+            <summary>
+              <p>IX. Nedlæggelse af skolen M.V.</p>
+            </summary>
+            <div>
+              <p class="boldVedtaegter paragraf">§11</p>
+              <p>
+                Beslutning om skolens nedleggelse traftes af bestyrelsen, dog
+                kun efter torudgaende droftelse med den katolske biskop af
+                Kebenhavn. Denne droftelse kraves dog ikke. hvis nedlreggelsen
+                af «kolen er nodvendig til opfyl-delse al lovkray.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 2.</span> Ophorer skolen med
+                at drive skolevirksomhed efter bestemmelserne i $ 2, stk. 7 og
+                8, skal den nedkegges.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 3.</span> Det pähviler
+                bestyrelsen at orientere forseldrekredsen om beslutning om
+                ned-laggelse og om grundlaget berfor. Orienteringen skal ske
+                umiddelbart efter beslutningen om nedlegselsen or trufiet.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 4.</span> Det pähviler
+                bestyrelsen at give Undervisring-ministeriet og de kommuner,
+                hvor eleverne er hjemmeherende, meddelelse om pkolens
+                nedlsegelse.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 5.</span> Det pähviler
+                bestyrelsen at onentere ndervisningsministeriet, hvis skolen
+                standser sine betalinger, begœres konkurs, oller der 1 ovrigt er
+                fare for, at skolene virksombed mà indstilles.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 6.</span> Bestyrelsen bar
+                ansvuret for bevarelsen af atolens aktiver og for, at den oko*
+                nomiske opzorelse i anledning af «kolens nedlezgolso foretages
+                efter guldende regler, samt at «kolens nettoformue anvendes i
+                overensstemmelee med vedtagten.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 7.</span> Eventuelle
+                overskydende midier skal med Undervisningsministeriets
+                godken-delse anvendes til brug for okoleformäl pl en eller flere
+                katolske skoler, der stettos gennem lov om friskoler of private
+                grundskoler m.v.
+              </p>
+              <p>
+                <span class="boldVedtaegter">Stk. 8.</span> Det pähviler
+                bestyrelsen at fungere videre, indtil den ekonomiske afvikling
+                af «kolens aktiver of passiver er tilendobragt efter guldende
+                rogler, herunder at «kolons nettoformue anvendes i
+                overensstemmelsen vedtægten.
+              </p>
+            </div>
+          </details>
         </div>
-    </section>
-    <section class="content godkendelseVedtaegter">
+      </section>
+
+      
+      <section class="content godkendelseVedtaegter">
         <div class="godkendelseVedtaegterContainer">
-            <p>Overstående vedtægter for Sct. Mariæ Skolen godkendt af skolens bestyrelse. Aalborg, den 12. september
-                2007</p>
-            <a href="https://sctms.dk/wp-content/uploads/2021/11/Vedtaegter-compressed-1.pdf" target="_blank"><button
-                    class="responsiveBtn">
-                    <div class="downloadIkon">
-                        <span class="btnText">Download vedtægter
-                        </span>
-                        <span class="material-symbols-outlined">
-                            download
-                        </span>
-                    </div>
-                </details>
-            </div>
-            <div class="singleBorder">
-                <details>
-                    <summary>
-                        <p>II. Skolens formål</p>
-                    </summary>
-                    <div>
-                        <p class="boldVedtaegter paragraf">§2</p>
-                        <p>Sct. Mariæ Skolen bygger hele sit virke på det katolsk-kristne livs- og menneskesyn og har
-                            som
-                            sit særlige kendetegn til formål at skabe et værdibaseret skolemiljø, hvor Evangeliets ånd
-                            af
-                            frihed og kærlighed er levende.</p>
-                        <p><span class="boldVedtaegter">Stk. 2.</span> På Sct. Mariæ Skole skabes rammerne for, at den
-                            enkeltes indsigt i kristendommen vokser, og at den enkeltes tro afklares og modnes.</p>
-                        <p><span class="boldVedtaegter">Stk. 3.</span> På Sct. Mariæ Skole er sin økumeniske opgave
-                            bevidst.
-                        </p>
-                        <p><span class="boldVedtaegter">Stk. 4.</span> Sct. Mariæ Skole skal søge at danne og uddanne
-                            eleverne til demokrati og ligeværd som en livsholdning.</p>
-                        <p><span class="boldVedtaegter">Stk. 5.</span> På Sct. Mariæ skole skal elever i frihed udvikle
-                            sine
-                            evner og særlige potentialer til gavn for den enkelte og fællesskabet.</p>
-                        <p><span class="boldVedtaegter">Stk. 6.</span> Sct. Mariæ Skolen skal styrke elevernes mod til
-                            at
-                            træffe etisk funderede valg.</p>
-                        <p><span class="boldVedtaegter">Stk. 7.</span> Skolen drives efter de til enhver tid gældende
-                            love
-                            og andre regler for friskoler og private grundskoler m. v.</p>
-                        <p><span class="boldVedtaegter">Stk. 8.</span> Skolen skal give en undervisning, som står mål
-                            med,
-                            hvad der almindeligvis kræves i folkeskolen.</p>
-                        <p><span class="boldVedtaegter">Stk. 9.</span> Skolen skal forberede eleverne til at leve i et
-                            samfund med frihed og folkestyr.</p>
-                    </div>
-                </details>
-            </div>
-            <div class="singleBorder">
-                <details>
-                    <summary>
-                        <p>III. Skolens bestyrelse og leder</p>
-                    </summary>
-                    <div>
-                        <p class="boldVedtaegter paragraf">§3</p>
-                        <p>Skolens bestyrelse varetager den overordnede ledelse af skolen og er ansvarlig over for
-                            undervisningsministeren for, at skolens økonomi og drift - herunder forvaltningen af de
-                            statslige tilskud - er i overensstemmelse med skolens vedtægt og med de til enhver til
-                            glædende
-                            love og andre regler for friskoler og privatskoler.</p>
-                        <p><span class="boldVedtaegter">Stk. 2.</span> Skolens leder varetager den daglige pædagogiske
-                            ledelse af skolen, jfr. §6, stk. 1 i lov om friskoler og private grundskoler m.v. Skolens
-                            leder
-                            har tillige ansvaret for, at den daglige drift af skolen er forsvarlig og i overensstemmelse
-                            med
-                            gældende regler og vilkår.</p>
-                        <p><span class="boldVedtaegter">Stk. 3.</span> Bestyrelsen består af 5 medlemmer, der for to år
-                            ad
-                            gangen udpeges/vælges således:</p>
-                        <ol type="a">
-                            <li>Et medlem udpeges af den katolske kirkes pastoralråd</li>
-                            <li>Et medlem udpeges af den katolske biskop af København</li>
-                            <li>Et medlem udpeges af menighedsrådet ved Sct. Mariæ Kirke</li>
-                            <li>To medlemmer vælges af og blandt forældrene til elever på skolen (forældrekredsen) efter
-                                reglerne i bekendtgørelsen om valg af tilsynsførende.</li>
-                        </ol>
-                        <p><span class="boldVedtaegter">Stk. 4.</span> De under stk. 3 litra aog b udpegede
-                            bestyrelsesmedlemmer samt det ene under litra d. valgte medlem afgår i ulige årstal pr. den
-                            1.
-                            januar, medens det andet under litra d. valgte medlem og det under litra c udpegede medlem
-                            afgår
-                            i lige årstal ligeledes pr. den 1. januar. Hvert år vælges for et år et af forældrekredsen
-                            fastsat antal suppleanter for de under litra d nævnte medlemmer. Suppleanterne optages
-                            automatisk i bestyrelsen, hvis en eller begge medlemmer nævnt under litra d træder ud af
-                            bestyrelsen.</p>
-                        <p><span class="boldVedtaegter">Stk. 5.</span> Meddelelse om, hvem der er udpeget som
-                            bestyrelsesmedlemmer i henhold til § 3, stk. 3, litra a, b og c, afgives ekriftligt senest
-                            den 1
-                            december i det ár, hvor udpeg* ningen har fundet sted.</p>
-                        <p><span class="boldVedtaegter">Stk. 6.</span> Bestyrelsesmedlemmerne kan ikke afsttes i
-                            funktions
-                            perioden.</p>
-                        <p><span class="boldVedtaegter">Stk. 7.</span> De under stk. 3 litra d. valgte
-                            bestyrelsesmedlemmer
-                            skal ikke udtrade al be-styrelsen, hvis deres bern i valgperioden udskrives af skelen mod
-                            foreldrenes enske.</p>
-                        <p><span class="boldVedtaegter">Stk. 8.</span> Bestyrelsen ber sà vidt muligt have en
-                            afbalanceret
-                            sammensatning al lvinder og meend jfr. § 11, stk. 2 i lov om ligestilling af kvinder og
-                            mend.
-                        </p>
-                        <p><span class="boldVedtaegter">Stk. 9.</span> Skolens ansatte kan ikke viere medlem af
-                            bestyrelsen
-                            og kan kun deltage i valg af bestyrelsen, när disse samtidigt er mediem af forteldrekredsen.
-                            Bestyrelsen kan be-slutte, at skolens ledelse, det vil eige skolelederen og viceinspektaren,
-                            samt en reprie-sentant for de ansatte kan deltage i bestyrelsens meder uden stemmeret. Ved
-                            behandling af enkeltsager, der vedrerer personer i «kolen= ledelse eller enkelte ansatte,
-                            kan
-                            bestyrelsen surpendere mededeltagelsen for en. Dere eller alle de pâgrldende.</p>
-                        <p><span class="boldVedtaegter">Stk. 10.</span> Bestyrelsesmedlemmerne er ikke ved udovelson af
-                            bestyrelseshvervet under givet beslutninger truftet af den organisation, institution,
-                            forening
-                            eller lignende, som har valgt eller udpeget den pägreldende.</p>
-                        <p><span class="boldVedtaegter">Stk. 11.</span> Bestyrelsen konstituerer sig colv af sin midte
-                            med
-                            formand og nestformand. Nestformanden trader i formandens sted ved formandens forfald</p>
-                        <p><span class="boldVedtaegter">Stk. 12.</span> Bestyrelsesmediemmerne skal vere myndige, og
-                            mindet
-                            et fertal, herunder formanden, «kal viere rezistreret i CPR med bopil i Danmark</p>
-                        <p><span class="boldVedtaegter">Stk. 13.</span> Bestyrelsesmedlemmer hrefter ikke personligt for
-                            skolena geld, men kan blive ansvarlig efter dansk rete almindelige erstatning-regler.</p>
-                        <p><span class="boldVedtaegter">Stk. 14.</span> Bestyrelsesmedlemmerne kan ikke modtage honorar
-                            af
-                            skolens midler for varetagelsen af hvervet som bestyrelsesmedlem.</p>
-                        <p><span class="boldVedtaegter">Stk. 15.</span> Et bestyrelsesmedlem udtreeder af bestyrelsen
-                            ojeblikkeligt, hvis medlemmet ikke lngere opfylder habilitetsbetingelserne for at vare
-                            medlem af
-                            bestyrelsen jfr. lov om friskoler og private grundskoler m.v. og bekendtgerelsen om
-                            vedtaegter
-                            for fri-ekoler og private grundskoler m.v.</p>
-                        <p><span class="boldVedtaegter">Stk. 16.</span> I tilfzelde af et bestyrelsesmedlems udtrreden i
-                            funktionsperioden feks. ved generel inhabilitet indtrieder suppleanten i den pägeldendes
-                            resterende funktionspe* riode. Hvis dette ikke er muligt, skal der valges henholdsvis
-                            udpeger et
-                            nyt medlem hurtigst muligt for resten af perioden. Yed supplering af bestyrelsen i
-                            funktionsperio-den skal antallet af medlemmer (to) valgt af og blandt foreldrekredsens
-                            medlommer
-                            opretholdes.</p>
-                        <p><span class="boldVedtaegter">Stk. 17.</span> For bestyrelsen, lederen og andre ansatte ved
-                            skolen
-                            samt den eller de tilsyns foronde grelder i ovrigt bestemmelserne i forvaltningslovens
-                            kapitel 2
-                            om inhabilitet og kapitel 8 om tavshedspligt m.v.</p>
-                        <p><span class="boldVedtaegter">Stk. 18.</span> Bestyrelsen er beslutningsdygtig, när mindst
-                            halvdelen al medlemmerne er modt personligt frem. Bestyrelsen triefler beslutninger ved
-                            almindelig stemmeflerhed. idet en rrekke beslutninger dog alene kan triefles ved sarlig
-                            majoritet jfr. 9 3, stk, 22. og § 10, stk. 2. Der kan ikke stemmes ved fuldmagt eller ved
-                            brev.
-                            Ved stemmelighed er formandens - og i dennes fraveer nestformandens - etemme udslagegivende.
-                        </p>
-                        <p><span class="boldVedtaegter">Stk. 19.</span> Bestyrelsen skal fore protokol over eine
-                            beslutnunger. Ethyert bestyrelsesmed-lem har ret til at fä fort sin afvigende mening til
-                            protokole. Protokollen skal underskrives af de mediemmer, der har doltaget z modet.
-                            Konstateret
-                            inhabilitot skal indfo-ros i protokollen.</p>
-                        <p><span class="boldVedtaegter">Stk. 20.</span> Bestyrelsen fastswtter en forretninesorden for
-                            sin
-                            vurksomhed, der mindst skal indeholde bestemmelser om. hvordan indkaldelse til
-                            bestyrelsesmoder
-                            skal ske. Forretningsordenen optages som bilag til vedtegten.</p>
-                        <p><span class="boldVedtaegter">Stk. 21.</span> Bestyrelsen ansetter of afskediger «kolene leder
-                            og
-                            «kolen» ovrige personale. Kompetencen til at ansette og af-kedige «kolens ovrige personale
-                            kan
-                            bestyrelsen de legere til skolen» leder, idet «kolelederen dos, udea at delegation er
-                            nodvendig,
-                            til en-hver tid pà egen hind kan ansiette og af-kedige vikarer of andea midiertidig
-                            med-hjelp
-                            til kortvarie tjeneste</p>
-                        <p><span class="boldVedtaegter">Stk. 22.</span> Bestyrelsen treffer beslutming om keb, cale of
-                            pantsetning af fast ejendom. Til beslutning om keb, salg og pantsetning af tast ejendom samt
-                            om
-                            andre viesentlige kebs og lejekontrakter krieves det, at mindst 3 medlemmer stemmer herfor.
-                        </p>
-                        <p><span class="boldVedtaegter">Stk. 23.</span> Bestyrelsen fastsatter sterrelsen af
-                            skolepengene og
-                            sterrelsen af foraeldrebe-talingen for skolefritidsordningen.</p>
-                        <p><span class="boldVedtaegter">Stk. 24.</span> Bestyrelsen traeffer beslutning om ethvert
-                            overordnet spergsmäl om skolen, som bestyrelsen selv ensker at triffe beslutning om, jfr.
-                            dog
-                            bestemmelsen i § 3 stk. 2 om, at skolens leder har den daglige paedagogiske ledelse af
-                            skolen,
-                            jfr, dog bestem-melserne om, at bestyrelsen og den katolske biskop af Kabenhavn i
-                            fiellesskab
-                            traffer beslutning om visse vedtagtsendringer (§ 10, stk. 3) og jfr. dog foreldrekredsens :
-                            kompetencer (§ 7, stk. 14).</p>
-                    </div>
-                </details>
-            </div>
-            <div class="singleBorder">
-                <details>
-                    <summary>
-                        <p>IV. Regnskab M.V.</p>
-                    </summary>
-                    <div>
-                        <p class="boldVedtaegter paragraf">§4</p>
-                        <p>Skolens regnskabsär felger kalenderaret.</p>
-                        <p><span class="boldVedtaegter">Stk. 2.</span> Bestyrelsen er ansvarlig for, at der hvert är
-                            udarbejdes et retvisende Ärsregn-skab for skolen i overensstemmelse med geldende regler.</p>
-                        <p><span class="boldVedtaegter">Stk. 3.</span> Bestyrelsen har ansvaret for, at ärsregnskabet
-                            underkastes betryggende revision i overensstemmelse med greldende regler.</p>
-                        <p><span class="boldVedtaegter">Stk. 4.</span> Bestyrelsen or ansvarlig for, at et revideret og
-                            originait underskrevet regnskab samt revisionsprotokoller sendes til
-                            Undervisning-ministeriet
-                            inden den 15. april i äret efter regnskabsäret, Alle bestyrelse-medlemmer skal underskrive
-                            regnskabet og afgive erklering pà tro og love om, at de opfylder betingelserne for
-                            medlemskab.
-                        </p>
-                        <p><span class="boldVedtaegter">Stk. 5.</span> Bestyrelsen vielger skolens revisor.</p>
-                        <p><span class="boldVedtaegter">Stk. 6.</span> Forieldre til elever og fastansatte ved «kolen
-                            har
-                            altd ret til at fa kendskab til budgetter, regnskaber og revisionsprotokol, som er godkendt
-                            af
-                            bestyrelsen. Bestyrelsen kan udstriekke denne ret til andre. Bestyrelsen kan fastsrette
-                            narmere
-                            regler for retten til indsigt i skolens forhold. Oplysninger, der er omfattet af
-                            bestemmelserne
-                            om tavshedspligt i forvaltningsloven, kan dog ikke videregives.</p>
-                    </div>
-                </details>
-            </div>
-            <div class="singleBorder">
-                <details>
-                    <summary>
-                        <p>V. Forældrekreds, valg af tilsynsførende M.V., forældrekredsmøde og forældrerepræsentskab</p>
-                    </summary>
-                    <div>
-                        <p class="boldVedtaegter paragraf">§5</p>
-                        <p>Foraldrekredsen bestär af forieldrene til bern pä skolen.</p>
-                        <p><span class="boldVedtaegter">Stk. 2.</span> Forldrenes rettigheder i medfor af denne vedtagt
-                            og
-                            lov om friskoler og private grundskoler m.v. tilkommer den eller de personer, der har
-                            foreldremyndigheden over eleven eller har barnet i pleje, idet den, der har eleven i pleje,
-                            dog
-                            ikke kan traeffe beslutning om skolegangens begyndelse og varighed
-                        </p>
-                        <p><span class="boldVedtaegter">Stk. 3.</span> Skolen forer en liste over de personer, som har
-                            tilmeldt sig som herende til for feldrekredsen. Listen rendres kun efter begrundet - om
-                            nodvendigt tillige dokumente ret - skriftlig anmodning herom med efterfalgende behorig
-                            underretning til den eller de personer, der optages henholdsvis slettes pä listen.
-                            Foreldremyndighedsindehave-re har altid ret til at udove deres rettigheder, uanset om de er
-                            opfart pà listen.</p>
-                        <p class="boldVedtaegter paragraf">§6</p>
-                        <p>Bestyrelsen er ansvarlig for, at forteldrekredsen indkaldes til made, bvor foraldre* kredsen
-                            skal
-                            vielge en eller fere personer eller kommunalbestyrelsen ul at fore tilayn med elevernes
-                            standpunkt i dansk, regning/matematik oe engelek, og med at «kolens samlede
-                            undervisningstilbud
-                            ud fra en helbedsvurderine stár mál med. hvad der al-mindeligvis krieves i folkeskolen, samt
-                            med
-                            at undervisningasproget er dannk</p>
-                        <p><span class="boldVedtaegter">Stk. 2.</span> Bestyrelsen er tallige ansvartig for, at der
-                            fivos l
-                            ndervisning-ministeriet or kommunen underretning om. hvem der er valgt som tilsynsterende,
-                            at
-                            kommunen anmodes om at varetage tilsynet, hvis foreldrekredeen ikke volgor tilaynsfarende,
-                            og at
-                            forreldrekredsen fir underretning om den arlige risynserklering</p>
-                        <p><span class="boldVedtaegter">Stk. 3.</span> Bestyrelsen er endvidere anevarlig for, nt
-                            fürieldrukredeen vielger den eller de tilsynsfarende og fastsntter retningslinier for
-                            foreldrekredsens eget tilsyn med skolens almindelige virksomhed herunder med, at akoten
-                            fiver en
-                            undervisning der stär mil med. hvad der almindeligvis kraves i fotkeskolen.
-                        </p>
-                        <p class="boldVedtaegter paragraf">§7</p>
-                        <p>Forzeldrekredsmade afholdes hvert ur pi skolen eller et andet sted i hjemstedskom-munen inden
-                            udgangen af november mäned. Bestyrelsen er ansvarlie for, at foreeldre kredsen indkaldes til
-                            foreldrekredsmedet. Indkaldelsen sker ved almindeligt brov, e-mail eller anden sikker
-                            forsendelsesmêde med mindse 14 dages varsol med angivelse af dagsorden. Indkaldelsen til
-                            forrldrekredsmode «kal indeholde falgende dagsorden:</p>
-                        <ol>
-                            <li>Valg af dirigent.</li>
-                            <li>Bestyrelsen og ledelsen orienterer om skolens ekonomiske, driftamessige og pedagogiske
-                                forhold.</li>
-                            <li>Valg af bestyrelsesmediem i medfar af § 3, stk. 3 litra d.</li>
-                            <li>Pastsettelse af det hejeste antal suppleanter og valg af suppleanter, jfr. § 3, stk. 4.
-                            </li>
-                            <li>Eventuelt.</li>
-                        </ol>
-                        <p><span class="boldVedtaegter">Stk. 2.</span> Pä forieldrekredsmoder, hvor der vielges
-                            tilsynsfarende jfr. § 6, stk. 1, suppleres dagsordenen med fölgende punkter:</p>
-                        <ol>
-                            <li>Fastsrettelse af funktionsperiode (hejst 4 är) for skolens tilsynsferende.</li>
-                            <li>Beslutning om hvorvidt tilsynet skal udferes af en eller flere personer eller af
-                                kommunalbestyrelsen</li>
-                            <li>Fastsrettelse af det hojeste antal tilsynsferende og eventuel opdeling i
-                                tilaynenkti-viteter.</li>
-                            <li>Valg af tilsynsforende</li>
-                        </ol>
-                        <p><span class="boldVedtaegter">Stk. 3.</span> Af indkaldelsen skal fremgl geldende regler for
-                            valg
-                            af bestyrelsesmedlemmer og - i de är hvor der skal eke valg af tilsynsforende - geldende
-                            regler
-                            for valg af til* synsforende samt tileynsregler. For begge valg galder, at det af
-                            indkaldelsen
-                            bl.a, skal fremgä, at enhver forelder har ret til at foreslá kandidater pä modet.
-                            Bestyrelsen er
-                            ansvarlig for, at det bäde i indkaldelsen og under forreldrekredsmodet rydeliggares, at
-                            valgene
-                            angär valg af foreldrerepriesentanter til bestyrelsen henholdevis vale af til-synsforende.
-                            Reglerne i bekendtgorelse om vale af tilsynsferende er ogsà greldende for valg af
-                            forreldrerepriesentanter til bestyrelsen.</p>
-                        <p><span class="boldVedtaegter">Stk. 4.</span> Hvert medlem hur en stemme. Bestyrelsen er
-                            ansvarlig
-                            for, at det alene er per soner, der tilherer forreldrekredsen, der stemmer</p>
-                        <p><span class="boldVedtaegter">Stk. 5.</span> Der kan kun gives fuldmagt til en person, med
-                            hvem
-                            man har faelles forseldre" myndighed over et barn pá =kolen.</p>
-                        <p><span class="boldVedtaegter">Stk. 6.</span> Forieldrekredsmodet er beslutningsdvstigt uden
-                            hensyn
-                            til antallet af frem-medte medlemmer. Forieldrekredamodet trietfer beslutninger ved
-                            almindelig
-                            stemme-flerhed</p>
-                        <p><span class="boldVedtaegter">Stk. 7.</span> Bestyrelsen of ekolens leder har mederet og
-                            taleret
-                            pa forreldrekredsens me-der. Herudover trieffer forwldrekredsen selv afgarelse om, hvorvidt
-                            personer uden for forrldrekredsen kan deltage i forieldrekredsmeder og i givet fald hvilke
-                            personer.</p>
-                        <p><span class="boldVedtaegter">Stk. 8.</span> Skolens ansatte samt kandidater til bestyrelsen
-                            og
-                            til tilsynsforende kan ikke viere dirigent pà forrldrekredameder.</p>
-                        <p><span class="boldVedtaegter">Stk. 9.</span> Der skal feres protokol over det pü
-                            foreldrekredsmoder vedtagne. Protokollen skal underskrives af dirigenten</p>
-                        <p><span class="boldVedtaegter">Stk. 10.</span> Valghandlinger «kal viere hemmelige, hvis et
-                            eller
-                            fere medlemmer af foreel-drekredsen onsker det.</p>
-                        <p><span class="boldVedtaegter">Stk. 11.</span> Ved valg af bestyrelsesmedlemmer, suppleanter og
-                            tilsynsterende kan hver forzlder afgive stemme pà det antal medlemmer, der skal valges til
-                            bestyrelsen, henholdsvis pà et antal personer svarende dels til det besluttede hojeste antal
-                            suppleanter og dels det besluttede hojeste antal tilsynsforende.</p>
-                        <p><span class="boldVedtaegter">Stk. 12.</span> Kandidaterne er valgt i reekkefelge efter
-                            sterrelsen
-                            af de personlige stemme-tal. I tilfrelde af stemmelighed foretages lodtriekning.</p>
-                        <p><span class="boldVedtaegter">Stk. 13.</span> Genvalg af bestyrelsesmedlemmer, suppleanter og
-                            tilsynsferende kan finde sted.</p>
-                        <p><span class="boldVedtaegter">Stk. 14.</span> Foreldrekredsmedete kompetencer er anfert i § 3,
-                            stk. 3 litra d., § 6, stk. 1, og $ 6, stk. 3.</p>
-                        <p><span class="boldVedtaegter">Stk. 15.</span> Forieldrene til bern pà skolen vielger et
-                            forreldrerepresentantskab, for hvilket der er fastsat ot serligt sat vedtegter.
-                            Foroldrerepresentantekabet har til formäl at medvirke til det bedst mulige samarbejde skole,
-                            elever og foraeldre imellem.</p>
-                    </div>
-                </details>
-            </div>
-            <div class="singleBorder">
-                <details>
-                    <summary>
-                        <p>VI. Skolens drift</p>
-                    </summary>
-                    <div>
-                        <p class="boldVedtaegter paragraf">§8</p>
-                        <p>Skolens drift gennemferes ved offentlige tilskud og ved egendekning herunder skole-penge for
-                            eleverne og foreldrebetaling for skolefnitidsordning efter lov om friskoler og private
-                            grundekoler m.v. og eventuelt ved bidrag fra andro.</p>
-                        <p><span class="boldVedtaegter">Stk. 2.</span> Skolens midler mä kun komme skolens skole og
-                            undervisningevirksomhed til gode.</p>
-                        <p><span class="boldVedtaegter">Stk. 3.</span> Et eventuelt overskud ved ekolens drift tilfalder
-                            skolen.</p>
-                        <p><span class="boldVedtaegter">Stk. 4.</span> Bidrag til skolen giver ikke ret til nogen del af
-                            skolens formue eller til udbytte af nogen art.</p>
-                        <p><span class="boldVedtaegter">Stk. 5.</span> Bestyrelsen skal forvalte skolens midler til
-                            sterst
-                            mulig gavn for skolen og skal tage skyldige okonomiske hensyn.</p>
-                        <p><span class="boldVedtaegter">Stk. 6.</span> Skolens likvide midler skal anbringes i
-                            overensstemmelse med bestemmelserne i lov om friskoler og private grundskoler m.v. og mä
-                            ikke
-                            anbringes pá konti m.v., som andre end skolen har rädighed over.</p>
-                    </div>
-                </details>
-            </div>
-            <div class="singleBorder">
-                <details>
-                    <summary>
-                        <p>VII. Tegningsret</p>
-                    </summary>
-                    <div>
-                        <p class="boldVedtaegter paragraf">§9</p>
-                        <p>Skolen tegnes enten af bestyrelsens formand og skolens leder i forenine eller af en af disse
-                            i
-                            forening med bestyrelsens nestformand</p>
-                        <p><span class="boldVedtaegter">Stk. 2.</span> Ved keb salg og pantsetning eller andre
-                            disponitioner
-                            over «kolens faste ejen* domme tegnes skolen dog af mindst 3 medlemmer af bestyrelsen i
-                            forening.</p>
-                        <p><span class="boldVedtaegter">Stk. 3.</span> Tegningsretten kan ikke delegeres, og der kan
-                            ikke
-                            gaves prokura jfr, dog stk.</p>
-                        <p><span class="boldVedtaegter">Stk. 4.</span> Bestyrelsen kan treefle beslutning om. at
-                            «kolelederen 1 et neermere fastlagt omfang og under bestyrelsens ansvar bemvndiges til at
-                            udfere
-                            overordnede ledelses funktioner, när dette er nodvendigt for at opnà en hensigtemmssig
-                            daglig
-                            ledelse.</p>
-                    </div>
-                </details>
-            </div>
-            <div class="singleBorder">
-                <details>
-                    <summary>
-                        <p>VIII. Ændring af skolens vedtægt</p>
-                    </summary>
-                    <div>
-                        <p class="boldVedtaegter paragraf">§10</p>
-                        <p>Medmindre andet or bestemt nedentor, kan «kolon: bestyrelse med almindelig stem* meflerhed
-                            vedtage vedtzegtsrendringer.</p>
-                        <p><span class="boldVedtaegter">Stk. 2.</span> Til sendring af vedtegtsbestemmelserne om skolens
-                            formäl (§ 2), om bestyrelsens sammensnetning (§ 3. stk. 3) om vedtrgtsendring (§ 10) eller
-                            om
-                            skolens nedlag gelse (§ 11) fordres det, at rendringen vedtagos med 4/5 majoritet af
-                            samtlige
-                            bestyrel-sesmedlemmer.</p>
-                        <p><span class="boldVedtaegter">Stk. 3.</span> Forslag til rondring af vedtregtsbestemmelser om
-                            skolens formäl (§ 2) og om bestyrelsens sammensetning (§ 3, stk. 3) -kal for at opnä
-                            gyldighed
-                            tillige godkendes af den katolske biskop af Kobenhava. Det samme galder rendring af § 10,
-                            stk.
-                            3.</p>
-                        <p><span class="boldVedtaegter">Stk. 4.</span> Skolens vedtagt samt fremtidige vedtegtsendringer
-                            skal godkendes af Under visningsministeriet for sä vidt angär bestemmelser om skolens
-                            styrelse
-                            og ekonomiske forhold.</p>
-                    </div>
-                </details>
-            </div>
-            <div class="singleBorder">
-                <details>
-                    <summary>
-                        <p>IX. Nedlæggelse af skolen M.V.</p>
-                    </summary>
-                    <div>
-                        <p class="boldVedtaegter paragraf">§11</p>
-                        <p>Beslutning om skolens nedleggelse traftes af bestyrelsen, dog kun efter torudgaende droftelse
-                            med
-                            den katolske biskop af Kebenhavn. Denne droftelse kraves dog ikke. hvis nedlreggelsen af
-                            «kolen
-                            er nodvendig til opfyl-delse al
-                            lovkray.</p>
-                        <p><span class="boldVedtaegter">Stk. 2.</span> Ophorer skolen med at drive skolevirksomhed efter
-                            bestemmelserne i $ 2, stk. 7 og 8, skal den nedkegges.</p>
-                        <p><span class="boldVedtaegter">Stk. 3.</span> Det pähviler bestyrelsen at orientere
-                            forseldrekredsen om beslutning om ned-laggelse og om grundlaget berfor. Orienteringen skal
-                            ske
-                            umiddelbart efter beslutningen om nedlegselsen or trufiet.</p>
-                        <p><span class="boldVedtaegter">Stk. 4.</span> Det pähviler bestyrelsen at give
-                            Undervisring-ministeriet og de kommuner, hvor eleverne er hjemmeherende, meddelelse om
-                            pkolens
-                            nedlsegelse.</p>
-                        <p><span class="boldVedtaegter">Stk. 5.</span> Det pähviler bestyrelsen at onentere
-                            ndervisningsministeriet, hvis skolen standser sine betalinger, begœres konkurs, oller der 1
-                            ovrigt er fare for, at skolene virksombed mà indstilles.</p>
-                        <p><span class="boldVedtaegter">Stk. 6.</span> Bestyrelsen bar ansvuret for bevarelsen af
-                            atolens
-                            aktiver og for, at den oko* nomiske opzorelse i anledning af «kolens nedlezgolso foretages
-                            efter
-                            guldende regler, samt at «kolens nettoformue anvendes i overensstemmelee med vedtagten.</p>
-                        <p><span class="boldVedtaegter">Stk. 7.</span> Eventuelle overskydende midier skal med
-                            Undervisningsministeriets godken-delse anvendes til brug for okoleformäl pl en eller flere
-                            katolske skoler, der stettos gennem lov om friskoler of private grundskoler m.v.</p>
-                        <p><span class="boldVedtaegter">Stk. 8.</span> Det pähviler bestyrelsen at fungere videre,
-                            indtil
-                            den ekonomiske afvikling af «kolens aktiver of passiver er tilendobragt efter guldende
-                            rogler,
-                            herunder at «kolons nettoformue anvendes i overensstemmelsen vedtægten.</p>
-                    </div>
-                </details>
-            </div>
-            </div>
-        </section>
-        <section class="content godkendelseVedtaegter">
-            <div class="godkendelseVedtaegterContainer">
-                <p>Overstående vedtægter for Sct. Mariæ Skolen godkendt af skolens bestyrelse. Aalborg, den 12.
-                    september
-                    2007</p>
-                <a href="https://sctms.dk/wp-content/uploads/2021/11/Vedtaegter-compressed-1.pdf"
-                    target="_blank"><button class="responsiveBtn">
-                        <div class="downloadIkon">
-                            <span class="btnText">Download vedtægter
-                            </span>
-                            <span class="material-symbols-outlined">
-                                download
-                            </span>
-                        </div>
-                    </button></a>
-            </div>
-            <img src="./assets/img/vedtaegter/underskrifter-vedtaegter.png" alt="underskrifter på vedtaegter">
-        </section>
+          <p>
+            Overstående vedtægter for Sct. Mariæ Skolen godkendt af skolens
+            bestyrelse. Aalborg, den 12. september 2007
+          </p>
+          <a
+            href="https://sctms.dk/wp-content/uploads/2021/11/Vedtaegter-compressed-1.pdf"
+            target="_blank"
+            ><button class="responsiveBtn">
+              <div class="downloadIkon">
+                <span class="btnText">Download vedtægter </span>
+                <span class="material-symbols-outlined"> download </span>
+              </div>
+            </button></a
+          >
+        </div>
+        <img
+          src="./assets/img/vedtaegter/underskrifter-vedtaegter.png"
+          alt="underskrifter på vedtaegter"
+        />
+      </section>
     </main>
     <footer class="footer" id="footer">
-        <div class="footerContent content">
-            <div class="logoFooter">
-                <img src="./assets/img/footer/logo.png" alt="logo" />
-                <p>© Sct. Mariæ Skolen 2025</p>
-            </div>
-            <div class="kontakt">
-                <h3><a href="./kontakt.html">Kontakt</a></h3>
-                <a href="#">Kastetvej 3</a>
-                <a href="#">9000 Aalborg</a>
-                <a href="#">+45 98 13 60 03</a>
-                <a href="#">kontoret@sctms.dk</a>
-            </div>
-            <div class="omSkolen">
-                <h3><a href="./omSctMarie.html">Om Skolen</a></h3>
-                <a href="./skolensHistorie.html">Skolens historie</a>
-                <a href="./detKatolskeAspekt.html">Det katolske aspekt</a>
-                <a href="./voresVærdier.html">Vores værdier</a>
-                <a href="#">Skolens bestyrelse</a>
-                <a href="#">Tilsyn og evaluering</a>
-            </div>
-            <div class="information">
-                <h3><a href="#">Information</a></h3>
-                <a href="#">Økonomi</a>
-                <a href="#">For forældre</a>
-                <a href="#">Politikker</a>
-                <a href="./faq.html">FAQ</a>
-            </div>
-            <div class="optagelseFooter">
-                <a href="./optagelse.html"><button class="responsiveBtn">
-                        <span class="btnText">Optagelse</span>
-                    </button></a>
-                <a href="https://www.facebook.com/Sct.Mariae"><img src="./assets/img/footer/facebook.png"
-                        alt="facebooklogo" /></a>
-            </div>
+      <div class="footerContent content">
+        <div class="logoFooter">
+          <img src="./assets/img/footer/logo.png" alt="logo" />
+          <p>© Sct. Mariæ Skolen 2025</p>
         </div>
-        <div class="imgFooter">
-            <img src="./assets/img/footer/footerImg.png" alt="footerImg" />
-            <img src="./assets/img/footer/footerImg.png" alt="footerImg" />
+        <div class="kontakt">
+          <h3><a href="./kontakt.html">Kontakt</a></h3>
+          <a href="#">Kastetvej 3</a>
+          <a href="#">9000 Aalborg</a>
+          <a href="#">+45 98 13 60 03</a>
+          <a href="#">kontoret@sctms.dk</a>
         </div>
+        <div class="omSkolen">
+          <h3><a href="./omSctMarie.html">Om Skolen</a></h3>
+          <a href="./skolensHistorie.html">Skolens historie</a>
+          <a href="./detKatolskeAspekt.html">Det katolske aspekt</a>
+          <a href="./voresVærdier.html">Vores værdier</a>
+          <a href="#">Skolens bestyrelse</a>
+          <a href="#">Tilsyn og evaluering</a>
+        </div>
+        <div class="information">
+          <h3><a href="#">Information</a></h3>
+          <a href="#">Økonomi</a>
+          <a href="#">For forældre</a>
+          <a href="#">Politikker</a>
+          <a href="./faq.html">FAQ</a>
+        </div>
+        <div class="optagelseFooter">
+          <a href="./optagelse.html"
+            ><button class="responsiveBtn">
+              <span class="btnText">Optagelse</span>
+            </button></a
+          >
+          <a href="https://www.facebook.com/Sct.Mariae"
+            ><img src="./assets/img/footer/facebook.png" alt="facebooklogo"
+          /></a>
+        </div>
+      </div>
+      <div class="imgFooter">
+        <img src="./assets/img/footer/footerImg.png" alt="footerImg" />
+        <img src="./assets/img/footer/footerImg.png" alt="footerImg" />
+      </div>
     </footer>
     <footer class="footerMobil" id="footerMobil">
-        <div class="footerOptagelseMobil content">
-            <a href="./optagelse.html"><button class="responsiveBtn">
-                    <span class="btnText">Optagelse</span>
-                </button></a>
-            <a href="https://www.facebook.com/Sct.Mariae"><img src="./assets/img/footer/facebook.png"
-                    alt="facebooklogo" /></a>
-        </div>
-        <div class="doubleBorder content">
-            <details>
-                <summary>
-                    <h3><a href="./kontakt.html">Kontakt</a></h3>
-                </summary>
-                <div class="footerMobilContent">
-                    <a href="#">Kastetvej 3</a>
-                    <a href="#">9000 Aalborg</a>
-                    <a href="#">+45 98 13 60 03</a>
-                    <a href="#">kontoret@sctms.dk</a>
-                </div>
-            </details>
-        </div>
-        <div class="singleBorder content">
-            <details>
-                <summary>
-                    <h3><a href="./omSctMarie.html">Om Skolen</a></h3>
-                </summary>
-                <div class="footerMobilContent">
-                    <a href="./skolensHistorie.html">Skolens historie</a>
-                    <a href="./detKatolskeAspekt.html">Det katolske aspekt</a>
-                    <a href="./voresVærdier.html">Vores værdier</a>
-                    <a href="#">Skolens bestyrelse</a>
-                    <a href="#">Tilsyn og evaluering</a>
-                </div>
-            </details>
-        </div>
-        <div class="singleBorder content">
-            <details>
-                <summary>
-                    <h3><a href="#">Information</a></h3>
-                </summary>
-                <div class="footerMobilContent">
-                    <a href="#">Økonomi</a>
-                    <a href="#">For forældre</a>
-                    <a href="#">Politikker</a>
-                    <a href="./faq.html">FAQ</a>
-                </div>
-            </details>
-        </div>
-        <div class="logoFooter content">
-            <img src="./assets/img/footer/logo.png" alt="logo" />
-            <p>© Sct. Mariæ Skolen 2025</p>
-        </div>
-        <img src="./assets/img/footer/footerImg.png" alt="footerImg" />
+      <div class="footerOptagelseMobil content">
+        <a href="./optagelse.html"
+          ><button class="responsiveBtn">
+            <span class="btnText">Optagelse</span>
+          </button></a
+        >
+        <a href="https://www.facebook.com/Sct.Mariae"
+          ><img src="./assets/img/footer/facebook.png" alt="facebooklogo"
+        /></a>
+      </div>
+      <div class="doubleBorder content">
+        <details>
+          <summary>
+            <h3><a href="./kontakt.html">Kontakt</a></h3>
+          </summary>
+          <div class="footerMobilContent">
+            <a href="#">Kastetvej 3</a>
+            <a href="#">9000 Aalborg</a>
+            <a href="#">+45 98 13 60 03</a>
+            <a href="#">kontoret@sctms.dk</a>
+          </div>
+        </details>
+      </div>
+      <div class="singleBorder content">
+        <details>
+          <summary>
+            <h3><a href="./omSctMarie.html">Om Skolen</a></h3>
+          </summary>
+          <div class="footerMobilContent">
+            <a href="./skolensHistorie.html">Skolens historie</a>
+            <a href="./detKatolskeAspekt.html">Det katolske aspekt</a>
+            <a href="./voresVærdier.html">Vores værdier</a>
+            <a href="#">Skolens bestyrelse</a>
+            <a href="#">Tilsyn og evaluering</a>
+          </div>
+        </details>
+      </div>
+      <div class="singleBorder content">
+        <details>
+          <summary>
+            <h3><a href="#">Information</a></h3>
+          </summary>
+          <div class="footerMobilContent">
+            <a href="#">Økonomi</a>
+            <a href="#">For forældre</a>
+            <a href="#">Politikker</a>
+            <a href="./faq.html">FAQ</a>
+          </div>
+        </details>
+      </div>
+      <div class="logoFooter content">
+        <img src="./assets/img/footer/logo.png" alt="logo" />
+        <p>© Sct. Mariæ Skolen 2025</p>
+      </div>
+      <img src="./assets/img/footer/footerImg.png" alt="footerImg" />
     </footer>
-</body>
-
+  </body>
 </html>

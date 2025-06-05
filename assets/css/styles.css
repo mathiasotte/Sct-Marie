@@ -345,7 +345,7 @@ padding-inline: 1rem;
 padding-block: 0.2rem;
 align-items: center;
 gap: 1rem;
-background-color: var(--white);
+background-color: var(--backgroundPrimaryColor);
 max-width: 1120px;
 border-bottom-right-radius: 10px;
 border-bottom-left-radius: 10px;
@@ -397,7 +397,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--white);
+  background-color: var(--backgroundPrimaryColor);
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border-top-left-radius: 28px;
@@ -417,7 +417,7 @@ nav {
 
 
 #logo {
-  width: 50px;
+  width: 70px;
 }
 
 
@@ -543,6 +543,28 @@ nav {
 /* landingpage start --------------------------------------------------------*/
 
 
+/* galleri afsnit */
+
+.citatOgBilledeSektion div div {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.citatOgBilledeSektion div div img {
+width: 50%;
+}
+.citatOgBilledeSektion div div p {
+padding-inline: 2rem;
+text-align: center;
+}
+.citatOgBilledeSektion {
+  margin-bottom: var(--spacingXLarge);
+}
+
+#landingPige {
+  margin-top: var(--spacingXLarge) !important;
+}
+
 
 img.align-right {
   display: block;
@@ -557,19 +579,56 @@ img.align-right {
 }
 
 #landingPage .heroSection img {
-  /* width: 50%; */
   margin: 0;
   max-width: 500px;
- 
 }
+
+
+
 #landingPage .heroSection {
   display: flex;
+}
+
+
+.videoContainer iframe{
+  width: 100%;
+  min-height: 500px;
+  border-radius: 28px;
+  margin-bottom: var(--spacingXLarge);
 }
 
 @media screen and (max-width: 1500px) {
 
 }
 @media screen and (max-width: 950px) {
+  .videoContainer iframe{
+    margin-bottom: var(--mobilSpacingXLarge);
+  }
+
+  .citatOgBilledeSektion div div p {
+    padding-inline: 0.1rem;
+    line-height: 130%;
+    text-align: center;
+    }
+
+    #landingMulighed {
+      margin-bottom: var(--mobilSpacingXLarge);
+      margin-top: 0px;
+    }
+
+    .heroSection {
+      gap: var(--mobilSpacingMedium);
+      margin-bottom: var(--mobilSpacingXLarge);
+    }
+
+    .citatOgBilledeSektion {
+      margin-bottom: var(--mobilSpacingXLarge);
+    }
+    
+    #landingPige {
+      margin-top: var(--mobilSpacingXLarge) !important;
+    }
+
   #textAlignLeft {
     transform: translateX(-160px);
   }
@@ -1268,7 +1327,7 @@ section.content.utilityBarSection {
 
 .arstal {
   font-size: 3rem;
-  margin-bottom: 0;
+  padding-top: 1rem;
   font-family: libre baskerville;
 }
 
@@ -1389,6 +1448,15 @@ section.content.utilityBarSection {
 
 @media screen and (max-width: 950px) {
 
+
+   #arstal {
+    font-size: 1rem;
+    padding-top: 0rem;
+  
+  } 
+
+ 
+
   .BorneGrottenEntrypointContent p {
     font-size: 1rem;
   }
@@ -1444,9 +1512,9 @@ background-image: none;
 
 @media screen and (max-width: 950px) {
 
-  #arstal {
+  /* #arstal {
     font-size: unset;
-  }
+  } */
 
   #SkolensHistorie section {
     margin-bottom: var(--mobilSpacingXLarge);
@@ -1556,7 +1624,7 @@ background-image: none;
 }
 
 .aabningstiderSfoSkole {
-  display: flex;
+ 
   gap: var(--spacingXLarge);
 }
 
@@ -1618,6 +1686,21 @@ background-image: none;
   margin: 0 auto;
   margin-top: var(--spacingMedium);
   margin-bottom: var(--spacingXLarge);
+}
+
+@media screen and (max-width: 470px) {
+  .kontaktSkolen {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    margin-bottom: var(--mobilSpacingXLarge);
+  }
+  
+  #lærere {
+   
+    gap: 1rem;
+   
+  }
+
 }
 
 @media screen and (max-width: 950px) {

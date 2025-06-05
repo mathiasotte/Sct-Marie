@@ -7,7 +7,7 @@
     <meta name="description" content="" />
     <script src="./assets/js/app.js" defer></script>
     <link rel="stylesheet" href="./assets/css/styles.css" />
-
+    <link rel="icon" type="image/png" href="./assets/img/Favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -221,7 +221,7 @@
             Sct. Mariæ er en tryg og inkluderende skole med fokus på trivsel,
             nærvær, kreativitet og faglighed.
           </p>
-          <a href=""
+          <a href="./omSctMarie.html"
             ><button class="responsiveBtn">
               <span class="btnText">Læs mere om Sct. Mariæ</span>
             </button></a
@@ -271,6 +271,101 @@
           </div>
         </div>
       </div>
+
+      <div class="valueModalContainer hidden" id="valueModalContainer">
+        <div class="valueModal content hidden" id="valueModal">
+          <div class="valueModalContent">
+            <button class="closeModalBtn" id="closeModalBtn">
+              <img src="./assets/img/vaedier/close.svg" alt="Luk ikon" />
+            </button>
+            <div class="df gapMedium">
+              <div>
+                <div class="valueFlex">
+                  <img
+                    src="./assets/img/vaedier/faellesskab.webp"
+                    alt="Fællesskab ikon"
+                  />
+                  <h3>Fællesskab</h3>
+                </div>
+                <p>
+                  På Sct. Mariæ er fællesskabet hjertet i hverdagen. Her kender
+                  vi hinanden på tværs af årgange, fag og forskelligheder. Vi
+                  tror på, at børn trives og udvikler sig bedst, når de føler
+                  sig set, hørt og anerkendt.
+                </p>
+                <br />
+                <p>
+                  Vi møder hinanden med respekt, hjælper når det er svært, og
+                  fejrer når det går godt. For os handler fællesskab ikke kun om
+                  at være sammen – men om at høre til.
+                </p>
+              </div>
+              <img
+                src="./assets/img/vaedier/eksempelFaellesskab.webp"
+                alt="Skolebørn der holder om hinanden"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="citatOgBilledeSektion content">
+        <div>
+          <div>
+            <img
+              src="./assets/img/forside/citatbilleder/gladeLerere.webp"
+              alt="Glade lærere"
+            />
+            <div>
+              <p>
+                “Sct. Marie er ikke bare en skole, det er en familie” <br />
+                - Anna, lærer
+              </p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <p>
+                “Skolens fysiske rammer er virkelig hyggelige og lidt Harry
+                Potter agtige med alle mulige små kroge og hjørner” <br />
+                - Ahmed, forældre
+              </p>
+            </div>
+            <img
+              src="./assets/img/forside/citatbilleder/gladePiger.webp"
+              alt="Glade piger"
+            />
+          </div>
+          <div>
+            <img
+              src="./assets/img/forside/citatbilleder/maleTime.webp"
+              alt="Glade lærere"
+            />
+            <div>
+              <p>
+                “Det er ikke bare en skole, det er et andet hjem” <br />
+                - Cirkeline, Elev
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="oplevSkolen" class="content">
+        <h2>Oplev Skolen</h2>
+        <div class="videoContainer">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/0TLHUg9eqy0?si=eHxjLhJK_VcXnbuZ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
 
       <section class="voresValues content">
         <div>
@@ -374,6 +469,150 @@
             </button>
           </div>
         </div>
+      </section>
+
+      <section class="entryPointVenteliste content" id="landingPige">
+        <div>
+          <div class="textBackground">
+            <h2>Kom og vær med i noget stort</h2>
+            <p>Er du og dit barn klar til at blive en del af et fællesskab?</p>
+            <p>
+              Hvor både lærere og elever bliver som en ekstra familie. Hvor
+              tryghed, nærvær og respekt danner rammen om hverdagen, og hvor der
+              er plads til både faglighed, tro og trivsel.
+            </p>
+            <p>
+              Her har du mulighed for at skrive dit barn op og tage første
+              skridt ind i et skoleliv med mening, sammenhold og varme.
+            </p>
+            <a href="venteliste.html"
+              ><button class="responsiveBtn">
+                <span class="btnText">Skriv dit barn op på Sct. Marie</span>
+              </button></a
+            >
+          </div>
+        </div>
+        <div>
+          <img
+            src="./assets/img/detKatolskeAspekt/venteliste.webp"
+            alt="Pige med ballon i hånden"
+          />
+        </div>
+      </section>
+
+      <section
+        class="entryPointSaerligeMuligheder content"
+        id="landingMulighed"
+      >
+        <h2>Særlige muligheder på Sct. Mariæ Skolen</h2>
+        <div class="entryPointMuligheder">
+          <div class="entryPointBigBand entryPointContent">
+            <p>
+              Big Band: Lad dit barn udfolde sin musikalitet i et stærk
+              fælleskab
+            </p>
+            <a href="#"
+              ><button class="responsiveBtn">
+                <span class="btnText">Læs mere om Big Band</span>
+              </button></a
+            >
+          </div>
+          <div class="entryPointKor entryPointContent">
+            <p>Kor: Vær med i Sct. Mariæ kor</p>
+            <a href="#"
+              ><button class="responsiveBtn">
+                <span class="btnText">Læs mere om Sct. Mariæs kor</span>
+              </button></a
+            >
+          </div>
+          <div class="entryPointCambridge entryPointContent">
+            <p>
+              Cambridge: Mulighed for at tage den internalt anerkendte
+              engelskprøve
+            </p>
+            <a href="#"
+              ><button class="responsiveBtn">
+                <span class="btnText">Læs mere om Cambridge</span>
+              </button></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="faqSection content">
+        <h2>Ofte stillede spørgsmål</h2>
+        <div class="doubleBorder">
+          <details>
+            <summary>
+              <p>Hvilke klassetrin tilbyder skolen?</p>
+            </summary>
+            <div>
+              <p>Sct. Mariæ Skole tilbyder undervisning fra 0. – 10. klasse</p>
+            </div>
+          </details>
+        </div>
+        <div class="singleBorder">
+          <details>
+            <summary>
+              <p>Hvor mange elever går der på skolen?</p>
+            </summary>
+            <div>
+              <p>
+                På Sct. Mariæ Skole har vi plads til 546 elever, og med en
+                relativ lille udskiftning ligger elevtallet som regel omkring
+                540 elever. Udviklingen i skolens elevtal kan ses på
+                <a
+                  href="https://uddannelsesstatistik.dk/Pages/Institutions/851053.aspx"
+                  target="_blank"
+                  >uddannelsesstatistik.</a
+                >
+              </p>
+            </div>
+          </details>
+        </div>
+        <div class="singleBorder">
+          <details>
+            <summary>
+              <p>Hvor mange elever er der i klasserne?</p>
+            </summary>
+            <div>
+              <p>På Sct. Mariæ Skole har vi 26 elever i alle klasser</p>
+            </div>
+          </details>
+        </div>
+        <div class="singleBorder">
+          <details>
+            <summary>
+              <p>Hvilke sprog undervises der i?</p>
+            </summary>
+            <div>
+              <p>
+                På Sct. Mariæ Skole foregår undervisningen på dansk. I
+                sprogfagene foregår undervisningen delvist på dansk og delvist
+                på det pågældende sprog – alt efter elevernes niveau.
+              </p>
+            </div>
+          </details>
+        </div>
+        <div class="singleBorder">
+          <details>
+            <summary>
+              <p>Skal man være katolik for at gå på skolen?</p>
+            </summary>
+            <div>
+              <p>
+                Nej, Sct. Mariæ Skole er åben for alle elever uanset religion.
+                Dog forventer vi, at såvel elever som forældre og personale kan
+                se sig selv i skolens værdigrundlag og efterlever det i praksis.
+              </p>
+            </div>
+          </details>
+        </div>
+        <a href="./faq.html"
+          ><button class="responsiveBtn">
+            <span class="btnText">Se FAQ</span>
+          </button></a
+        >
       </section>
     </main>
 
