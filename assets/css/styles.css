@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 /* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,
@@ -48,6 +49,14 @@ h6 {
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 
+/* .inter-font{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+
 h1 {
   font-size: 3.5rem;
   font-family: libre baskerville;
@@ -76,7 +85,7 @@ p,
 li,
 a {
   font-size: 1.125rem;
-  font-family: inter;
+  font-family: "Inter", sans-serif;
   margin-bottom: var(--spacingSmall);
   text-wrap: balance;
   line-height: 2rem;
@@ -110,6 +119,7 @@ a:hover {
   p,
   li,
   a {
+    font-family: "Inter", sans-serif;
     font-size: 0.75rem;
     line-height: 1.5rem;
     margin-bottom: var(--mobilSpacingSmall);
@@ -121,10 +131,10 @@ a:hover {
   /* Font Weight */
   --regularWeight: 400;
   --boldWeight: 700;
+
 }
 
 /* Afstande */
-
 :root {
   /* spacing desktop */
 
@@ -1013,8 +1023,6 @@ details[open] summary:after {
   margin-bottom: var(--spacingXLarge);
 }
 
-
-
 .arstal {
   font-size: 3rem;
   margin-bottom: 0;
@@ -1028,41 +1036,45 @@ details[open] summary:after {
   gap: 2rem;
   margin-bottom: var(--spacingXLarge);
 }
-
-
-
 /* Udforsk skolen entry point */
 
 .udforskSkoleEntryPoint{
   display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
+  padding: 8% 1%;
   width: 100%;
+  
 }
+
+.svgSti{
+  background-image: url(../img/sctMarie/mariaSti.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 99%;
+  z-index: -1;
+  padding-bottom: var(--spacingXLarge);
+
+}
+
 .custom-shape-card {
   position: relative;
   width: 100%;
+  max-width: 410px;
 }
 
-.borderImg{
-  background-color:  #d57a66;
-  background-image: url(../img/sctMarie/shape1.svg);
-  mask-repeat: no-repeat;
-  transform: translateZ(-10px);
-  z-index: -1;
-  width: 100%;
-  max-width: 500px;
-}
 
 /* Background image (inside the SVG shape) */
-.maskSvgImg{
+.maskSvgImg1{
   mask-image: url(../img/sctMarie/shape1.svg);
   mask-repeat: no-repeat;
-  width: 90%;
-  max-width: 500px;
-  text-align: center;
+  width: 100%;
+  max-width: 410px;
   z-index: 2;
+  border-radius: 28px;
 }
-.gradientImg{
-    background-image: linear-gradient(175deg, #000 0%, rgba(0, 0, 0, 0.00)45%);
+.gradientImg1{
+    background-image: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00)45%);
     content: '';
     border-radius: 28px;
     position: absolute;
@@ -1070,26 +1082,54 @@ details[open] summary:after {
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 3;
+    z-index: 2;
+    padding: 10px;
+    max-width: 410px;
+}
+.maskSvgImg2{
+  mask-image: url(../img/sctMarie/image.svg);
+  mask-repeat: no-repeat;
+  width: 100%;
+  max-width: 410px;
+  z-index: 2;
+}
+
+.gradientImg2{
+    background-image: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.00)60%);
+    content: '';
+    position: absolute;
+    border-radius: 43%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 5;
+    z-index: 2;
+    width: 100%;
+    max-width: 410px;
 }
 /* Overlay content */
 .BorneGrottenEntrypointContent {
   position: absolute;
   inset: 0;
-  z-index: 4;
+  z-index: 3;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: top;
   align-items: center;
-  padding: 2rem;
-  text-align: center;
   color: white;
+  margin-top: var(--spacingMedium);
   /* Or adjust for contrast */
 }
-
-.BorneGrottenEntrypointContent p {
-  font-size: 1.5rem;
+.shapeTitle{
+  font-size: 2rem;
   font-family: "Libre Baskerville", serif;
+  font-weight: var(--boldWeight);
+
+}
+.BorneGrottenEntrypointContent p {
+  font-size: 1rem;
+  text-align: center;
 }
 
 .BorneGrottenEntrypointContent button {
@@ -1098,6 +1138,7 @@ details[open] summary:after {
   color: white;
   padding: 0.75rem 1.5rem;
   border-radius: 2rem;
+  font-family: "Inter", sans-serif;
   font-size: 1rem;
   cursor: pointer;
 }
@@ -1845,7 +1886,32 @@ textarea {
 .citatAfsender{
   text-align: right;
 }
+.traditionCardContainer{
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  align-items: flex-start;
+  max-height: 450px;
+  margin-top: var(--mobilSpacingSmall);
+}
 
+
+.traditionCardContainer::-webkit-scrollbar {
+  height: 30px;
+}
+
+.traditionCardContainer::-webkit-scrollbar-thumb,
+.traditionCardContainer::-webkit-scrollbar-track {
+  border-radius: 92px;
+}
+
+.traditionCardContainer::-webkit-scrollbar-thumb {
+  background: var(--primaryCTA);
+}
+
+.traditionCardContainer::-webkit-scrollbar-track {
+  background: var(--white);
+}
 .traditionImg{
   border-radius: 28px;
 }
