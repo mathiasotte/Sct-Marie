@@ -1338,7 +1338,7 @@ section.content.utilityBarSection {
 
 .arstal {
   font-size: 3rem;
-  margin-bottom: 0;
+  padding-top: 1rem;
   font-family: libre baskerville;
 }
 
@@ -1457,7 +1457,16 @@ section.content.utilityBarSection {
   cursor: pointer;
 }
 
-@media screen and (min-width: 950px) {
+@media screen and (max-width: 950px) {
+
+
+   #arstal {
+    font-size: 1rem;
+    padding-top: 0rem;
+  
+  } 
+
+ 
 
   .BorneGrottenEntrypointContent p {
     font-size: 1rem;
@@ -1514,9 +1523,9 @@ background-image: none;
 
 @media screen and (max-width: 950px) {
 
-  #arstal {
+  /* #arstal {
     font-size: unset;
-  }
+  } */
 
   #SkolensHistorie section {
     margin-bottom: var(--mobilSpacingXLarge);
@@ -1626,7 +1635,7 @@ background-image: none;
 }
 
 .aabningstiderSfoSkole {
-  display: flex;
+ 
   gap: var(--spacingXLarge);
 }
 
@@ -1688,6 +1697,21 @@ background-image: none;
   margin: 0 auto;
   margin-top: var(--spacingMedium);
   margin-bottom: var(--spacingXLarge);
+}
+
+@media screen and (max-width: 470px) {
+  .kontaktSkolen {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    margin-bottom: var(--mobilSpacingXLarge);
+  }
+  
+  #lærere {
+   
+    gap: 1rem;
+   
+  }
+
 }
 
 @media screen and (max-width: 950px) {
